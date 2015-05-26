@@ -4,7 +4,7 @@
 #backup me
 cp -r scripts ~/Desktop/
 
-sourceBranch="master"
+sourceBranch="coming-soon"
 releaseRemote="github"
 releaseBranch="gh-pages"
 buildFolder="_site"
