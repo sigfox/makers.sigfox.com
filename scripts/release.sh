@@ -4,10 +4,12 @@
 #backup me
 cp -r scripts ~/Desktop/
 
+
 sourceBranch="master"
 releaseRemote="github"
 releaseBranch="gh-pages"
 buildFolder="_site"
+tempFolder="_temp"
 
 #Git repo ?
 if [[ ! -d .git ]]; then
@@ -44,6 +46,16 @@ if [[ ! -d _site ]]; then
   exit
 fi
 
+#Save build in tmp folder
+mkdir _temp
+cp -r $buildFolder/* $tempFolder/
+
+##Stop Jekyll
+jekyllPID=$(ps aux | grep [j]ekyll | awk '{print $2}')
+if [[ $jekyllPID ]]; then
+  echo "Killing Jekyll process $jekyllPID"
+  kill $jekyllPID
+fi
 
 ##Create release branch if needed
 if [[ $(git branch --list $releaseBranch) ]]; then
@@ -53,27 +65,22 @@ else
 fi
 
 
-##Stop Jekyll
-jekyllPID=$(ps aux | grep [j]ekyll | awk '{print $2}')
-if [[ $jekyllPID ]]; then
-  echo "Killing Jekyll process $jekyllPID"
-  kill $jekyllPID
-fi
 
 ##Keep only build files
-ls | grep -v $buildFolder | xargs rm -rf
+ls | grep -v $tempFolder | xargs rm -rf
 rm .gitignore
 #Check that the build files haven't been erased. Could be the case if jekyll process is still running
-nbFiles=$(ls -l $buildFoler | wc -l)
+nbFiles=$(ls -l $tempFolder | wc -l)
 if [[ nbFiles == 0 ]]; then
-  echo "Unexpected err : $buildFolder files are gone. Aborting the whole process"
+  echo "Unexpected err : $tempFolder files are gone. Aborting the whole process"
+  rmdir $tempFolder
   git checkout .
   git checkout $sourceBranch
   exit
 fi
 
-mv $buildFolder/* .
-rmdir $buildFolder
+mv $tempFolder/* .
+rmdir $tempFolder
 git add .
 git commit -m "$releaseMsg"
 git push $releaseRemote $releaseBranch
