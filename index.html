@@ -36,13 +36,13 @@ layout: default
       SIGFOX uses an Ultra-Narrow Band (UNB) modulation, which is key to our ability to provide a scalable & high-capacity network.
     </p>
     <p>
-      With a 162dB path loss SIGFOX enable long range communications, with much longer reach than GSM.
+      With a 162dB path loss SIGFOX enables long range communications, with much longer reach than GSM.
     </p>
     <p>
-      There is no negociation between the device and a receiving station. The device simply emits in the available frequency band (+/- its own frequency shift).<br />
-      The signal is detected by the closer base stations, decoded & forwarded to the network backend.<br />
-      Deduplication & other protocol operations are handed by the network itself.<br />
-      Message is then forwarded to your own application, and accessible using SIGFOX's API. ()
+      There is no negotiation between the device and a receiving station. The device simply emits in the available frequency band (+/- its own frequency shift).<br />
+      The signal is detected by the closest base stations, decoded & forwarded to the network backend.<br />
+      Deduplication & other protocol operations are handled by the network itself.<br />
+      Messages are then forwarded to your own application, and made   accessible using SIGFOX's API. ()
     </p>
     <h2>SIGFOX Specifics</h2>
     <h3>In a few words</h3>
@@ -55,15 +55,12 @@ layout: default
     <h3>Message size</h3>
     <p>
       You can send up to 12 bytes (96 bits) per message. <br />
-      The protocol metadata already include a timestamp & the device unique id. 
+      The protocol metadata already includes a timestamp & the device unique id. 
     </p>
     <h3>Number of messages</h3>
     <p>
-      The maximum number of messages that can be sent each day is 140. This limitation is in part here to comply with regulations.<br />
-      
-      The european regulation on the 868MHz band enforce a <a href="http://en.wikipedia.org/wiki/Duty_cycle">transmission duty cycle</a> of 1%. <br />
-      A unique device is not allowed to emit more than 1% of the time each hour. <br />
-      As emission of a message can take up to ~6 seconds, this allows up to 6 messages per hour<br />
+      The maximum number of messages that can be sent each day is 140.<br />This limitation is introduced, in part, to comply with regulations. The european regulation governing the 868MHz band enforces a transmission  <a href="http://en.wikipedia.org/wiki/Duty_cycle" target="_blank">duty cycle</a> of 1%. <br /><br />
+A unique device is therefore not allowed to emit more than 1% of the time each hour and since emission of a message can take up to ~6 seconds, this allows up to 6 messages per hour.
       
     </p>
     
@@ -88,12 +85,12 @@ layout: default
           <img src="./img/Akene.png" class="img-responsive" />
         </div>
         <p>
-          Designed by Snootlab, an Arduino shield, with a Telecom Design TD1208 SIGFOX module.<br />
-          Ships with a one-year subscription to the SIGFOX network.
+          Designed by Snootlab, the Akene is an Arduino shield with a Telecom Design TD1208 SIGFOX module.<br />
+          It ships with a one-year subscription to the SIGFOX network. 
         </p>
         <p>
-          Use the Arduino IDE to program, and simply send your AT commands over serial.<br />
-          A small Arduino lib allows you to send messages as easy as 
+          You can use the Arduino IDE to program and simply send your AT commands over serial.<br />
+          A small Arduino lib allows you to send messages as easy as:
           <pre class="pre-scrollable">
 #include &lt;Akene.h&gt;
 struct sigfoxData {
@@ -118,14 +115,18 @@ Akene.send(&data, sizeof(data)));
           Full documentation (PDF) <a href="./resources/Atmel-User-Guide-for-ATAK55002-V1-V2-V3_Application-Note.pdf">here</a>.
         </p>
         <p>
-          The Atmel ATAK55002-V2 extension board is a hardware platform for evaluating the Atmel ATA8520 SIGFOX transmitter <br />
-          This Arduino shield includes the Atmel ATA8520 SIGFOX transmitter and an Atmel AT30TS75A temperature sensor.<br />
-        <p>
-          This shield doesn't come with a valid subscription, you need to contact us to subscribe.
+          The Atmel ATAK55002-V2 extension board is a hardware platform for evaluating the Atmel ATA8520 SIGFOX transmitter.<br />
+          This Arduino shield includes the Atmel ATA8520 SIGFOX transmitter and an Atmel AT30TS75A temperature sensor.
         </p>
         <p>
-          Use the Arduino IDE to program and send your messages over serial<br />
-          Atmel provides Arduino libs to handle both the temperature sensor & the SIGFOX transceiver.
+          This shield does not come with a valid subscription - you need to contact us to subscribe.
+        </p>
+        <p>
+          Use the Arduino IDE to program and send your messages over serial. Atmel provides Arduino libs to handle both the temperature sensor & the SIGFOX transceiver.
+        </p>
+        <p>
+          
+          
           <pre class="pre-scrollable">
 #include "AtmSIGFOXshd.h"    // Atmel SIGFOX shield library 
 SIGFOXshield SIGsh;          // load class SIGFOXshield
@@ -151,12 +152,12 @@ SIGsh.sendMessage(message,sizeof(message));
           <img class="img-responsive" src="./img/SmartEverything.png" />
         </div>
         <p>
-      The Amel Technology SmartEverything SoM (System On Module) is based on Atmel D21 Ultra low-power µcontroller,  using the 32-bit ARM Cortex-M0+ processor.
+      The Atmel Technology SmartEverything SoM (System On Module) is based on Atmel D21 Ultra low-power µcontroller,  using the 32-bit ARM Cortex-M0+ processor.
           </p>
       <p>
         The SmartEverything Board provides the following peripherals or modules:
         <ul>
-          <li>Atmel Crypto Authentication chpset</li>
+          <li>Atmel Crypto Authentication chipset</li>
           <li>Dynaflex 868Mhz Antenna</li>
           <li>Sigfox Module (<a href="http://www.telit.com/products/product-service-selector/product-service-selector/show/product/le51-868-s/">Telit LE51-868S</a>)</li>
           <li>GPS Module with Embedded Antenna</li>
@@ -185,12 +186,12 @@ SIGsh.sendMessage(message,sizeof(message));
           <img src="./img/airboard.png" class="img-responsive" />
         </div>
         <p>
-          The Airboard is an Arduino-compatible board, build upon the Arduino IDE.<br />
-          It's a tiny SIGFOX module with a Xbee format.<br />
+          The Airboard is an Arduino-compatible board, built upon the Arduino IDE.<br />
+          It is a tiny SIGFOX module with a Xbee format.<br />
           The module can be programmed wirelessly
         </p>
         <p>
-          Check their <a href="http://theairboard.cc">website </a> for detailed informations, and updates about the upcoming release. <br />
+          Check their <a href="http://theairboard.cc">website </a> for detailed information and updates about the upcoming release. <br />
           Note that they will first serve the people who backed their Kickstarter project.
         </p>
       </div>
@@ -278,7 +279,7 @@ Akeru.send(&data, sizeof(data)));
       <div class="col-sm-4">
         <h3>TST</h3>
         <p> 
-          TST has a development kit available for its <a href="http://www.tst-sistemas.es/en/products/tsmart/">TSmote platfirm</a><br />
+          TST has a development kit available for its <a href="http://www.tst-sistemas.es/en/products/tsmart/">TSmote platform</a><br />
           The TSmote is powered by a 32-bit ARM Cortex M3 µprocessor, and the <a href="http://www.tst-sistemas.es/en/products/tsmart/tskits/">SIGFOX starter kit</a> includes a Xbee-format SIGFOX module
         </p>
         <p>
@@ -304,7 +305,7 @@ Akeru.send(&data, sizeof(data)));
       <div class="col-sm-4">
         <h3>Adeunis</h3>
         <p>
-          The Adeunis RF Evaluation Board Si868  provides a very simple access to the UART of the module and in addition, the Evaluation board provides an RF output designs to get the best Si868 module performances.
+          The Adeunis RF Evaluation Board Si868 provides a very simple access to the UART of the module. In addition, the evaluation board provides an RF output designed to obtain the best Si868 module performance.
         </p>
         <p>
           Check <a href="http://www.adeunis-rf.com/en/products/sigfox-rf-module/evaluation-board-sigfox">Adeunis-rf.com</a> for details about the Si868 Evaluation Board<br />
@@ -320,7 +321,7 @@ Akeru.send(&data, sizeof(data)));
     <div class="row">
       <div class="col-sm-12">
         <p>
-          In order to achieve an extremely competitive offer, SIGFOX makes its IP available at no cost to silicon and module vendors. This strategy has encouraged leading silicon and module vendors to integrate SIGFOX in their existing assets, giving solution enablers a choice of a wide range of components.
+          SIGFOX makes its IP available at no cost to silicon and module vendors. This strategy has encouraged leading silicon and module vendors to integrate SIGFOX in their existing assets, giving solution enablers a wide choice of very competitively priced components.
 </p><p>
 SIGFOX enables bi-directional as well as mono-directional communications and can co-exist with other communication protocols, both short and long range.
 </p><p>
@@ -390,7 +391,7 @@ The increasing number of M2M and Internet of Things solutions calls for better i
     <div class="row">
       <div class="col-sm-12">
         <p>
-          Once a device sent a message, there are 3 ways to fetch & use the data :
+          Once a device sends a message, there are 3 ways to fetch & use the data :
           <ul>
             <li>Web interface on http://backend.sigfox.com</li>
             <li>REST API</li>
@@ -413,7 +414,7 @@ The increasing number of M2M and Internet of Things solutions calls for better i
           <ul>
             <li>Retrieve the list of devices associated to a device type</li>
             <li>Retrieve the messages of a given device</li>
-            <li>Get metrics about a device messages</li>
+            <li>Get metrics about a device's messages</li>
           </ul>
         </p>
       </div>
@@ -430,7 +431,7 @@ The increasing number of M2M and Internet of Things solutions calls for better i
                 <div class="panel-heading">Data sent in the callback body</div>
                 <div class="panel-body">
                   One callback is called per emitted message. <br />
-                  You can optionally subscribe to receive a callback each time a station receive your message. Deduplication will be your side then.<br /><br />
+                  You can optionally subscribe to receive a callback each time a station receives your message. Deduplication will then occur on your side.<br /><br />
                   You can choose to receive the callback using a GET or POST HTTP request.
                 </div>
                 <table class="table table-condensed table-striped table-hover">
@@ -459,7 +460,7 @@ The increasing number of M2M and Internet of Things solutions calls for better i
                     </tr>
                     <tr>
                       <td>rssi</td>
-                      <td>Received Signal Strength Intensity on the base station who received your message. </td>
+                      <td>Received Signal Strength Intensity on the base station that received your message. </td>
                       <td>dBm</td>
                     </tr>
                   </tbody>
@@ -470,7 +471,7 @@ The increasing number of M2M and Internet of Things solutions calls for better i
         </p>
         <p>
           To avoid side effects, you should send an <code>HTTP 200</code> response as soon as the callback is received on your side.<br />
-          If the SIGFOX backend receive an error status, it assumes that the message wasn't properly received, and send a retry shortly after. Which will be seen as another message by your system.<br />
+          If the SIGFOX backend receives an error status, it assumes that the message wasn't properly received, and send a retry shortly after. This will be seen as another message by your system.<br />
         </p>
         <p>
           An example of a quick implementation of a callback handler is available <a href="http://github.com/nicolsc/sigfox-callback-demo">here</a>.
@@ -482,8 +483,8 @@ The increasing number of M2M and Internet of Things solutions calls for better i
     <h1>Coverage</h1>
     <p>
       <i>SIGFOX coverage, as of May 2015.</i><br />
-      <a href="#contact">Contact us</a> for details & questions about current coverage, and stay tuned for future annnoucements ! <br />
-      New countries will be annouced in the upcoming weeks
+      <a href="#contact">Contact us</a> for details & questions about current coverage, and stay tuned for future announcements ! <br />
+      New countries will be annouced in the coming weeks
     </p>
     <div class="row">
       <div class="col-sm-4">
@@ -498,6 +499,7 @@ The increasing number of M2M and Internet of Things solutions calls for better i
       <div class="col-sm-4">
         <h3>On-going rollout</h3>
         <div class="list-group">
+          <p class="list-group-item">Denmark</p>
           <p class="list-group-item">Portugal</p>
           <p class="list-group-item">United States</p>
         </div>
@@ -524,7 +526,7 @@ The increasing number of M2M and Internet of Things solutions calls for better i
       <p>
         Nicolas Lesconnec<br />
         Developer & Maker Evangelist<br />
-        <span class="glyphicon glyphicon-envelope"></span>&nbsp;<a href="mailto:nicolas.lesconnec@sigfox.com">nicolas.lesconnec@sigfox.com</a><br />
+        <span class="glyphicon glyphicon-envelope"></span>&nbsp;<a href="mailto:devrelations@sigfox.com">devrelations@sigfox.com</a><br />
         <span class="twittericon"></span>&nbsp;<a href="http://twitter.com/nlesconnec/">@nlesconnec</a><br />
           <span class="githubicon"></span>&nbsp;<a href="http://github.com/nicolsc/">@nicolsc</a><br />
         
