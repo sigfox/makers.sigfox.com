@@ -91,7 +91,7 @@
       
     </p>
     <p>
-      It is a LPWA (Low-Power Wide-Area) network, currently deployed in Western Europe & San Francisco. 
+      It is a LPWA (Low-Power Wide-Area) network, currently deployed in Western Europe, San Francisco, and with ongoing tests in South America & Asia.
     </p>
     <p>
       The SIGFOX allows a bidirectional communication, both from & to the device.<br />
@@ -111,13 +111,18 @@
       SIGFOX uses an Ultra-Narrow Band (UNB) modulation, which is key to our ability to provide a scalable & high-capacity network.
     </p>
     <p>
-      With a 162dB path loss SIGFOX enables long range communications, with much longer reach than GSM.
+      With a 162dB budget link SIGFOX enables long range communications, with much longer reach than GSM.
     </p>
     <p>
       There is no negotiation between the device and a receiving station. The device simply emits in the available frequency band (+/- its own frequency shift).<br />
       The signal is detected by the closest base stations, decoded & forwarded to the network backend.<br />
       Deduplication & other protocol operations are handled by the network itself.<br />
-      Messages are then forwarded to your own application, and made   accessible using SIGFOX's API. ()
+      Messages are then forwarded to your own application, and made   accessible using SIGFOX's API.
+    </p>
+    <p>
+      Each message is authenticated using a hash mechanism, and a private key specific to the device. <br />
+      This offers a great protection against replay attacks.<br />
+      The SIGFOX radio protocol also offers a great resistance to interferers.
     </p>
     <h2>SIGFOX Specifics</h2>
     <h3>In a few words</h3>
