@@ -67,6 +67,7 @@ fi
 
 
 ##Keep only build files
+mv CNAME $tempFolder
 ls | grep -v $tempFolder | xargs rm -rf
 rm .gitignore
 #Check that the build files haven't been erased. Could be the case if jekyll process is still running
