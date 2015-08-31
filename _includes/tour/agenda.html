@@ -1,0 +1,40 @@
+<section id="agenda">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Agenda</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% for entry in site.data.tourdates %}
+        <div class="col-md-3 col-sm-4 col-xs-6">
+          <div class="agenda-entry country {{entry.country}}">
+            <div class="agenda-city">
+              {{entry.city}}
+            </div>
+            <div class="agenda-date">
+              {{entry.date}}
+            </div>
+            <div class="agenda-invite">
+              <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1&entry_1730054643={{entry.city}}">Request an invite</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="agenda-entry">
+          <div class="agenda-city">
+            <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1&entry_158233344=Nicolas&entry_1730054643=Nice">
+            Your city ? 
+            </a>
+          </div>
+          <div class="agenda-date">
+            <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1&entry_158233344=Nicolas&entry_1730054643=Nice">
+              Date to be defined
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

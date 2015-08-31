@@ -1,1 +1,2 @@
 exclude: [scripts, README.md]
+permalink: pretty
