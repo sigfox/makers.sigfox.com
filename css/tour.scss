@@ -1,0 +1,95 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+  
+.agenda-entry, .program-entry{
+  text-align:center;
+  color: #fff;
+  margin-bottom: 1.5em;
+  background-color:#028C7e;
+  height:10em;
+}
+.agenda-entry{
+  
+  a{
+    color:#fff;
+  }
+  .agenda-city{
+    font-size:1.2em;
+    padding-top:.2em;
+  }
+  .agenda-date{
+    font-size:.9em;
+    font-style:italic;
+  }
+  .agenda-invite{
+    position:absolute;
+    bottom:1.8em;
+    width:90%;
+  }
+  &.country{
+    background-repeat: no-repeat;
+    background-size:25%;
+    background-position: 50% 70%;
+
+    &.FRA{
+      background-image: url(/img/flags/fr.png);
+    }
+    &.GBR{
+      background-image: url(/img/flags/uk.png);
+    }
+    &.ESP{
+      background-image: url(/img/flags/sp.png);
+    }
+    &.ITA{
+      background-image: url(/img/flags/it.png);
+    }
+    &.FIN{
+      background-image: url(/img/flags/fi.png);
+    }
+    &.DEN{
+      background-image: url(/img/flags/dk.png);
+    }
+    &.NED{
+      background-image: url(/img/flags/nl.png);
+    }
+    &.POR{
+      background-image: url(/img/flags/pt.png);
+    }
+    &.BEL{
+      background-image: url(/img/flags/be.png);
+    }
+  }
+}
+
+.program-entry{
+  background-repeat: no-repeat;
+  background-size:50%;
+  background-position: 50% 70%;
+  &.program-pres{
+    background-image: url(/img/icons/presentation.png)      
+  }
+  &.program-demo{
+    background-image: url(/img/icons/demo.png)    
+  }
+  &.program-work{
+    background-image: url(/img/icons/work.png)    
+  }
+  &.program-party{
+    background-image: url(/img/icons/party.png)    
+  }
+  &.program-gift{
+    background-image: url(/img/icons/gift.png)    
+  }
+}
+
+.googleform{
+  height:1600px;
+  iframe{
+    padding:0;
+    margin:0;
+    border:none;
+    width:100%;
+    height:100%;
+  }
+}
