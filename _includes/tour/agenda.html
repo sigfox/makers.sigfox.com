@@ -2,7 +2,8 @@
   <div class="container">
     <h1>Agenda</h1>
     <div class="row">
-      {% for entry in site.data.tourdates %}
+      {% assign entries = site.data.tourdates | sort:"date","last"%}
+      {% for entry in entries %}
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
           <div class="agenda-entry country {{entry.country}}">
             {%if entry.date%}

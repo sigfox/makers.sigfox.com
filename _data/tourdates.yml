@@ -1,14 +1,14 @@
 - city: Lille
   country: FRA
-  date: 08/10/2015
+  date: 2015/10/08
   
 - city: Paris
   country: FRA
-  date: 22/10/2015
+  date: 2015/10/22
 
 - city: Grenoble
   country: FRA
-  date: 27/10/2015
+  date: 2015/10/27
 
 - city: Lyon
   country: FRA
@@ -16,14 +16,16 @@
 
 - city: Madrid
   country: ESP
-  
+  date: 2015/11/25
 
 - city: Barcelona
   country: ESP
+  date: 2015/11/26
   
 
 - city: Toulouse
   country: FRA
+  date: 2015/11/19
   
 
 - city: London
