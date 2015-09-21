@@ -1,0 +1,40 @@
+<section id="agenda">
+  <div class="container">
+    <h1>Agenda</h1>
+    <div class="row">
+      {% for entry in site.data.tourdates %}
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="agenda-entry country {{entry.country}}">
+            {%if entry.date%}
+              <div class="agenda-date">
+                <date datetime="{{entry.date}}">{{entry.date | date:"%B %d" | upcase }}</date>
+              </div>
+            {%else%}
+              <div class="agenda-date agenda-date-tbd">
+                Date to be defined
+              </div>
+            {% endif %}
+            <div class="agenda-city">
+              {{entry.city}}
+            </div>
+            <div class="agenda-invite">
+              <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1&entry_1730054643={{entry.city}}&entry.826059317=Ask+for+an+invite">Request an invite</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="agenda-entry">
+          <div class="agenda-city">
+            Want the maker tour to come to your city ?
+          </div>
+          <div class="agenda-date">
+            <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1">
+              Let us know
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

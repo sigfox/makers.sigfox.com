@@ -1,0 +1,63 @@
+- city: Lille
+  country: FRA
+  date: 08/10/2015
+  
+- city: Paris
+  country: FRA
+  date: 22/10/2015
+
+- city: Grenoble
+  country: FRA
+  date: 27/10/2015
+
+- city: Lyon
+  country: FRA
+  
+
+- city: Madrid
+  country: ESP
+  
+
+- city: Barcelona
+  country: ESP
+  
+
+- city: Toulouse
+  country: FRA
+  
+
+- city: London
+  country: GBR
+  
+
+- city: Amsterdam
+  country: NED
+  
+
+- city: Copenhagen
+  country: DEN
+  
+  
+- city: Lisbon
+  country: POR
+  
+    
+- city: Angers
+  country: FRA
+  
+  
+- city: Rome
+  country: ITA
+  
+
+- city: Helsinki
+  country: FIN
+  
+  
+- city: Nice
+  country: FRA
+  
+
+- city: Brussels
+  country: BEL
+  

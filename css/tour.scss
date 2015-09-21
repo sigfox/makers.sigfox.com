@@ -1,0 +1,282 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+$darkgreen: #0f5451;
+$lightgreen: #028C7E;
+$almostwhite: #fffffe;
+$darkgray: #8c8c8c;
+$lighgray: #d8d8d8;
+$shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.24), 0 0px 2px 0px rgba(0, 0, 0, 0.12);
+$verticalmargins : 70px;
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,400,300);
+body{
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+.container{
+  width: 100%;
+  padding:0;
+}
+.row{
+  margin:0;
+}
+h1{
+  color: $lightgreen;  
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  margin-top:0;
+  margin-bottom:$verticalmargins/2;
+
+}
+section{
+  padding: $verticalmargins 0;
+}
+.navbar{
+  box-shadow: $shadow;
+  text-transform: uppercase;
+  font-weight: 400;
+  background: $lightgreen;
+  height:48px;
+  max-height: 48px;
+  
+  .navbar-header{
+    margin-left:5%;
+  }
+  #navbar{
+    margin-right:10%;
+  }
+  .nav-logo{
+    max-height: 48px;
+  }
+  
+  li{
+    line-height: 16px;
+    font-size: 14px;
+  }
+  
+  
+}
+.navbar-inverse{
+  border:none;
+  .navbar-toggle{
+    border:1px solid #fff;
+  }
+  .icon-bar{
+    background-color: #fff;
+  }
+  .navbar-toggle:focus, .navbar-toggle:hover{
+    background: #fff;
+    border-color: $lightgreen;
+    .icon-bar{
+      background: $lightgreen;  
+    }
+  }
+}
+.navbar, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar li a{
+  min-height:48px;
+  height:48px;
+ 
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+  background: $lightgreen;
+  color:#fff;
+  border-bottom: 2px solid #fff;
+}
+.navbar-inverse .navbar-nav>li>a{
+  color:#fff;
+}
+
+#header{
+  padding-top: 0;
+  .banner img{
+    width: 100%;
+  }
+  .request{
+    background-color: $lightgreen;
+    box-shadow: $shadow;
+    margin-top:-100px;
+    font-size:14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    width: 195px;
+    height:40px;
+    line-height: 40px;
+    opacity: 0.99;
+    margin-left: calc(50% - (195px/2));
+    
+    a{
+      color:#fff;
+    }
+      
+  }
+  @media (max-width: 992px) {
+    .banner{
+      display: none;
+    }
+  }
+}
+
+#about{
+  font-size:16px;
+  line-height: 24px;
+  h1{
+    color: $lightgreen;
+
+  }
+  .demo-img{
+    img{
+      width:460px;
+      max-width: 100%;
+      height:360px;
+      
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
+    
+      
+    
+  }
+}
+
+.butterfly{
+  background-image: url(/img/tour/butterfly.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height:51px;
+  width: 100%;
+  
+  margin: 50px 0;
+}
+
+
+#program, #contact, #footer{
+  h1{
+    color: #fff;
+  }
+  background-color:$lightgreen;
+  color:#fff; 
+  padding-bottom: $verticalmargins;
+}
+#program{
+  .program-entry{
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center center;
+    padding-top:70%;
+    &.program-pres{
+      background-image: url(/img/tour/presentation.png)      
+    }
+    &.program-demo{
+      background-image: url(/img/tour/demo.png)    
+    }
+    &.program-work{
+      background-image: url(/img/tour/tools.png)    
+    }
+    &.program-party{
+      background-image: url(/img/tour/beer.png)    
+    }
+    &.program-gift{
+      background-image: url(/img/tour/kit.png)    
+    }
+  }
+}
+
+.agenda-entry, .program-entry{
+  text-align:center;
+  
+}
+
+#agenda{
+  .row{
+    padding: 0 11%;
+  }
+  .agenda-entry{
+    max-height: 190px;
+    box-shadow: $shadow;
+    color: $darkgray;
+    padding: 45px 79px;
+    margin-bottom: 30px;
+    a{
+      color: $lightgreen;
+      &:after{
+        content: "→";
+      }
+    }
+    .agenda-city{
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #000;
+      margin:20px 0;
+    }
+    .agenda-date{
+      
+    }
+    .agenda-invite{
+      font-weight: 400;
+      color: $lightgreen;
+    }
+    &.country{
+      background-repeat: no-repeat;
+      background-size:33%;
+      background-position: 50% 50%;
+
+      &.FRA{
+        background-image: url(/img/tour/france.png);
+      }
+      &.GBR{
+        background-image: url(/img/tour/uk.png);
+      }
+      &.ESP{
+        background-image: url(/img/tour/spain.png);
+      }
+      &.ITA{
+        background-image: url(/img/tour/italy.png);
+      }
+      &.FIN{
+        background-image: url(/img/tour/finland.png);
+      }
+      &.DEN{
+        background-image: url(/img/tour/denmark.png);
+      }
+      &.NED{
+        background-image: url(/img/tour/netherlands.png);
+      }
+      &.POR{
+        background-image: url(/img/tour/portugal.png);
+      }
+      &.BEL{
+        background-image: url(/img/tour/belgium.png);
+      }
+    }
+    @media (max-width: 768px) {
+      padding: 15px 9px; 
+      &.country{
+       background-size:85%;
+      }
+      .agenda-date-tbd{
+        font-size:11px;
+        line-height: 20px;
+      }
+      
+
+        
+    }
+  }
+}
+#contact{
+  a{
+    color:#fff;
+  }
+}
+.footer {
+  text-align: center;
+  font-size:12px;
+  width: 100%;
+  height: 29px;
+  color:$almostwhite;
+}
