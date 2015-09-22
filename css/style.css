@@ -1,82 +1,35 @@
-body {
-  padding: 70px 0 35px 0; }
+body { padding: 70px 0 35px 0; }
 
-.navbar, .navbar-inverse {
-  background-color: #028C7E; }
+.navbar, .navbar-inverse { background-color: #028C7E; }
 
-.navbar {
-  background-image: url("/img/logo-sigfox.png");
-  background-repeat: no-repeat;
-  background-size: contain; }
-  .navbar .container {
-    width: 100%;
-    padding-left: 180px; }
+.navbar { background-image: url("/img/logo-sigfox.png"); background-repeat: no-repeat; background-size: contain; }
+.navbar .container { width: 100%; padding-left: 180px; }
 
-.navbar-inverse {
-  border-color: #015D5B; }
-  .navbar-inverse .navbar-toggle {
-    border-color: #fff; }
-  .navbar-inverse .navbar-nav > li > a {
-    color: #fff; }
-  .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav .active > a, .navbar-inverse .navbar-nav .active > a:focus, .navbar-inverse .navbar-nav .active > a:hover {
-    background: #015D5B; }
-  .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background: #fff;
-    border-color: #015D5B; }
-    .navbar-inverse .navbar-toggle:focus .icon-bar, .navbar-inverse .navbar-toggle:hover .icon-bar {
-      background: #028C7E; }
+.navbar-inverse { border-color: #015D5B; }
+.navbar-inverse .navbar-toggle { border-color: #fff; }
+.navbar-inverse .navbar-nav > li > a { color: #fff; }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav .active > a, .navbar-inverse .navbar-nav .active > a:focus, .navbar-inverse .navbar-nav .active > a:hover { background: #015D5B; }
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover { background: #fff; border-color: #015D5B; }
+.navbar-inverse .navbar-toggle:focus .icon-bar, .navbar-inverse .navbar-toggle:hover .icon-bar { background: #028C7E; }
 
-.navbar-brand {
-  padding: 0 15px; }
+.navbar-brand { padding: 0 15px; }
 
-.navbar-brand img {
-  height: 100%; }
+.navbar-brand img { height: 100%; }
 
-#transceivers .row h3 {
-  text-align: center; }
+#transceivers .row h3 { text-align: center; }
 
-.jumbotron {
-  text-align: center; }
+.jumbotron { text-align: center; }
 
-.twittericon::before {
-  background-image: url("/img/twitter.png"); }
+.twittericon::before { background-image: url("/img/twitter.png"); }
 
-.githubicon::before {
-  background-image: url("/img/github.png"); }
+.githubicon::before { background-image: url("/img/github.png"); }
 
-.twittericon::before, .githubicon::before {
-  content: " ";
-  background-size: contain;
-  display: inline-block;
-  width: 25px;
-  height: 25px; }
+.twittericon::before, .githubicon::before { content: " "; background-size: contain; display: inline-block; width: 25px; height: 25px; }
 
-.footer {
-  position: fixed;
-  z-index: 2;
-  font-size: 12px;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 25px;
-  background-color: #028C7E;
-  color: #fff; }
-  .footer p {
-    padding-top: 4px; }
+.footer { position: fixed; z-index: 2; font-size: 12px; bottom: 0; width: 100%; /* Set the fixed height of the footer here */ height: 25px; background-color: #028C7E; color: #fff; }
+.footer p { padding-top: 4px; }
 
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-  /* Since positioning the image, we need to help out the caption */ }
-  .carousel .carousel-caption {
-    z-index: 10; }
-  .carousel .carousel-inner > .item {
-    /* Declare heights because of positioning of img element */
-    height: 500px;
-    background-color: #777; }
-    .carousel .carousel-inner > .item > img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 500px; }
+.carousel { height: 500px; margin-bottom: 60px; /* Since positioning the image, we need to help out the caption */ }
+.carousel .carousel-caption { z-index: 10; }
+.carousel .carousel-inner > .item { /* Declare heights because of positioning of img element */ height: 500px; background-color: #777; }
+.carousel .carousel-inner > .item > img { position: absolute; top: 0; left: 0; min-width: 100%; height: 500px; }
