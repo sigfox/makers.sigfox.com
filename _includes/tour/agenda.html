@@ -12,14 +12,21 @@
               </div>
             {%else%}
               <div class="agenda-date agenda-date-tbd">
-                Date to be defined
+                Considering this city
               </div>
             {% endif %}
             <div class="agenda-city">
               {{entry.city}}
             </div>
             <div class="agenda-invite">
-              <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1&entry_1730054643={{entry.city}}&entry.826059317=Ask+for+an+invite">Request an invite</a>
+              <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1&entry_1730054643={{entry.city}}&entry.826059317=Ask+for+an+invite">
+                {%if entry.date%}
+                  Request an invite
+                {%else%}
+                  Show your interest
+                {% endif %}
+              
+              </a>
             </div>
           </div>
         </div>
