@@ -91,6 +91,10 @@ section {
   line-height: 24px; }
   #about h1 {
     color: #028C7E; }
+  #about a {
+    color: #0f5451;
+    text-decoration: underline;
+    font-weight: 400; }
   #about .demo-img img {
     width: 460px;
     max-width: 100%;
