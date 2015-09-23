@@ -47,10 +47,8 @@
 - city: Angers
   country: FRA
   
-  
-- city: Rome
-  country: ITA
-  
+- city: Prague
+  country: CZE  
 
 - city: Helsinki
   country: FIN
@@ -62,4 +60,9 @@
 
 - city: Brussels
   country: BEL
-  
+
+- city: Rome
+  country: ITA
+
+- city: Luxembourg
+  country: LUX
