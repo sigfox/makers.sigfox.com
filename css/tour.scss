@@ -127,6 +127,12 @@ section{
     color: $lightgreen;
 
   }
+  a{
+    color:$darkgreen;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+
   .demo-img{
     img{
       width:460px;
@@ -137,9 +143,6 @@ section{
         display: none;
       }
     }
-    
-      
-    
   }
 }
 
