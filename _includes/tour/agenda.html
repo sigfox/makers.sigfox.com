@@ -8,7 +8,22 @@
           <div class="agenda-entry country {{entry.country}}">
             {%if entry.date%}
               <div class="agenda-date">
-                <date datetime="{{entry.date}}">{{entry.date | date:"%B %d" | upcase }}</date>
+                <date datetime="{{entry.date}}">
+                  {{entry.date | date:"%B %d" | upcase }} 
+                  {% assign time = entry.date|date:"%H" %}
+                  {%if time != "00" %}
+                    {{entry.date | date:"%H:%M"}}
+                  {% endif%}
+                </date>
+                 {% if entry.location %}
+                  <div class="agenda-location">
+                    {% if entry.locationLink%}
+                      @&nbsp;<a target="_blank"   href="{{entry.locationLink}}">{{entry.location}}</a>
+                    {%else%}
+                      @&nbsp;{{entry.location}}
+                    {%endif%}
+                  </div>
+                {%endif%}
               </div>
             {%else%}
               <div class="agenda-date agenda-date-tbd">
