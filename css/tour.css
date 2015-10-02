@@ -143,7 +143,7 @@ section {
   max-height: 190px;
   box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.24), 0 0px 2px 0px rgba(0, 0, 0, 0.12);
   color: #8c8c8c;
-  padding: 45px 79px;
+  padding: 35px 75px;
   margin-bottom: 30px; }
   #agenda .agenda-entry a {
     color: #028C7E; }
@@ -154,6 +154,10 @@ section {
     font-weight: 600;
     color: #000;
     margin: 20px 0; }
+  #agenda .agenda-entry .agenda-date {
+    height: 40px; }
+    #agenda .agenda-entry .agenda-date a:after {
+      content: ""; }
   #agenda .agenda-entry .agenda-invite {
     font-weight: 400;
     color: #028C7E; }
