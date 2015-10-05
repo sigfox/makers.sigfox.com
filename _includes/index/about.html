@@ -1,0 +1,79 @@
+<section id="about">
+    <div class="page-header">
+      <h1>About SIGFOX</h1>
+    </div>
+    <h2>In a few words</h2>
+    <p>
+      <strong>SIGFOX is an operated telecommunication network, dedicated to the Internet of Things. </strong>
+    </p>
+    <p>
+      It is an operated network, meaning  you do not have to handle any installation or maintenance operations.<br />
+      SIGFOX is seamless and out-of-the box, allowing you to forget about communication and keep focused on the core of your project.
+      
+    </p>
+    <p>
+      It is a LPWA (Low-Power Wide-Area) network, currently deployed in Western Europe, San Francisco, and with ongoing tests in South America & Asia.
+    </p>
+    <p>
+      The SIGFOX allows a bidirectional communication, both from & to the device.<br />
+      The communication is always initiated by the device.
+    </p>
+    <p>
+      The SIGFOX protocol is designed for small messages sent every now and then. It is not appropriate for high-bandwith usages (multimedia, permanent broadcast).
+    </p>
+    <p>
+      Its focus on energy efficiency allows you to build connected devices able to last years on a standard battery.
+    </p>
+    <h2>Technology</h2>
+    <p>
+      The SIGFOX network operates on sub-GHz frequencies, on ISM bands : 868MHz in Europe/ETSI & 915MHz in the US/FCC.
+    </p>
+    <p>
+      SIGFOX uses an Ultra-Narrow Band (UNB) modulation, which is key to our ability to provide a scalable & high-capacity network.
+    </p>
+    <p>
+      With a 162dB budget link SIGFOX enables long range communications, with much longer reach than GSM.
+    </p>
+    <p>
+      There is no negotiation between the device and a receiving station. The device simply emits in the available frequency band (+/- its own frequency shift).<br />
+      The signal is detected by the closest base stations, decoded & forwarded to the network backend.<br />
+      Deduplication & other protocol operations are handled by the network itself.<br />
+      Messages are then forwarded to your own application, and made   accessible using SIGFOX's API.
+    </p>
+    <p>
+      Each message is authenticated using a hash mechanism, and a private key specific to the device. <br />
+      This offers a great protection against replay attacks.<br />
+      The SIGFOX radio protocol also offers a great resistance to interferers.
+    </p>
+    <h2>SIGFOX Specifics</h2>
+    <h3>In a few words</h3>
+    <p>
+      <ul>
+        <li>Up to 12 bytes per message</li>
+        <li>Up to 140 messages per day</li>
+      </ul>
+    </p>
+    <h3>Message size</h3>
+    <p>
+      You can send up to 12 bytes (96 bits) per message. <br />
+      The protocol metadata already includes a timestamp & the device unique id. 
+    </p>
+    <h3>Number of messages</h3>
+    <p>
+      The maximum number of messages that can be sent each day is 140.<br />This limitation is introduced, in part, to comply with regulations. The european regulation governing the 868MHz band enforces a transmission  <a href="http://en.wikipedia.org/wiki/Duty_cycle" target="_blank">duty cycle</a> of 1%. <br /><br />
+A unique device is therefore not allowed to emit more than 1% of the time each hour and since emission of a message can take up to ~6 seconds, this allows up to 6 messages per hour.
+      
+    </p>
+    
+    <h2>How to get started ?</h2>
+    <p>
+    You need 3 things to get started with SIGFOX :
+      <ul>
+        <li>A SIGFOX-ready module or transceiver (<a href="#arduino">see below</a>)</li>
+        <li>A valid subscription. Most of the Eval Kits come with a one-year subscription.</li>
+        <li>Be in a covered area. (See current coverage <a href="#coverage">here</a>)</li>
+        
+      </ul>
+    </p>
+
+  </section>

@@ -1,0 +1,133 @@
+- type: Arduino
+  fullname: Arduino boards & shields
+  items:
+    - name: Akeru
+      image: ./img/Akeru.jpg
+      description: Designed by Snootlab, an Arduino-like board, with an Atmega328 µcontroller and a Telecom Design TD1208 SIGFOX module.<br />
+              It ships with a one-year subscription to the SIGFOX network. 
+              You can use the Arduino IDE to program and simply send your AT commands over serial.<br />
+              A small Arduino lib allows you to send messages as easy as 
+      codeSample: //Akeru sample
+      
+        &#35;include &lt;Akeru.h&gt;
+                
+        struct sigfoxData {
+
+        &#9;int numValue;
+
+        } data;
+
+        data.numValue = getValue();
+
+        Akeru.begin();
+
+        Akeru.send(&data, sizeof(data)));
+      linkUrl: http://snootlab.com/shields-snootlab/829-.html
+      linkText: Order here
+      
+    - name: Atmel ATAK55002-V2 shield
+      image: ./img/Atmel-ATAK55002-v2.png
+      description: Full documentation (PDF) <a href="/resources/Atmel-User-Guide-for-ATAK55002-V1-V2-V3_Application-Note.pdf">here</a>.
+
+        The Atmel ATAK55002-V2 extension board is a hardware platform for evaluating the Atmel ATA8520 SIGFOX transmitter.
+        This Arduino shield includes the Atmel ATA8520 SIGFOX transmitter and an Atmel AT30TS75A temperature sensor.
+
+        This shield does not come with a valid subscription - you need to contact us to subscribe.
+
+        Use the Arduino IDE to program and send your messages over serial. Atmel provides Arduino libs to handle both the temperature sensor & the SIGFOX transceiver.
+      codeSample: //Atmel Sample
+        
+        &#35;include "AtmSIGFOXshd.h"    
+        
+        SIGFOXshield SIGsh;
+        
+        SIGsh.begin(); 
+        
+        SIGsh.SIGFOXon();
+        
+        unsigned char message[2]; 
+        
+        message[0] = 0x01;
+        
+        message[1] = 0x02;
+        
+        SIGsh.sendMessage(message,sizeof(message)); 
+
+      linkUrl: http://www.atmel.com
+      linkText: Order on Atmel.com
+        
+    - name: SmartEverything
+      intro:  Available soon!
+      image: ./img/SmartEverything.png
+      description: The Atmel Technology SmartEverything SoM (System On Module) is based on Atmel D21 Ultra low-power µcontroller, using the 32-bit ARM Cortex-M0+ processor.
+        
+        <br /><br />The SmartEverything Board provides the following peripherals or modules
+        <ul>
+          <li>Atmel Crypto Authentication chipset</li>
+          <li>Dynaflex 868Mhz Antenna</li>
+          <li>Sigfox Module (Telit LE51-868S)</li>
+          <li>GPS Module with Embedded Antenna</li>
+          <li>Proximity sensor</li>
+          <li>Humidity and Temperature sensor</li>
+          <li>Axis sensors</li>
+          <li>Pressure Sensor</li>
+          <li>NFC NTAG I2C Interface</li>
+          <li>Bluetooth Low Energy (BLE) Interface</li>
+        </ul>
+        
+        The SmartEverything Board is supported by the Arduino IDE for a fast and easy software development cycle.
+        The software can also be developed using the Atmel Studio IDE.
+        
+        Draft documentation (PDF) <a href="./resources/SmartEverything-UserGuide.pdf">here</a>.
+        
+      linkUrl : http://www.smarteverything.it
+      linkText: Stay tuned for updates on the SmartEverything website!
+      
+      
+    - name: Akene
+      image: ./img/Akene.png
+      description:  Designed by Snootlab, the Akene is an Arduino shield with a Telecom Design TD1208 SIGFOX module.<br />
+            It ships with a one-year subscription to the SIGFOX network. 
+            You can use the Arduino IDE to program and simply send your AT commands over serial.<br />
+            A small Arduino lib allows you to send messages easily
+      codeSample: //Akene sample
+
+        &#35;include &lt;Akene.h&gt;
+                
+        struct sigfoxData {
+
+        &#9;int numValue;
+
+        } data;
+
+        data.numValue = getValue();
+
+        Akene.begin();
+
+        Akene.send(&data, sizeof(data)));
+      linkUrl: http://snoot.it/akene
+      linkText: Order here
+      
+    - name: The Airboard
+      image: ./img/airboard.png
+      description: The Airboard is an Arduino-compatible board, built upon the Arduino IDE.
+          It is a tiny SIGFOX module with a Xbee format.
+          The module can be programmed wirelessly, through a BLE dongle
+          
+          They're currently serving their Kickstarter backers, and will soon take new orders.
+      
+      linkUrl: http//theairboard.cc
+      linkText: More info on their website
+    
+      
+- type: RPi
+  fullname: Raspberry Pi
+  items: 
+    - name: SNOC - RPISIGFOX
+      image: ./img/snoc-rpi.jpg
+      description:
+        This Raspberry Pi shield comes with a one-year valid subscription, a custom case and a DIN-rail mount.
+        You can check the associated Python library on <a href="https://github.com/SNOC/rpisigfox">Github</a>
+      linkUrl: http://yadom.fr/carte-rpisigfox.html
+      linkText: Available here
+
