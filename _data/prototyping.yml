@@ -2,7 +2,7 @@
   fullname: Arduino boards & shields
   items:
     - name: Akeru
-      image: ./img/Akeru.jpg
+      image: ./img/akeru.jpg
       description: Designed by Snootlab, an Arduino-like board, with an Atmega328 µcontroller and a Telecom Design TD1208 SIGFOX module.<br />
               It ships with a one-year subscription to the SIGFOX network. 
               You can use the Arduino IDE to program and simply send your AT commands over serial.<br />
