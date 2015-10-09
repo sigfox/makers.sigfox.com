@@ -1,0 +1,37 @@
+{% assign nationwide = site.data.coverage.countries | where: "status", "nationwide" |  sort:"name"%}
+{% assign rollout = site.data.coverage.countries | where: "status", "rollout" | sort:"name"%}
+{% assign cities =  site.data.coverage.cities | sort:"name"%}
+<section id="coverage">
+    <h1>Coverage</h1>
+    <p>
+      <i>SIGFOX coverage, as of {{site.data.coverage.update | date:"%B %Y"}}</i><br />
+      <a href="#contact">Contact us</a> for details & questions about current coverage, and stay tuned for future announcements ! <br />
+      New countries will be annouced in the coming weeks
+    </p>
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Nationwide coverage</h3>
+        <div class="list-group">
+          {% for country in nationwide%}
+            <p class="list-group-item">{{country.name}}</p>
+          {% endfor%}
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h3>On-going rollout</h3>
+        <div class="list-group">
+          {% for country in rollout %}
+            <p class="list-group-item">{{country.name}}</p>
+          {% endfor%}
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h3>Spot coverage (citywide)</h3>
+        <div class="list-group">
+         {% for city in cities%}
+            <p class="list-group-item">{{city.name}}&nbsp;({{city.country}})</p>
+          {% endfor%}
+        </div>
+      </div>
+    </div>
+  </section>
