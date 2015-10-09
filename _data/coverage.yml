@@ -20,6 +20,8 @@ countries:
     status: rollout
   - name: Czech Republic
     status: rollout
+  - name: Italy
+    status: rollout
 cities:
   - name: Milan
     country: Italy
