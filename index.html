@@ -158,311 +158,325 @@ A unique device is therefore not allowed to emit more than 1% of the time each h
 
   </section>
   <section id="prototyping">
-    <h1>Prototyping</h1>
-    <h2>Arduino Boards & Shields</h2>
+  <h1>Prototyping</h1>
+  
+    <h2 id="proto-Arduino">Arduino boards & shields</h2>
     <div class="row">
-      <div class="col-sm-4">
-        <h3>Akene shield</h3>
-        <div class="product-illustration">
-          <img src="./img/Akene.png" class="img-responsive" />
-        </div>
-        <p>
-          Designed by Snootlab, the Akene is an Arduino shield with a Telecom Design TD1208 SIGFOX module.<br />
-          It ships with a one-year subscription to the SIGFOX network. 
-        </p>
-        <p>
-          You can use the Arduino IDE to program and simply send your AT commands over serial.<br />
-          A small Arduino lib allows you to send messages as easy as:
-          <pre class="pre-scrollable">
-#include &lt;Akene.h&gt;
-struct sigfoxData {
- int numValue;
-} data;
-
-data.numValue = getValue();
-Akene.begin();
-Akene.send(&data, sizeof(data)));
-          </pre>
-        </p>
-        <p>
-          Order <a href="http://snoot.it/akene">here</a>
-        </p>
-      </div><!-- /.col-sm-6 -->
-      <div class="col-sm-4">
-        <h3>Atmel ATAK55002-V2 shield</h3>
-        <div class="product-illustration">
-          <img class="img-responsive" src="./img/Atmel-ATAK55002-v2.png" />
-        </div>
-        <p>
-          Full documentation (PDF) <a href="./resources/Atmel-User-Guide-for-ATAK55002-V1-V2-V3_Application-Note.pdf">here</a>.
-        </p>
-        <p>
-          The Atmel ATAK55002-V2 extension board is a hardware platform for evaluating the Atmel ATA8520 SIGFOX transmitter.<br />
-          This Arduino shield includes the Atmel ATA8520 SIGFOX transmitter and an Atmel AT30TS75A temperature sensor.
-        </p>
-        <p>
-          This shield does not come with a valid subscription - you need to contact us to subscribe.
-        </p>
-        <p>
-          Use the Arduino IDE to program and send your messages over serial. Atmel provides Arduino libs to handle both the temperature sensor & the SIGFOX transceiver.
-        </p>
-        <p>
+      
+        <div class="col-md-4 col-sm-6 col-xs-12 product">
+          <h3>Akeru</h3>
           
           
-          <pre class="pre-scrollable">
-#include "AtmSIGFOXshd.h"    // Atmel SIGFOX shield library 
-SIGFOXshield SIGsh;          // load class SIGFOXshield
-SIGsh.begin(); 
-SIGsh.SIGFOXon();
-unsigned char message[2]; 
-message[0] = 0x01;
-message[1] = 0x02;
-SIGsh.sendMessage(message,sizeof(message)); 
-          </pre>
-        </p>
-        <p>
-          Order on <a href="http://www.atmel.com/tools/atak55002-v2.aspx">Atmel.com</a>
-        </p>
-      </div>
-<div class="col-sm-4">
-        <h3>SmartEverything board</h3>
-        <p>
-          <strong><i>Available soon!<br /> Stay tuned for updates on <a href="http://www.amel-tech.com/">Amel tech</a> website !</i></strong><br />
-          Draft documentation (PDF) <a href="./resources/SmartEverything-UserGuide.pdf">here</a>.
-        </p>
-        <div class="product-illustration">
-          <img class="img-responsive" src="./img/SmartEverything.png" />
-        </div>
-        <p>
-      The Atmel Technology SmartEverything SoM (System On Module) is based on Atmel D21 Ultra low-power µcontroller,  using the 32-bit ARM Cortex-M0+ processor.
+            <div class="product-illustration">
+              <img src="./img/Akeru.jpg" class="img-responsive" />
+            </div>
+          
+          <p>
+            Designed by Snootlab, an Arduino-like board, with an Atmega328 µcontroller and a Telecom Design TD1208 SIGFOX module.<br /> It ships with a one-year subscription to the SIGFOX network. You can use the Arduino IDE to program and simply send your AT commands over serial.<br /> A small Arduino lib allows you to send messages as easy as
           </p>
-      <p>
-        The SmartEverything Board provides the following peripherals or modules:
-        <ul>
-          <li>Atmel Crypto Authentication chipset</li>
-          <li>Dynaflex 868Mhz Antenna</li>
-          <li>Sigfox Module (<a href="http://www.telit.com/products/product-service-selector/product-service-selector/show/product/le51-868-s/">Telit LE51-868S</a>)</li>
-          <li>GPS Module with Embedded Antenna</li>
-          <li>Proximity sensor</li>
-          <li>Humidity and Temperature sensor</li>
-          <li>Axis sensors</li>
-          <li>Pressure Sensor</li>
-          <li>NFC NTAG I2C Interface</li>
-          <li>Bluetooth Low Energy (BLE) Interface</li>
-      </ul>
-      </p>
-      <p>
-        The SmartEverything Board is supported by the Arduino IDE for a fast and easy software development cycle.<br />
-        The software can also be developed using the Atmel Studio IDE.
-
-      </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>The Airboard</h3>
-        <p>
-          <strong><i>Available soon</i></strong>
-        </p>
-        <div class="product-illustration">
-          <img src="./img/airboard.png" class="img-responsive" />
-        </div>
-        <p>
-          The Airboard is an Arduino-compatible board, built upon the Arduino IDE.<br />
-          It is a tiny SIGFOX module with a Xbee format.<br />
-          The module can be programmed wirelessly
-        </p>
-        <p>
-          Check their <a href="http://theairboard.cc">website </a> for detailed information and updates about the upcoming release. <br />
-          Note that they will first serve the people who backed their Kickstarter project.
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Akeru board</h3>
-         <p>
-          <strong><i>Currently out of stock. Check <a href="http://snootlab.com/shields-snootlab/829-.html">Snootlab.com</a> for updates.</i></strong>
-        </p>
-        <div class="product-illustration">
-          <img src="./img/akeru.png" class="img-responsive" />
-        </div>
-        <p>
-          Designed by Snootlab, an Arduino-like board, with an Atmega328 µcontroller and a Telecom Design TD1208 SIGFOX module.<br />
-          Ships with a one-year subscription to the SIGFOX network.
-        </p>
-        <p>
-          Use the Arduino IDE to program, and simply send your AT commands over serial.<br />
-          A small Arduino lib allows you to send messages as easy as 
-          <pre class="pre-scrollable">
-#include &lt;Akeru.h&gt;
+          
+            <pre class="pre-scrollable">
+              //Akeru sample
+&#35;include &lt;Akeru.h&gt;
 struct sigfoxData {
- int numValue;
+&#9;int numValue;
 } data;
-
 data.numValue = getValue();
 Akeru.begin();
 Akeru.send(&data, sizeof(data)));
-          </pre>
-        </p>
-        <p>
-          Order <a href="http://snootlab.com/shields-snootlab/829-.html">here</a>
-        </p>
-      </div>
-    </div>
-    <h2>Raspberry Pi</h2>
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>SNOC - RPISIGFOX</h3>
-        <p>
-          This Raspberry Pi shield comes with a one-year valid subscription, a custom case and a DIN-rail mount.<br />
-          Available <a href="http://yadom.fr/carte-rpisigfox.html" target="_blank">here</a>.<br />
-          You can check the associated Python library <a href="https://github.com/SNOC/rpisigfox" target="_blank">on github</a>.
-          <div class="product-illustration">
-            <img src="./img/snoc-rpi.jpg"class="img-responsive" />
-          </div>
-        </p>
-      </div>
-    </div>
-  </section>
-  <section id="evalkits">
-    <h1>Evaluation Kits</h1>
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Telecom Design</h3>
-        <p>
-          Telecom Design has Evaluation Boards available for their modules<br />
-          You can order them through their distributor, <a href="http://www.avnet-memec.eu/products/telecom-design-bi-directional-sigfox-modules.html">Avnet-Memec</a>
-        </p>
-        <p>
-          Telecom Design provide a full SDK, with complete examples.<br />
-          The modules are controlled using AT commands, but you can also flash your own firmware & use them autonomously.<br />
-          To do so, Telecom Design provides a full SDK (using Eclipse) and working examples.
+            </pre>
           
-        </p>
-        <p>
-          Documentation is available on the <a href="http://rfmodules.td-next.com/">TD-next</a> official website.<br />
-          SDK & full datasheets and documentations are available on their <a href="http://github.com/Telecom-Design">Github account</a>
-        </p>
-        <p>
-          <h4>TD1204</h4>
-          The TD1204 combines a SIGFOX-certified radio transceiver, an ARM Cortex M3 µcontroller and a GPS & an 3-axis accelerometer, allowing you to build complete solutions with a single component.<br />
-        Documentation <a href="https://github.com/Telecom-Design/Documentation_TD_RF_Module/raw/master/TD1204%20EVB%20User%27s%20Guide.pdf">here</a> (PDF)
-        </p>
-        
-        <h4>TD1208</h4>
-        <p>
-          The TD1208 is a SIGFOX-certified radio transceiver, combined with a ARM Cortex M3 µcontroller. <br />
-          Compatible with the Telecom Design SDK.
-          Documentation <a href="https://github.com/Telecom-Design/Documentation_TD_RF_Module/raw/master/TD1208%20EVB%20User%27s%20Guide.pdf">here</a> (PDF)
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>TST</h3>
-        <p> 
-          TST has a development kit available for its <a href="http://www.tst-sistemas.es/en/products/tsmart/">TSmote platform</a><br />
-          The TSmote is powered by a 32-bit ARM Cortex M3 µprocessor, and the <a href="http://www.tst-sistemas.es/en/products/tsmart/tskits/">SIGFOX starter kit</a> includes a Xbee-format SIGFOX module
-        </p>
-        <p>
-          SIGFOX module <a href="http://api.tst-sistemas.es/group___t_s_m_a_r_t___s_i_g_f_o_x___t_d.html">online documentation</a>, and <a href="./resources/TST-module.pdf">datasheet</a> (PDF).
-        </p>
-        <p>
-          The <a href="./resources/TSmoTe-EN.pdf">TSmote</a> is to be programmed in standard C, and the SIGFOX module is controlled with AT commands.
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Telit</h3>
-        <p>
-          The LE51-868 S is a high performance certified Short Range to Long Range module designed to cover the 863-870 MHz band working with the Telit Proprietary protocol and acting as a SIGFOX gateway
-        </p>
-        <p>
-          The evaluation board can be programmed, or controlled by AT commands
-        </p>
-        <p>
-          Check <a href="http://www.telit.com/products/product-service-selector/product-service-selector/show/product/le51-868-s/">Telit.com</a> for details about the LE51-686 S<br />
-          Documentation <a href="./resources/Telit_LE51-868S_DemoUnit.pdf"> here</a> (PDF).
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Adeunis</h3>
-        <p>
-          The Adeunis RF Evaluation Board Si868 provides a very simple access to the UART of the module. In addition, the evaluation board provides an RF output designed to obtain the best Si868 module performance.
-        </p>
-        <p>
-          Check <a href="http://www.adeunis-rf.com/en/products/sigfox-rf-module/evaluation-board-sigfox">Adeunis-rf.com</a> for details about the Si868 Evaluation Board<br />
-          Documentation <a href="./resources/adeunis-evb.pdf"> here</a> (PDF).
-        </p>
+          
+            <p>
+              <a href="http://snootlab.com/shields-snootlab/829-.html">Order here</a>
+            </p>
+          
+        </div>
+      
+        <div class="col-md-4 col-sm-6 col-xs-12 product">
+          <h3>Atmel ATAK55002-V2 shield</h3>
+          
+          
+            <div class="product-illustration">
+              <img src="./img/Atmel-ATAK55002-v2.png" class="img-responsive" />
+            </div>
+          
+          <p>
+            Full documentation (PDF) <a href="/resources/Atmel-User-Guide-for-ATAK55002-V1-V2-V3_Application-Note.pdf">here</a>.
+The Atmel ATAK55002-V2 extension board is a hardware platform for evaluating the Atmel ATA8520 SIGFOX transmitter. This Arduino shield includes the Atmel ATA8520 SIGFOX transmitter and an Atmel AT30TS75A temperature sensor.
+This shield does not come with a valid subscription - you need to contact us to subscribe.
+Use the Arduino IDE to program and send your messages over serial. Atmel provides Arduino libs to handle both the temperature sensor & the SIGFOX transceiver.
+          </p>
+          
+            <pre class="pre-scrollable">
+              //Atmel Sample
+&#35;include "AtmSIGFOXshd.h"
+SIGFOXshield SIGsh;
+SIGsh.begin();
+SIGsh.SIGFOXon();
+unsigned char message[2];
+message[0] = 0x01;
+message[1] = 0x02;
+SIGsh.sendMessage(message,sizeof(message));
+            </pre>
+          
+          
+            <p>
+              <a href="http://www.atmel.com">Order on Atmel.com</a>
+            </p>
+          
+        </div>
+      
+        <div class="col-md-4 col-sm-6 col-xs-12 product">
+          <h3>SmartEverything</h3>
+          
+            <div class="product-intro">Available soon!</div>
+          
+          
+            <div class="product-illustration">
+              <img src="./img/SmartEverything.png" class="img-responsive" />
+            </div>
+          
+          <p>
+            The Atmel Technology SmartEverything SoM (System On Module) is based on Atmel D21 Ultra low-power µcontroller, using the 32-bit ARM Cortex-M0+ processor.
+<br /><br />The SmartEverything Board provides the following peripherals or modules <ul> <li>Atmel Crypto Authentication chipset</li> <li>Dynaflex 868Mhz Antenna</li> <li>Sigfox Module (Telit LE51-868S)</li> <li>GPS Module with Embedded Antenna</li> <li>Proximity sensor</li> <li>Humidity and Temperature sensor</li> <li>Axis sensors</li> <li>Pressure Sensor</li> <li>NFC NTAG I2C Interface</li> <li>Bluetooth Low Energy (BLE) Interface</li> </ul>
+The SmartEverything Board is supported by the Arduino IDE for a fast and easy software development cycle. The software can also be developed using the Atmel Studio IDE.
+Draft documentation (PDF) <a href="./resources/SmartEverything-UserGuide.pdf">here</a>.
+          </p>
+          
+          
+            <p>
+              <a href="http://www.smarteverything.it">Stay tuned for updates on the SmartEverything website!</a>
+            </p>
+          
+        </div>
+      
+        <div class="col-md-4 col-sm-6 col-xs-12 product">
+          <h3>Akene</h3>
+          
+          
+            <div class="product-illustration">
+              <img src="./img/Akene.png" class="img-responsive" />
+            </div>
+          
+          <p>
+            Designed by Snootlab, the Akene is an Arduino shield with a Telecom Design TD1208 SIGFOX module.<br /> It ships with a one-year subscription to the SIGFOX network. You can use the Arduino IDE to program and simply send your AT commands over serial.<br /> A small Arduino lib allows you to send messages easily
+          </p>
+          
+            <pre class="pre-scrollable">
+              //Akene sample
+&#35;include &lt;Akene.h&gt;
+struct sigfoxData {
+&#9;int numValue;
+} data;
+data.numValue = getValue();
+Akene.begin();
+Akene.send(&data, sizeof(data)));
+            </pre>
+          
+          
+            <p>
+              <a href="http://snoot.it/akene">Order here</a>
+            </p>
+          
+        </div>
+      
+        <div class="col-md-4 col-sm-6 col-xs-12 product">
+          <h3>The Airboard</h3>
+          
+          
+            <div class="product-illustration">
+              <img src="./img/airboard.png" class="img-responsive" />
+            </div>
+          
+          <p>
+            The Airboard is an Arduino-compatible board, built upon the Arduino IDE. It is a tiny SIGFOX module with a Xbee format. The module can be programmed wirelessly, through a BLE dongle
+They're currently serving their Kickstarter backers, and will soon take new orders.
+          </p>
+          
+          
+            <p>
+              <a href="http//theairboard.cc">More info on their website</a>
+            </p>
+          
+        </div>
+      
       </div>
     
-  </div>
+    <h2 id="proto-RPi">Raspberry Pi</h2>
+    <div class="row">
+      
+        <div class="col-md-4 col-sm-6 col-xs-12 product">
+          <h3>SNOC - RPISIGFOX</h3>
+          
+          
+            <div class="product-illustration">
+              <img src="./img/snoc-rpi.jpg" class="img-responsive" />
+            </div>
+          
+          <p>
+            This Raspberry Pi shield comes with a one-year valid subscription, a custom case and a DIN-rail mount. You can check the associated Python library on <a href="https://github.com/SNOC/rpisigfox">Github</a>
+          </p>
+          
+          
+            <p>
+              <a href="http://yadom.fr/carte-rpisigfox.html">Available here</a>
+            </p>
+          
+        </div>
+      
+      </div>
+    
   </section>
-  <section id="transceivers">
-    <h1>SIGFOX radio transceivers & modules</h1>
+  <section id="evalkits">
+  <h1>Evaluation Kits</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Telecom Design</h3>
+      <p>
+        Telecom Design has Evaluation Boards available for their modules<br />
+        You can order them through their distributor, <a href="http://www.avnet-memec.eu/products/telecom-design-bi-directional-sigfox-modules.html">Avnet-Memec</a>
+      </p>
+      <p>
+        Telecom Design provide a full SDK, with complete examples.<br />
+        The modules are controlled using AT commands, but you can also flash your own firmware & use them autonomously.<br />
+        To do so, Telecom Design provides a full SDK (using Eclipse) and working examples.
+
+      </p>
+      <p>
+        Documentation is available on the <a href="http://rfmodules.td-next.com/">TD-next</a> official website.<br />
+        SDK & full datasheets and documentations are available on their <a href="http://github.com/Telecom-Design">Github account</a>
+      </p>
+      <p>
+        <h4>TD1204</h4>
+        The TD1204 combines a SIGFOX-certified radio transceiver, an ARM Cortex M3 µcontroller and a GPS & an 3-axis accelerometer, allowing you to build complete solutions with a single component.<br />
+      Documentation <a href="https://github.com/Telecom-Design/Documentation_TD_RF_Module/raw/master/TD1204%20EVB%20User%27s%20Guide.pdf">here</a> (PDF)
+      </p>
+
+      <h4>TD1208</h4>
+      <p>
+        The TD1208 is a SIGFOX-certified radio transceiver, combined with a ARM Cortex M3 µcontroller. <br />
+        Compatible with the Telecom Design SDK.
+        Documentation <a href="https://github.com/Telecom-Design/Documentation_TD_RF_Module/raw/master/TD1208%20EVB%20User%27s%20Guide.pdf">here</a> (PDF)
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h3>TST</h3>
+      <p> 
+        TST has a development kit available for its <a href="http://www.tst-sistemas.es/en/products/tsmart/">TSmote platform</a><br />
+        The TSmote is powered by a 32-bit ARM Cortex M3 µprocessor, and the <a href="http://www.tst-sistemas.es/en/products/tsmart/tskits/">SIGFOX starter kit</a> includes a Xbee-format SIGFOX module
+      </p>
+      <p>
+        SIGFOX module <a href="http://api.tst-sistemas.es/group___t_s_m_a_r_t___s_i_g_f_o_x___t_d.html">online documentation</a>, and <a href="./resources/TST-module.pdf">datasheet</a> (PDF).
+      </p>
+      <p>
+        The <a href="./resources/TSmoTe-EN.pdf">TSmote</a> is to be programmed in standard C, and the SIGFOX module is controlled with AT commands.
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Telit</h3>
+      <p>
+        The LE51-868 S is a high performance certified Short Range to Long Range module designed to cover the 863-870 MHz band working with the Telit Proprietary protocol and acting as a SIGFOX gateway
+      </p>
+      <p>
+        The evaluation board can be programmed, or controlled by AT commands
+      </p>
+      <p>
+        Check <a href="http://www.telit.com/products/product-service-selector/product-service-selector/show/product/le51-868-s/">Telit.com</a> for details about the LE51-686 S<br />
+        Documentation <a href="./resources/Telit_LE51-868S_DemoUnit.pdf"> here</a> (PDF).
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Adeunis</h3>
+      <p>
+        The Adeunis RF Evaluation Board Si868 provides a very simple access to the UART of the module. In addition, the evaluation board provides an RF output designed to obtain the best Si868 module performance.
+      </p>
+      <p>
+        Check <a href="http://www.adeunis-rf.com/en/products/sigfox-rf-module/evaluation-board-sigfox">Adeunis-rf.com</a> for details about the Si868 Evaluation Board<br />
+        Documentation <a href="./resources/adeunis-evb.pdf"> here</a> (PDF).
+      </p>
+    </div>
+
+</div>
+</section>
+  
+<section id="transceivers">
+    <h1>SIGFOX radio transceivers, SoC & modules</h1>
     <h3>SIGFOX is available from leading silicon and module vendors</h3>
     <div class="row">
       <div class="col-sm-12">
-        <p>
-          SIGFOX makes its IP available at no cost to silicon and module vendors. This strategy has encouraged leading silicon and module vendors to integrate SIGFOX in their existing assets, giving solution enablers a wide choice of very competitively priced components.
-</p><p>
-SIGFOX enables bi-directional as well as mono-directional communications and can co-exist with other communication protocols, both short and long range.
-</p><p>
-High energy consumption has been a major obstacle with regards to unleashing the potential of the Internet of Things, which is why one of the key elements of the SIGFOX strategy is to continue to push the boundaries for energy consumption lower and lower.
-</p><p>
-The increasing number of M2M and Internet of Things solutions calls for better interoperability solutions, which can only come through standardization. As the first Internet of Things operator, SIGFOX has taken a lead in this process through the foundation of dedicated standardization groups within recognized standards bodies such as ETSI and others.
-        </p>
-      <p>Check the <a href="http://sigfox.com/en/#!/connected-world/technology-enablers">Technology Enablers</a> section of our website to keep posted on the list of available modules & transceivers from our partners.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3">
-        <h3>Adeunis RF</h3>
-        <a target="_blank" href="http://www.adeunis-rf.com/en/technologies/sigfox">
-         <img class="img-responsive" src="./img/adeunis.jpg" />
-        </a>
-      </div>
-      <div class="col-sm-3">
-        <h3>Atim</h3>
-        <a target="_blank" href="http://www.atim.com/en/atim-sigfox-network-solutions">
-          <img class="img-responsive" src="./img/atim.jpg" />
-        </a>
-      </div>
-      <div class="col-sm-3">
-        <h3>Atmel</h3>
-        <a target="_blank" href="http://www.atmel.com/products/wireless/smartrf/default.aspx?tab=tools">
-          <img class="img-responsive" src="./img/atmel.jpg" />
-        </a>
-      </div>
-      <div class="col-sm-3">
-        <h3>Axsem</h3>
-        <a target="_blank" href="http://axsem.com/www/sigfox">
-          <img class="img-responsive" src="./img/axsem.jpg" />
-        </a>
+        
+          <p>SIGFOX makes its IP available at no cost to silicon and module vendors. This strategy has encouraged leading silicon and module vendors to integrate SIGFOX in their existing assets, giving solution enablers a wide choice of very competitively priced components.</p>
+        
+          <p>SIGFOX enables bi-directional as well as mono-directional communications and can co-exist with other communication protocols, both short and long range.</p>
+        
+          <p>High energy consumption has been a major obstacle with regards to unleashing the potential of the Internet of Things, which is why one of the key elements of the SIGFOX strategy is to continue to push the boundaries for energy consumption lower and  low</p>
+        
+          <p>The increasing number of M2M and Internet of Things solutions calls for better interoperability solutions, which can only come through standardization. As the first Internet of Things operator, SIGFOX has taken a lead in this process through the   foundatio</p>
+        
+          <p>Check the <a href="http//sigfox.com/en/#!/connected-world/technology-enablers">Technology Enablers</a> section of our website to keep posted on the list of available modules & transceivers from our partners.</p>
+        
+          
       </div>
     </div>
     <div class="row">
       
-      <div class="col-sm-3">
-        <h3>Silicon Labs</h3>
-        <a target="_blank" href="http://www.silabs.com/">
-          <img class="img-responsive" src="./img/silabs.jpg" />
-        </a>
-      </div>
-      <div class="col-sm-3">
-        <h3>Telecom Design</h3>
-        <a target="_blank" href="http://www.avnet-memec.eu/products/telecom-design-bi-directional-sigfox-modules.html">
-          <img class="img-responsive" src="./img/telecomdesign.jpg" />
-        </a>
-      </div>
-      <div class="col-sm-3">
-        <h3>Telit</h3>
-        <a target="_blank" href="http://www.telit.com/products/product-service-selector/product-service-selector/show/product/le51-868-s/">
-          <img class="img-responsive" src="./img/telit.jpg" />
-        </a>
-      </div>
-      <div class="col-sm-3">
-        <h3>Texas Instruments</h3>
-        <a target="_blank" href="http://www.ti.com/product/cc1120?DCMP=sigfox&HQS=ep-con-lprf-sigfox-pf-cc1120-en">
-          <img class="img-responsive" src="./img/ti.jpg" />
-        </a>
-      </div>
+        <div class="col-sm-3">
+          <h3>Adeunis</h3>
+          <a target="_blank" href="://www.adeunis-rf.com/en/technologies/sigfox">
+           <img class="img-responsive" src="./img/adeunis.jpg" />
+          </a>
+        </div>
+      
+        <div class="col-sm-3">
+          <h3>Atim</h3>
+          <a target="_blank" href="http://www.atim.com/en/atim-sigfox-network-solutions">
+           <img class="img-responsive" src="./img/atim.jpg" />
+          </a>
+        </div>
+      
+        <div class="col-sm-3">
+          <h3>Atmel</h3>
+          <a target="_blank" href="http://www.atmel.com/products/wireless/smartrf/default.aspx?tab=tools">
+           <img class="img-responsive" src="./img/atmel.jpg" />
+          </a>
+        </div>
+      
+        <div class="col-sm-3">
+          <h3>Axsem</h3>
+          <a target="_blank" href="http://axsem.com/www/sigfox">
+           <img class="img-responsive" src="./img/axsem.jpg" />
+          </a>
+        </div>
+      
+        <div class="col-sm-3">
+          <h3>Silicon Labs</h3>
+          <a target="_blank" href="http://www.silabs.com/">
+           <img class="img-responsive" src="./img/silabs.jpg" />
+          </a>
+        </div>
+      
+        <div class="col-sm-3">
+          <h3>Telecom Design</h3>
+          <a target="_blank" href="http://www.avnet-memec.eu/products/telecom-design-bi-directional-sigfox-modules.html">
+           <img class="img-responsive" src="./img/telecomdesign.jpg" />
+          </a>
+        </div>
+      
+        <div class="col-sm-3">
+          <h3>Telit</h3>
+          <a target="_blank" href="http://www.telit.com/products/product-service-selector/product-service-selector/show/product/le51-868-s/">
+           <img class="img-responsive" src="./img/telit.jpg" />
+          </a>
+        </div>
+      
+        <div class="col-sm-3">
+          <h3>Texas Instruments</h3>
+          <a target="_blank" href="http://www.ti.com/product/cc1120?DCMP=sigfox&HQS=ep-con-lprf-sigfox-pf-cc1120-en">
+           <img class="img-responsive" src="./img/ti.jpg" />
+          </a>
+        </div>
+      
     </div>
   </section>
   <section id="api">
@@ -558,10 +572,13 @@ The increasing number of M2M and Internet of Things solutions calls for better i
       </div>
     </div>
   </section>
-  <section id="coverage">
+  
+
+
+<section id="coverage">
     <h1>Coverage</h1>
     <p>
-      <i>SIGFOX coverage, as of July 2015.</i><br />
+      <i>SIGFOX coverage, as of October 2015</i><br />
       <a href="#contact">Contact us</a> for details & questions about current coverage, and stay tuned for future announcements ! <br />
       New countries will be annouced in the coming weeks
     </p>
@@ -569,36 +586,59 @@ The increasing number of M2M and Internet of Things solutions calls for better i
       <div class="col-sm-4">
         <h3>Nationwide coverage</h3>
         <div class="list-group">
-          <p class="list-group-item">France</p>
-          <p class="list-group-item">The Netherlands</p>
-          <p class="list-group-item">Spain</p>
-          <p class="list-group-item">The United Kingdom (10 of the largest cities)</p>
+          
+            <p class="list-group-item">France</p>
+          
+            <p class="list-group-item">Spain</p>
+          
+            <p class="list-group-item">The Netherlands</p>
+          
+            <p class="list-group-item">The United Kingdom (10 of the largest cities)</p>
+          
         </div>
       </div>
       <div class="col-sm-4">
         <h3>On-going rollout</h3>
         <div class="list-group">
-          <p class="list-group-item">Belgium</p>
-          <p class="list-group-item">Czech Republic</p>
-          <p class="list-group-item">Denmark</p>
-          <p class="list-group-item">Luxembourg</p>
-          <p class="list-group-item">Portugal</p>
-          <p class="list-group-item">United States</p>
+          
+            <p class="list-group-item">Belgium</p>
+          
+            <p class="list-group-item">Czech Republic</p>
+          
+            <p class="list-group-item">Denmark</p>
+          
+            <p class="list-group-item">Luxembourg</p>
+          
+            <p class="list-group-item">Portugal</p>
+          
+            <p class="list-group-item">USA</p>
+          
         </div>
       </div>
       <div class="col-sm-4">
         <h3>Spot coverage (citywide)</h3>
         <div class="list-group">
-          <p class="list-group-item">Dublin (Ireland)</p>
-          <p class="list-group-item">Milan (Italy)</p>
-          <p class="list-group-item">Menlo Park (USA)</p>
-          <p class="list-group-item">Mumbai/Bombay (India)</p>
-          <p class="list-group-item">New York (USA)</p>
-          <p class="list-group-item">Prague (Czech Republic)</p>
-          <p class="list-group-item">San Francisco (USA)</p>
-          <p class="list-group-item">Santiago (Chile)</p>
-          <p class="list-group-item">Vienna (Austria)</p>
-          <p class="list-group-item">Warsaw (Poland)</p>
+         
+            <p class="list-group-item">Bogota&nbsp;(Colombia)</p>
+          
+            <p class="list-group-item">Dublin&nbsp;(Ireland)</p>
+          
+            <p class="list-group-item">Milan&nbsp;(Italy)</p>
+          
+            <p class="list-group-item">Munich&nbsp;(Germany)</p>
+          
+            <p class="list-group-item">New York&nbsp;(USA)</p>
+          
+            <p class="list-group-item">Prague&nbsp;(Czech Republic)</p>
+          
+            <p class="list-group-item">San Francisco&nbsp;(USA)</p>
+          
+            <p class="list-group-item">Santiago&nbsp;(Chile)</p>
+          
+            <p class="list-group-item">Vienna&nbsp;(Austria)</p>
+          
+            <p class="list-group-item">Warsaw&nbsp;(Polan)</p>
+          
         </div>
       </div>
     </div>

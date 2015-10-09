@@ -32,6 +32,10 @@ body {
 .navbar-brand img {
   height: 100%; }
 
+.product-intro {
+  font-weight: bold;
+  font-style: italic; }
+
 #transceivers .row h3 {
   text-align: center; }
 
