@@ -1,0 +1,32 @@
+intro:
+  - text: SIGFOX makes its IP available at no cost to silicon and module vendors. This strategy has encouraged leading silicon and module vendors to integrate SIGFOX in their existing assets, giving solution enablers a wide choice of very competitively priced components.
+  - text: SIGFOX enables bi-directional as well as mono-directional communications and can co-exist with other communication protocols, both short and long range.
+  - text: High energy consumption has been a major obstacle with regards to unleashing the potential of the Internet of Things, which is why one of the key elements of the SIGFOX strategy is to continue to push the boundaries for energy consumption lower and  low
+  - text: The increasing number of M2M and Internet of Things solutions calls for better interoperability solutions, which can only come through standardization. As the first Internet of Things operator, SIGFOX has taken a lead in this process through the   foundatio
+  - text: Check the <a href="http//sigfox.com/en/#!/connected-world/technology-enablers">Technology Enablers</a> section of our website to keep posted on the list of available modules & transceivers from our partners.
+  
+partners:
+  - name: Adeunis
+    link: ://www.adeunis-rf.com/en/technologies/sigfox
+    image: ./img/adeunis.jpg
+  - name: Atim
+    link: http://www.atim.com/en/atim-sigfox-network-solutions
+    image: ./img/atim.jpg
+  - name: Telecom Design
+    link: http://www.avnet-memec.eu/products/telecom-design-bi-directional-sigfox-modules.html
+    image: ./img/telecomdesign.jpg
+  - name: Telit
+    link: http://www.telit.com/products/product-service-selector/product-service-selector/show/product/le51-868-s/
+    image: ./img/telit.jpg
+  - name: Atmel
+    link: http://www.atmel.com/products/wireless/smartrf/default.aspx?tab=tools
+    image: ./img/atmel.jpg
+  - name: Texas Instruments
+    link: http://www.ti.com/product/cc1120?DCMP=sigfox&HQS=ep-con-lprf-sigfox-pf-cc1120-en
+    image: ./img/ti.jpg
+  - name: Axsem
+    link: http://axsem.com/www/sigfox
+    image: ./img/axsem.jpg
+  - name: Silicon Labs
+    link: http://www.silabs.com/
+    image: ./img/silabs.jpg
