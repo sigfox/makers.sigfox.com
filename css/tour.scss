@@ -199,6 +199,7 @@ section{
   }
   .agenda-entry{
     max-height: 190px;
+    min-height: 190px;
     box-shadow: $shadow;
     color: $darkgray;
     padding: 35px 75px;
