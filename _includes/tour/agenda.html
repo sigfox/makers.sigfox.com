@@ -1,15 +1,20 @@
+{% assign today = site.time | date:"%Y-%m-%d"%}
 <section id="agenda">
   <div class="container">
     <h1>Agenda</h1>
     <div class="row">
       {% assign entries = site.data.tourdates | sort:"date","last"%}
       {% for entry in entries %}
+        {% assign eventdate = entry.date | date:"%Y-%m-%d"%}
+        {% capture oldevent%}{%if today > eventdate %}true{%else%}false{%endif%}{%endcapture%}
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-          <div class="agenda-entry country {{entry.country}}">
+          <div class="agenda-entry country {{entry.country}}{% if oldevent == 'true'%} old-event{% endif %} ">
             {%if entry.date%}
               <div class="agenda-date">
                 <date datetime="{{entry.date}}">
-                  {{entry.date | date:"%B %d" | upcase }} 
+                  
+                  {{entry.date | date:"%B %d" | upcase }}
+
                   {% assign time = entry.date|date:"%H" %}
                   {%if time != "00" %}
                     {{entry.date | date:"%H:%M"}}
@@ -34,14 +39,15 @@
               {{entry.city}}
             </div>
             <div class="agenda-invite">
-              <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1&entry_1730054643={{entry.city}}&entry.826059317=Ask+for+an+invite">
-                {%if entry.date%}
-                  Request an invite
-                {%else%}
-                  Show your interest
-                {% endif %}
-              
-              </a>
+              {%unless oldevent == 'true' %}
+                <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1&entry_1730054643={{entry.city}}&entry.826059317=Ask+for+an+invite">
+                  {%if entry.date%}
+                    Request an invite
+                  {%else%}
+                    Show your interest
+                  {% endif %}
+                </a>
+              {% endunless %}
             </div>
           </div>
         </div>
