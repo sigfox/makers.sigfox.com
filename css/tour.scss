@@ -198,6 +198,9 @@ section{
     padding: 0 11%;
   }
   .agenda-entry{
+    &.old-event{
+      opacity: .5;
+    }
     max-height: 190px;
     min-height: 190px;
     box-shadow: $shadow;
