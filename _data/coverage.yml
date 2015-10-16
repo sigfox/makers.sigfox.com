@@ -31,8 +31,6 @@ cities:
     country: Ireland
   - name: San Francisco
     country: USA
-  - name: New York
-    country: USA
   - name: Bogota
     country: Colombia
   - name: Santiago
