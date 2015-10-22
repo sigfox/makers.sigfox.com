@@ -30,3 +30,9 @@ partners:
   - name: Silicon Labs
     link: http://www.silabs.com/
     image: ./img/silabs.jpg
+  - name: Radiocrafts
+    link: http://www.radiocrafts.com
+    image: ./img/radiocrafts.png
+  - name: CG-Wireless
+    link: http://www.cgwi.fr/
+    image: ./img/cg-wireless.png
