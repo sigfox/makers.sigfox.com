@@ -57,7 +57,6 @@
       linkText: Order on Atmel.com
         
     - name: SmartEverything
-      intro:  Available soon!
       image: ./img/SmartEverything.png
       description: The Atmel Technology SmartEverything SoM (System On Module) is based on Atmel D21 Ultra low-power µcontroller, using the 32-bit ARM Cortex-M0+ processor.
         
@@ -79,9 +78,11 @@
         The software can also be developed using the Atmel Studio IDE.
         
         Draft documentation (PDF) <a href="./resources/SmartEverything-UserGuide.pdf">here</a>.
+        <br />
+        More information on the <a target="_blank" href="http://www.smarteverything.it">SmartEverything</a> website.
         
-      linkUrl : http://www.smarteverything.it
-      linkText: Stay tuned for updates on the SmartEverything website!
+      linkUrl : http://uk.rs-online.com/web/p/radio-frequency-development-kits/9015121/
+      linkText: Available on Radiospares
       
       
     - name: Akene
