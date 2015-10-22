@@ -39,9 +39,6 @@ body {
 #transceivers .row h3 {
   text-align: center; }
 
-.jumbotron {
-  text-align: center; }
-
 .twittericon::before {
   background-image: url("/img/twitter.png"); }
 
@@ -68,19 +65,5 @@ body {
   .footer p {
     padding-top: 4px; }
 
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-  /* Since positioning the image, we need to help out the caption */ }
-  .carousel .carousel-caption {
-    z-index: 10; }
-  .carousel .carousel-inner > .item {
-    /* Declare heights because of positioning of img element */
-    height: 500px;
-    background-color: #777; }
-    .carousel .carousel-inner > .item > img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 500px; }
+#evalkits .row > div {
+  min-height: 310px; }
