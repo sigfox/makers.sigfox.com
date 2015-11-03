@@ -64,6 +64,8 @@
 - city: Helsinki
   country: FIN
   date: 2015/11/10
+  location: Aalto Design Factory
+  locationLink: http://www.aaltodesignfactory.fi/
   
   
 - city: Nice
