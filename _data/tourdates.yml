@@ -38,6 +38,12 @@
   location: IoT Valley
   locationLink: http://www.iot-valley.fr/
   
+- city: Paris
+  country: FRA
+  date: 2015/12/10
+  location: le Fab Shop
+  locationLink: http://www.lefabshop.fr/
+  
 
 - city: London
   country: GBR
