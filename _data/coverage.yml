@@ -22,6 +22,8 @@ countries:
     status: rollout
   - name: Italy
     status: rollout
+  - name: Ireland
+    status: rollout
 cities:
   - name: Milan
     country: Italy
