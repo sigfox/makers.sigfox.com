@@ -1,23 +1,37 @@
-{% assign partners = site.data.hardware.partners | sort:"name" %}
-<section id="transceivers">
-    <h1>SIGFOX radio transceivers, SoC & modules</h1>
-    <h3>SIGFOX is available from leading silicon and module vendors</h3>
-    <div class="row">
-      <div class="col-sm-12">
-        {% for para in site.data.hardware.intro %}
-          <p>{{para.text}}</p>
-        {% endfor %}
-          
-      </div>
-    </div>
-    <div class="row">
-      {% for partner in partners %}
-        <div class="col-sm-3">
-          <h3>{{ partner.name }}</h3>
-          <a target="_blank" href="{{ partner.link }}">
-           <img class="img-responsive" src="{{partner.image}}" />
-          </a>
-        </div>
+{% assign types = site.data.hardware.solutions %}
+<section id="hardware-solutions">
+  <h1>Hardware solutions</h1>
+  <div class="row">
+    <div class="col-sm-12">
+      {% for para in site.data.hardware.intro %}
+        <p>{{para.text}}</p>
       {% endfor %}
+
     </div>
-  </section>
+  </div>
+  
+  {% for type in types %}
+    <section id="{{type.name}}">
+      <h2>{{type.name}}</h2>
+      <div class="row">
+      {% for partner in type.partners %}
+        {% assign mdcycle = forloop.index | modulo: 3 %}
+        {% for solution in partner.solutions %}
+          
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hardware-partner {{mdcycle}} {{mdcycle == 0}}">
+            <div class="row">
+              <div class="col-md-12 hardware-solution">
+              <h3>{{partner.name}}</h3>
+              <h4>{{solution.name}}</h4>
+              <p>{{solution.desc}}</p>
+              </div>
+          </div></div>
+        {% if mdcycle == 0 %}
+          <div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
+        {% endif%}
+        {% endfor %}
+      {% endfor %}
+      </div >
+    </section>
+  {% endfor %}
+</section>

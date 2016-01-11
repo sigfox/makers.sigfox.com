@@ -4,35 +4,74 @@ intro:
   - text: High energy consumption has been a major obstacle with regards to unleashing the potential of the Internet of Things, which is why one of the key elements of the SIGFOX strategy is to continue to push the boundaries for energy consumption lower and  low
   - text: The increasing number of M2M and Internet of Things solutions calls for better interoperability solutions, which can only come through standardization. As the first Internet of Things operator, SIGFOX has taken a lead in this process through the   foundatio
   - text: Check the <a href="http//sigfox.com/en/#!/connected-world/technology-enablers">Technology Enablers</a> section of our website to keep posted on the list of available modules & transceivers from our partners.
-  
-partners:
-  - name: Adeunis
-    link: ://www.adeunis-rf.com/en/technologies/sigfox
-    image: ./img/adeunis.jpg
-  - name: Atim
-    link: http://www.atim.com/en/atim-sigfox-network-solutions
-    image: ./img/atim.jpg
-  - name: Telecom Design
-    link: http://www.avnet-memec.eu/products/telecom-design-bi-directional-sigfox-modules.html
-    image: ./img/telecomdesign.jpg
-  - name: Telit
-    link: http://www.telit.com/products/product-service-selector/product-service-selector/show/product/le51-868-s/
-    image: ./img/telit.jpg
-  - name: Atmel
-    link: http://www.atmel.com/products/wireless/smartrf/default.aspx?tab=tools
-    image: ./img/atmel.jpg
-  - name: Texas Instruments
-    link: http://www.ti.com/product/cc1120?DCMP=sigfox&HQS=ep-con-lprf-sigfox-pf-cc1120-en
-    image: ./img/ti.jpg
-  - name: Axsem
-    link: http://axsem.com/www/sigfox
-    image: ./img/axsem.jpg
-  - name: Silicon Labs
-    link: http://www.silabs.com/
-    image: ./img/silabs.jpg
-  - name: Radiocrafts
-    link: http://www.radiocrafts.com
-    image: ./img/radiocrafts.png
-  - name: CG-Wireless
-    link: http://www.cgwi.fr/
-    image: ./img/cg-wireless.png
+
+solutions:
+  - name: Transceivers
+    partners:
+      - name: Silicon Labs
+        solutions:
+        - name: SI446x
+          desc: Silicon Labs’ Si446x devices are high-performance, low-current transceivers covering the sub-GHz frequency bands from 119 to 1050MHz.
+      - name: Texas Instruments
+        solutions:
+        - name: CC112x
+          desc: The CC120 device is a fully integrated single-chip radio transceiver desi- gned for high performance at very low-power and low-voltage operation in cost-effective wireless systems.
+  - name: SoC
+    partners:
+      - name: On Semiconductors
+        solutions:
+          - name: AX-SIGFOX SoC
+            desc: The AX-SIGFOX is a SoC solution adding SIGFOX functionality for up- link and down-link to any existing system at the cost of 20x13 mm2 PCB area.The radio part of AX-SIGFOX makes use of the AX5043 lowest power radio. Reference design and application notes are downloadable from the product web site.
+      - name: Atmel
+        solutions:
+          - name: ATA 8520
+  - name: Modules
+    partners:
+      - name: Adeunis
+        solutions:
+          - name: Si 828 25mW
+      - name: Atim
+        solutions:
+          - name: ARM Nano
+      - name: Radiocrafts
+        solutions:
+          - name: RC 1682-SIG
+      - name: TD Next
+        solutions:
+          - name: TD1204
+          - name: TD1205
+          - name: TD1207
+          - name: TD1208
+      - name: Telit
+        solutions:
+          - name: Le51-868S
+      - name: Nemeus
+        solutions:
+          - name: MM002-xx-EU
+  - name: EVK & Dev Kits
+    partners:
+      - name: Radiocrafts
+        solutions: 
+          - name: RC 1682-SIG DK 
+      - name: SNOC
+        solutions:
+          - name: RPISIGFOX
+      - name: TD Next
+        solutions: 
+          - name: TD1208 EVK
+      - name: Telit
+        solutions:
+          - name: LE51-868SEVK
+      - name: TST Sistemas
+        solutions:
+          - name: Smart expansion board
+      - name: Snootlab
+        solutions:
+          - name: Akeru
+      - name: Adeunis
+        solutions:
+          - name: Demonstrator
+      - name: Connit
+        solutions:
+          - name: Live black USB
+      
