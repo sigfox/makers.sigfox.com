@@ -16,9 +16,6 @@
   location: La Casemate
   locationLink: http://lacasemate.fr/qui-sommes-nous/infos-pratiques/
 
-- city: Lyon
-  country: FRA
-  
 - city: Madrid
   country: ESP
   date: 2015/11/25 16:00
@@ -44,22 +41,24 @@
   location: le Fab Shop
   locationLink: http://www.lefabshop.fr/
   
-
-- city: London
-  country: GBR
-  
-
 - city: Amsterdam
   country: NED
   
-
-- city: Copenhagen
-  country: DEN
+- city: London
+  country: GBR
   
+- city: Lyon
+  country: FRA
   
 - city: Lisbon
   country: POR
   
+- city: Porto
+  country: POR
+  
+
+- city: Copenhagen
+  country: DEN    
     
 - city: Angers
   country: FRA

@@ -7,7 +7,7 @@
       {% for entry in entries %}
         {% assign eventdate = entry.date | date:"%Y-%m-%d"%}
         {% capture oldevent%}{%if today > eventdate %}true{%else%}false{%endif%}{%endcapture%}
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
           <div class="agenda-entry country {{entry.country}}{% if oldevent == 'true'%} old-event{% endif %} ">
             {%if entry.date%}
               <div class="agenda-date">
