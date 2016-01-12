@@ -3,7 +3,7 @@
   <div class="container">
     <h1>Agenda</h1>
     <div class="row">
-      {% assign entries = site.data.tourdates | sort:"date","last"%}
+      {% assign entries = site.data.tourdates | sort:"date","first" | reverse%}
       {% for entry in entries %}
         {% assign eventdate = entry.date | date:"%Y-%m-%d"%}
         {% capture oldevent%}{%if today > eventdate %}true{%else%}false{%endif%}{%endcapture%}
