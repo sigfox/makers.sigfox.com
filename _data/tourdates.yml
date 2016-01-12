@@ -52,10 +52,16 @@
   
 - city: Lisbon
   country: POR
+  date: 2016/02/11 14:00
+  location: Startup Lisboa
+  locationLink: http://startuplisboa.com/
+  
   
 - city: Porto
   country: POR
-  
+  date: 2016/02/12 14:00
+  location: UPTEC
+  locationLink: http://uptec.up.pt/en/corporate/uptec/technology-center
 
 - city: Copenhagen
   country: DEN    
