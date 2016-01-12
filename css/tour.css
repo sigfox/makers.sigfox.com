@@ -144,7 +144,7 @@ section {
   min-height: 190px;
   box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.24), 0 0px 2px 0px rgba(0, 0, 0, 0.12);
   color: #8c8c8c;
-  padding: 35px 75px;
+  padding: 35px 65px;
   margin-bottom: 30px; }
   #agenda .agenda-entry.old-event {
     opacity: .5; }
