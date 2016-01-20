@@ -4,35 +4,118 @@ intro:
   - text: High energy consumption has been a major obstacle with regards to unleashing the potential of the Internet of Things, which is why one of the key elements of the SIGFOX strategy is to continue to push the boundaries for energy consumption lower and  low
   - text: The increasing number of M2M and Internet of Things solutions calls for better interoperability solutions, which can only come through standardization. As the first Internet of Things operator, SIGFOX has taken a lead in this process through the foundation of dedicated standardization groups within recognized standards bodies such as ETSI and others.
   - text: Check the <a href="http//sigfox.com/en/#!/connected-world/technology-enablers">Technology Enablers</a> section of our website to keep posted on the list of available modules & transceivers from our partners.
-  
-partners:
-  - name: Adeunis
-    link: ://www.adeunis-rf.com/en/technologies/sigfox
-    image: ./img/adeunis.jpg
-  - name: Atim
-    link: http://www.atim.com/en/atim-sigfox-network-solutions
-    image: ./img/atim.jpg
-  - name: Telecom Design
-    link: http://www.avnet-memec.eu/products/telecom-design-bi-directional-sigfox-modules.html
-    image: ./img/telecomdesign.jpg
-  - name: Telit
-    link: http://www.telit.com/products/product-service-selector/product-service-selector/show/product/le51-868-s/
-    image: ./img/telit.jpg
-  - name: Atmel
-    link: http://www.atmel.com/products/wireless/smartrf/default.aspx?tab=tools
-    image: ./img/atmel.jpg
-  - name: Texas Instruments
-    link: http://www.ti.com/product/cc1120?DCMP=sigfox&HQS=ep-con-lprf-sigfox-pf-cc1120-en
-    image: ./img/ti.jpg
-  - name: Axsem
-    link: http://axsem.com/www/sigfox
-    image: ./img/axsem.jpg
-  - name: Silicon Labs
-    link: http://www.silabs.com/
-    image: ./img/silabs.jpg
-  - name: Radiocrafts
-    link: http://www.radiocrafts.com
-    image: ./img/radiocrafts.png
-  - name: CG-Wireless
-    link: http://www.cgwi.fr/
-    image: ./img/cg-wireless.png
+
+solutions:
+  - name: Transceivers
+    info: Description provided by vendors
+    partners:
+      - name: Silicon Labs
+        solutions:
+        - name: SI446x
+          desc: Silicon Labs’ Si446x devices are high-performance, low-current transceivers covering the sub-GHz frequency bands from 119 to 1050MHz.
+          img: silabs-si446.png
+      - name: Texas Instruments
+        solutions:
+        - name: CC112x
+          desc: The CC120 device is a fully integrated single-chip radio transceiver designed for high performance at very low-power and low-voltage operation in cost-effective wireless systems.
+          img: ti-cc1120.png
+  - name: SoC
+    info: Description provided by vendors
+    partners:
+      - name: On Semiconductors
+        solutions:
+          - name: AX-SIGFOX SoC
+            desc: The AX-SIGFOX is a SoC solution adding SIGFOX functionality for up-link and down-link to any existing system at the cost of 20x13 mm2 PCB area.<br /><br />The radio part of AX-SIGFOX makes use of the AX5043 lowest power radio. <br /><br />Design and application notes are downloadable from the product web site.
+            img: axsem-am006.png
+      - name: Atmel
+        solutions:
+          - name: ATA 8520
+            desc: The ATA8520 incorporates a RF front end, a digital baseband and a microcontroller in a single chip.<br />Firmware stored in internal memory supports the chip’s operations, including handling of the SIGFOX protocol.<br />A serial peripheral interface provides for external control and configuration.<br />The single chip solution provides extremely low power consumption.
+            img: atmel-ata8520.png
+  - name: Modules
+    info: Description provided by vendors
+    partners:
+      - name: Adeunis
+        solutions:
+          - name: Si 828 25mW
+            img: adeunis-module.png
+            desc: RF Module optimized for very long range/low consumption applications.<br /><br />The implementation of UNB technology allows communication with the SIGFOX network.<br />This product is for the custom design only. It may not be sold as a single module.
+      - name: Atim
+        solutions:
+          - name: ARM Nano
+            img: atim-module.png
+            desc: The new family of ATIM radio Modules operates in the ISM bands (169Mhz, 433Mhz and 868Mhz) and on the 868Mhz for SIGFOX.<br /><br />This RF module is optimized for long range.<br />The radio communication is half-duplex, bidirectional and allows to establish point to point and multipoints connections, and to the Internet with SIGFOX compatibility.
+      - name: Radiocrafts
+        solutions:
+          - name: RC 1682-SIG
+            img: radiocrafts-module.png
+            desc: The RC1682-SIG module is a SIGFOX Ready compact surface-mounted product that measures only 12.7 x 25.4 x 3.3 mm.<br />The module contains a communication controller with embedded SIGFOX protocol software and is pre-certified for operation under European regulations. Custom variants can be offered with custom functionalities.<br />• High sensitivity (best class) and selectivity, high blocking properties<br />• Completely shielded module 12.7 x 25.4 x 3.3 mm for SMD mounting<br />• Pin compatible with other modules from Radiocrafts<br />• 2.8 – 3.8 V supply voltage with ultra low power modes
+
+      - name: TD Next
+        solutions:
+          - name: TD1204
+            img: td-1204.png
+            desc: The TD1204 is the best compromise between ease of integration and costs.<br />1st SIGFOX module with GNSS and 3-axis accelerometer sensors for geolocation and tracking applications.<br />The TD1204 interfaces with most GNSS and SIGFOX antennas.<br />• Efficient & Powerful<br />• Easily adaptable to each specific business<br />• Low consumption<br />• Easy integration into a device (41.91mm x 12.7mm x 3.81mm)<br />• Short range function<br />• Packaged for mass production
+          - name: TD1205
+            img: td-1205.png
+            desc: This is a compact state-of-the-art geolocation device with integrated 868MHz and GNSS antennas for a ready-to-package application.<br />Just connect a battery to your TD1205... and you’re done!<br />• Efficient & Powerful<br />• Integrated 868 MHz and GNSS antennas<br />• Easily adaptable to each specific business<br />• Low consumption for a long battery life<br />• Easy integration into a device (48mm x 30mm x 10.5mm)<br />• Short range function<br />• Packaged for mass production
+          - name: TD1207
+            img: td-1207.png
+            desc: The simple low-end time-to-market AT-command SIGFOX modem that brings the highest performance at the lowest price.<br /><br />This module is the best way to step easily into the SIGFOX world!<br /><br /><br />• Efficient & Powerful<br />• Low consumption<br />• Easy integration into a device (25.4mm x 12.7mm x 3.80mm)<br />• Short range function
+          - name: TD1208
+            img: td-1208.png
+            desc: Because each customer is unique and each business has its own special features...<br /> TD next gives you the ability to embed your own application into the TD1208.<br />The TD1208 is the most integrated and lowest-power engine for most battery-operated SIGFOX devices.<br /><br />• Efficient & Powerful<br />• Easily adaptable to each specific business<br />• Low consumption<br />• Easy integration into a device (25.4mm x 12.7mm x 3.80mm)<br />• Short range function<br />• Packaged for mass production
+      - name: Telit
+        solutions:
+          - name: Le51-868S
+            img: telit-le51.jpg
+            desc: The LE51-868 S is a high performance certified short range to long range module designed to cover the 863-870 MHz band working with the Telit Proprietary protocol and acting as a SIGFOX gateway.
+      - name: Nemeus
+        solutions:
+          - name: MM002-xx-EU
+            img: nemeus.jpg
+            desc: With a same form-factor and a same control interface, the modules of the MM002-xx-EU family are interchangeable and allow communications on various radio technologies (local loop and long distance).<br />The MM002- EU-LS version includes SIGFOX technology for communications with this network.<br /><br />Operating in the 868MHz unlicensed band, this module has a good interferers robustness and low power consumption.<br />It is the best solution for applications requiring long range, maximum battery lifetime and secure radio link.
+  - name: EVK & Dev Kits
+    partners:
+      - name: Radiocrafts
+        solutions: 
+          - name: RC 1682-SIG DK 
+            img: radiocrafts-devkit.png
+            desc: The RC1682-SIGFOX-DK is the Demonstration Kit for the compact SIGFOX module.<br />It consists of two Demonstration Boards with antennas and a USB interface. It is supported by the RCTools PC software for easy configuration and test.<br />Each Demonstration Kit is delivered with Platinum level SIGFOX subscription, which allows up to 140 uplink messages, and up to 4 downlink messages per day, for 1 year after the activation date.<br />Roaming is also included so that the Radiocrafts Demonstration Kits can be used in every place in Europe where a SIGFOX network is available.
+      - name: SNOC
+        solutions:
+          - name: RPISIGFOX
+            img: snoc-rpi.png
+            desc: The expansion board is for raspberry pi mainboard and allow to use the SIGFOX network. It is developped and made in France by SNOC and includes the following accessories :<br /><br />• a box designed for table & rail DIN<br />• an antenna
+
+      - name: TD Next
+        solutions: 
+          - name: TD1208 EVK
+            img: td-evb.png
+            desc: Evaluate the SIGFOX technology and our modules by sending simple AT commands!<br />Available for TD1207, TD1208, TD1508, TD1204, TD1205<br />Included&colon; 1 EVB with a TD module, 1 antenna, 1 FDTI cable, 1 year subscription to the SIGFOX network, 1 year access to TD Next's developer backend
+      - name: Telit
+        solutions:
+          - name: LE51-868SEVK
+            img: telit-le51.jpg
+            desc: The Evaluation Kit based on Telit modules provides a robust, future-proof and  exible environment to streamline all application development based on Télit modules.<br />It include a full SIGFOX subscription.
+      - name: TST Sistemas
+        solutions:
+          - name: Smart expansion board
+            img: tst.jpg
+            desc: Smart SIGFOX expansion board which will be used for project prototyping thanks to the easy operation, programming and its powerful API available.<br />It allows a direct connectivity to the SIGFOX network and provides digital interfaces that control any external sensor.
+
+      - name: Snootlab
+        solutions:
+          - name: Akeru
+            img: snootlab-akeru.png
+            desc: Make prototypes with SIGFOX IoT technology and Arduino C language.<br /><br />This new version of Akeru offers a better access to advanced features of the modem and a low power usage. Many applications have been developed with Akeru (weather station, bee hive monitoring, trackers, etc.).<br /><br />Gives you the possibility to use the IoT SIGFOX technology as easy as sending data to a serial port or blinking a LED with Arduino.
+      - name: Adeunis
+        solutions:
+          - name: Demonstrator
+            img: adeunis-demonstrator.png
+            desc: The SIGFOX demonstrator is a ready to use system which provides connection to the SIGFOX network.<br />With 3 integrated sensors (GPS, accelerometer, temperature) this demonstrator allows to transmit and instantly view the radio frames on a dedicated web app<br /><br />This demonstrator is particularly suitable for the validation of applications like sensor networks, environment, intelligent buildings, metering, security, or M2M.
+      - name: Connit
+        solutions:
+          - name: Live black USB
+            img: connit-usb.png
+            desc: Device with USB output can be connected to the SIGFOX network thanks to Live Black USB.<br /> It allows for a quick setup with multiple sensors.<br />It can be used as a backup channel in addition to other networks.<br /><br />Connected to a computer like a Raspberry Pi, Live Black USB is made for rapid prototyping.

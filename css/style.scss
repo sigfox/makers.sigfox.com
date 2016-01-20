@@ -1,12 +1,19 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
-  
+$darkgreen: #015D5B;
+$lightgreen: #028C7E;
+$almostwhite: #fffffe;
+$darkgray: #8c8c8c;
+$lighgray: #d8d8d8;
+$shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.24), 0 0px 2px 0px rgba(0, 0, 0, 0.12);  
+$greenshadow: 2px 2px 2px 2px rgba(1, 93, 91, 0.5);
+
 body{
   padding:70px 0 35px 0;
 }
 .navbar, .navbar-inverse{
-  background-color: #028C7E;
+  background-color: $lightgreen;
 }
 .navbar{
   background-image: url('/img/logo-sigfox.png');
@@ -19,17 +26,17 @@ body{
 }
 
 .navbar-inverse{
-  border-color: #015D5B;
+  border-color: $darkgreen;
   .navbar-toggle{
-    border-color: #fff;
+    border-color: $almostwhite;
   }
   .navbar-nav > li > a{
-    color:#fff;
+    color:$almostwhite;
   }
   .navbar-nav{
     > .open, .active{
       > a, > a:focus, > a:hover{
-        background: #015D5B;    
+        background: $darkgreen;    
       }
     }
     
@@ -38,10 +45,10 @@ body{
   }
   
   .navbar-toggle:focus, .navbar-toggle:hover{
-    background: #fff;
-    border-color: #015D5B;
+    background: $almostwhite;
+    border-color: $darkgreen;
     .icon-bar{
-      background: #028C7E;  
+      background: $lightgreen;  
     }
   }
 }
@@ -87,11 +94,12 @@ body{
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 25px;
-  background-color: #028C7E;
-  color:#fff;
+  background-color: $lightgreen;
+  color:$almostwhite;
 
   p{
     padding-top:4px;
+    padding-left: 10px;
   }
 }
 
@@ -99,5 +107,23 @@ body{
 #evalkits{
   .row > div{
     min-height:310px;
+  }
+}
+
+
+.hardware-solution{
+  padding: 1px 20px;
+  box-shadow: $shadow;
+  border-radius: 3px;
+  min-height: 280px;
+  margin-bottom: 2em;
+}
+.hw-img{
+  width: 100%;
+  text-align:center;
+  img{
+    max-height: 15em;
+    max-width: 100%;
+    margin:.5em;
   }
 }

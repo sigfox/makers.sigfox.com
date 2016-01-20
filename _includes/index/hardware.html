@@ -1,23 +1,49 @@
-{% assign partners = site.data.hardware.partners | sort:"name" %}
-<section id="transceivers">
-    <h1>SIGFOX radio transceivers, SoC & modules</h1>
-    <h3>SIGFOX is available from leading silicon and module vendors</h3>
-    <div class="row">
-      <div class="col-sm-12">
-        {% for para in site.data.hardware.intro %}
-          <p>{{para.text}}</p>
-        {% endfor %}
-          
-      </div>
-    </div>
-    <div class="row">
-      {% for partner in partners %}
-        <div class="col-sm-3">
-          <h3>{{ partner.name }}</h3>
-          <a target="_blank" href="{{ partner.link }}">
-           <img class="img-responsive" src="{{partner.image}}" />
-          </a>
-        </div>
+{% assign types = site.data.hardware.solutions %}
+<section id="hardware-solutions">
+  <h1>Hardware solutions</h1>
+  <div class="row">
+    <div class="col-sm-12">
+      {% for para in site.data.hardware.intro %}
+        <p>{{para.text}}</p>
       {% endfor %}
+
     </div>
-  </section>
+  </div>
+  {% for type in types %}
+    <section id="{{type.name | slugify}}">
+      <h2>{{type.name}}</h2>
+      {%if type.info %}
+        <h5><i>{{type/info}}</i></h5>
+      {% endif %}
+      <div class="row">
+        {% assign idx = 0 %}
+      {% for partner in type.partners %}
+        {% for solution in partner.solutions %}
+        
+          {% assign idx = idx | plus: 1 %}
+          {% assign lgcycle = idx | modulo: 3 %}  
+          {% assign smcycle = idx | modulo: 2 %}
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="hardware-solution">
+              <h3>{{partner.name}}</h3>
+              <h4>{{solution.name}}</h4>
+              <p>{{solution.desc}}</p>
+              {% if solution.img %}
+                <div class="hw-img">
+                  <img src="/img/hw/{{solution.img}}" />
+                </div>
+              {% endif %}
+            </div>
+          </div>
+          {% if smcycle == 0 %}
+            <div class="clearfix visible-sm-block visible-md-block"></div>
+          {% endif%}
+          {% if lgcycle == 0 %}
+            <div class="clearfix visible-lg-block "></div>
+          {% endif%}
+        {% endfor %}
+      {% endfor %}
+      </div >
+    </section>
+  {% endfor %}
+</section>
