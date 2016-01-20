@@ -99,6 +99,7 @@ body{
 
   p{
     padding-top:4px;
+    padding-left: 10px;
   }
 }
 
@@ -110,12 +111,19 @@ body{
 }
 
 
-.hardware-partner{
-  
-  padding: 0 1.5em;
-  
-}
 .hardware-solution{
-box-shadow: $greenshadow;
+  padding: 1px 20px;
+  box-shadow: $shadow;
   border-radius: 3px;
+  min-height: 280px;
+  margin-bottom: 2em;
+}
+.hw-img{
+  width: 100%;
+  text-align:center;
+  img{
+    max-height: 15em;
+    max-width: 100%;
+    margin:.5em;
+  }
 }
