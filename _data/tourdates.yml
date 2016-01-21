@@ -46,6 +46,9 @@
   
 - city: London
   country: GBR
+  date: 2016/02/16
+  location: FabLab London
+  locationLink: http://fablablondon.org/
   
 - city: Lyon
   country: FRA
