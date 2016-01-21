@@ -7,7 +7,7 @@ intro:
 
 solutions:
   - name: Transceivers
-    info: Description provided by vendors
+    info: Descriptions provided by vendors
     partners:
       - name: Silicon Labs
         solutions:
@@ -20,7 +20,7 @@ solutions:
           desc: The CC120 device is a fully integrated single-chip radio transceiver designed for high performance at very low-power and low-voltage operation in cost-effective wireless systems.
           img: ti-cc1120.png
   - name: SoC
-    info: Description provided by vendors
+    info: Descriptions provided by vendors
     partners:
       - name: On Semiconductors
         solutions:
@@ -33,7 +33,7 @@ solutions:
             desc: The ATA8520 incorporates a RF front end, a digital baseband and a microcontroller in a single chip.<br />Firmware stored in internal memory supports the chip’s operations, including handling of the SIGFOX protocol.<br />A serial peripheral interface provides for external control and configuration.<br />The single chip solution provides extremely low power consumption.
             img: atmel-ata8520.png
   - name: Modules
-    info: Description provided by vendors
+    info: Descriptions provided by vendors
     partners:
       - name: Adeunis
         solutions:
