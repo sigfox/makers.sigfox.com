@@ -117,13 +117,18 @@ body{
   border-radius: 3px;
   min-height: 280px;
   margin-bottom: 2em;
-}
-.hw-img{
-  width: 100%;
-  text-align:center;
-  img{
-    max-height: 15em;
-    max-width: 100%;
-    margin:.5em;
+  
+  .more{
+    font-style: italic;
+  }
+  
+  .hw-img{
+    width: 100%;
+    text-align:center;
+    img{
+      max-height: 15em;
+      max-width: 100%;
+      margin:.5em;
+    }
   }
 }

@@ -30,6 +30,9 @@
                 <h3>{{partner.name}}</h3>
                 <h4>{{solution.name}}</h4>
                 <p>{{solution.desc}}</p>
+                {% if solution.more %}
+                  <p class="more">More informations on <a target="_blank" href="{{solution.more.link}}">{{solution.more.text}}</a></p>
+                {% endif %}
                 {% if solution.img %}
                   <div class="hw-img">
                     <img src="/img/hw/{{solution.img}}" />
