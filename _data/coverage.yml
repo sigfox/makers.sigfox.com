@@ -15,7 +15,7 @@ countries:
   - name: Denmark
     status: rollout
   - name: Portugal
-    status: rollout
+    status: nationwide
   - name: USA
     status: rollout
   - name: Czech Republic
