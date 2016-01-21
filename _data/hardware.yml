@@ -130,3 +130,8 @@ solutions:
           - name: The AirBoard
             img: airboard.png
             desc: The AirBoard is a wireless, modular and ultra low-power prototyping platform for the Internet of Things, designed to explore, hack and deploy your killer idea out in the field.<br /><br />Forget about your sensors with the built-in battery and Power Management System.<br />The AirBoard is designed for ultra low-power applications, yet capable to drive long range wireless shields.<br />It offers an ultra-low power sleep mode with switchable radio for most efficient communication strategy.
+      - name: Embeblue
+        solutions:
+          - name: 
+            img: embeblue.png
+            desc: Industrial Arduino is a flexible and low cost Sigfox communication device. It includes a low energy micro-controller (0,4uA standby)  that users can program with the Arduino IDE.<br />Small size and a rugged enclosure allows to use it on industrial environment. <br />Ad hoc designed modules can be attached in order to use any sensor, communication or power supplies.<br /><br />Thanks to the Arduino compatible micro-controller, you can program the firmware in order to develop the optimal functionality of the device. Use this module no only for prototyping but for long series production.
