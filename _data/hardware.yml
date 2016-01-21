@@ -119,3 +119,9 @@ solutions:
           - name: Live black USB
             img: connit-usb.png
             desc: Device with USB output can be connected to the SIGFOX network thanks to Live Black USB.<br /> It allows for a quick setup with multiple sensors.<br />It can be used as a backup channel in addition to other networks.<br /><br />Connected to a computer like a Raspberry Pi, Live Black USB is made for rapid prototyping.
+      - name: AXEL Elettronica
+        solutions:
+          - name: Smart Everything
+            img: smarteverything.png
+            desc: SmartEverything is the core component developed to accelerate the “Internet of Things” eco- system.<br /><br />It is an Arduino form factor IoT board, equipped with a multitude of factory bundled I/O ports and sensors and with the most energy-efficient wireless connectivity technology dedicated to all projects in the IoT and IoE fields.<br /><br />the board features a simplified (Arduino IDE) but also a professional (Atmel Studio) programming environment, making the SmartEverything an ideal educational tool and, at the same time, the perfect tool to develop projects in technical and scientific labs.
+        desc: 
