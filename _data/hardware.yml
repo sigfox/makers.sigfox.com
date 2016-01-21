@@ -124,4 +124,9 @@ solutions:
           - name: Smart Everything
             img: smarteverything.png
             desc: SmartEverything is the core component developed to accelerate the “Internet of Things” eco- system.<br /><br />It is an Arduino form factor IoT board, equipped with a multitude of factory bundled I/O ports and sensors and with the most energy-efficient wireless connectivity technology dedicated to all projects in the IoT and IoE fields.<br /><br />the board features a simplified (Arduino IDE) but also a professional (Atmel Studio) programming environment, making the SmartEverything an ideal educational tool and, at the same time, the perfect tool to develop projects in technical and scientific labs.
-        desc: 
+        
+      - name: AirThings
+        solutions:
+          - name: The AirBoard
+            img: airboard.png
+            desc: The AirBoard is a wireless, modular and ultra low-power prototyping platform for the Internet of Things, designed to explore, hack and deploy your killer idea out in the field.<br /><br />Forget about your sensors with the built-in battery and Power Management System.<br />The AirBoard is designed for ultra low-power applications, yet capable to drive long range wireless shields.<br />It offers an ultra-low power sleep mode with switchable radio for most efficient communication strategy.
