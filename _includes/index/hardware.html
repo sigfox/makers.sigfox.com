@@ -17,32 +17,34 @@
       {% endif %}
       <div class="row">
         {% assign idx = 0 %}
-      {% for partner in type.partners %}
-        {% for solution in partner.solutions %}
-        
-          {% assign idx = idx | plus: 1 %}
-          {% assign lgcycle = idx | modulo: 3 %}  
-          {% assign smcycle = idx | modulo: 2 %}
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="hardware-solution">
-              <h3>{{partner.name}}</h3>
-              <h4>{{solution.name}}</h4>
-              <p>{{solution.desc}}</p>
-              {% if solution.img %}
-                <div class="hw-img">
-                  <img src="/img/hw/{{solution.img}}" />
-                </div>
-              {% endif %}
+        {% assign partners = type.partners | sort:"name" %}
+        {% for partner in partners %}
+          {% assign solutions = type.solutions | sort:"name" %}
+          {% for solution in solutions %}
+
+            {% assign idx = idx | plus: 1 %}
+            {% assign lgcycle = idx | modulo: 3 %}  
+            {% assign smcycle = idx | modulo: 2 %}
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="hardware-solution">
+                <h3>{{partner.name}}</h3>
+                <h4>{{solution.name}}</h4>
+                <p>{{solution.desc}}</p>
+                {% if solution.img %}
+                  <div class="hw-img">
+                    <img src="/img/hw/{{solution.img}}" />
+                  </div>
+                {% endif %}
+              </div>
             </div>
-          </div>
-          {% if smcycle == 0 %}
-            <div class="clearfix visible-sm-block visible-md-block"></div>
-          {% endif%}
-          {% if lgcycle == 0 %}
-            <div class="clearfix visible-lg-block "></div>
-          {% endif%}
+            {% if smcycle == 0 %}
+              <div class="clearfix visible-sm-block visible-md-block"></div>
+            {% endif%}
+            {% if lgcycle == 0 %}
+              <div class="clearfix visible-lg-block "></div>
+            {% endif%}
+          {% endfor %}
         {% endfor %}
-      {% endfor %}
       </div >
     </section>
   {% endfor %}
