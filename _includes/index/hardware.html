@@ -19,7 +19,7 @@
         {% assign idx = 0 %}
         {% assign partners = type.partners | sort:"name" %}
         {% for partner in partners %}
-          {% assign solutions = type.solutions | sort:"name" %}
+          {% assign solutions = partner.solutions | sort:"name" %}
           {% for solution in solutions %}
 
             {% assign idx = idx | plus: 1 %}
