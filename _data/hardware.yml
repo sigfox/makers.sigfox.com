@@ -76,6 +76,7 @@ solutions:
             img: nemeus.jpg
             desc: With a same form-factor and a same control interface, the modules of the MM002-xx-EU family are interchangeable and allow communications on various radio technologies (local loop and long distance).<br />The MM002- EU-LS version includes SIGFOX technology for communications with this network.<br /><br />Operating in the 868MHz unlicensed band, this module has a good interferers robustness and low power consumption.<br />It is the best solution for applications requiring long range, maximum battery lifetime and secure radio link.
   - name: EVK & Dev Kits
+    info: Descriptions provided by vendors
     partners:
       - name: Radiocrafts
         solutions: 
@@ -109,6 +110,9 @@ solutions:
           - name: Akeru
             img: snootlab-akeru.png
             desc: Make prototypes with SIGFOX IoT technology and Arduino C language.<br /><br />This new version of Akeru offers a better access to advanced features of the modem and a low power usage. Many applications have been developed with Akeru (weather station, bee hive monitoring, trackers, etc.).<br /><br />Gives you the possibility to use the IoT SIGFOX technology as easy as sending data to a serial port or blinking a LED with Arduino.
+            buy:
+              link: http://akeru.cc
+              text: Available on Snootlab.com
       - name: Adeunis
         solutions:
           - name: Demonstrator
@@ -124,12 +128,18 @@ solutions:
           - name: Smart Everything
             img: smarteverything.png
             desc: SmartEverything is the core component developed to accelerate the “Internet of Things” eco- system.<br /><br />It is an Arduino form factor IoT board, equipped with a multitude of factory bundled I/O ports and sensors and with the most energy-efficient wireless connectivity technology dedicated to all projects in the IoT and IoE fields.<br /><br />the board features a simplified (Arduino IDE) but also a professional (Atmel Studio) programming environment, making the SmartEverything an ideal educational tool and, at the same time, the perfect tool to develop projects in technical and scientific labs.
+            more:
+              link: http://smarteverything.it
+              text: SmartEverything website
         
       - name: AirThings
         solutions:
           - name: The AirBoard
             img: airboard.png
             desc: The AirBoard is a wireless, modular and ultra low-power prototyping platform for the Internet of Things, designed to explore, hack and deploy your killer idea out in the field.<br /><br />Forget about your sensors with the built-in battery and Power Management System.<br />The AirBoard is designed for ultra low-power applications, yet capable to drive long range wireless shields.<br />It offers an ultra-low power sleep mode with switchable radio for most efficient communication strategy.
+            more:
+              link: http://theairboard.cc
+              text: The Airboard website
       - name: Embeblue
         solutions:
           - name: 
