@@ -75,11 +75,12 @@ body {
   border-radius: 3px;
   min-height: 280px;
   margin-bottom: 2em; }
-
-.hw-img {
-  width: 100%;
-  text-align: center; }
-  .hw-img img {
-    max-height: 15em;
-    max-width: 100%;
-    margin: .5em; }
+  .hardware-solution .more {
+    font-style: italic; }
+  .hardware-solution .hw-img {
+    width: 100%;
+    text-align: center; }
+    .hardware-solution .hw-img img {
+      max-height: 15em;
+      max-width: 100%;
+      margin: .5em; }
