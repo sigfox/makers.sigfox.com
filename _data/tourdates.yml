@@ -100,8 +100,10 @@
 
 - city: Bordeaux
   country: FRA
-  date: 2016/04/05
+  date: 2016/04/05 
   
 - city: Dublin
   country: IRL
   date: 2016/03/09
+  location: DCU Alpha
+  locationLink: http://www.dcualpha.ie/
