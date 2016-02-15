@@ -39,14 +39,18 @@
               {{entry.city}}
             </div>
             <div class="agenda-invite">
-              {%unless oldevent == 'true' %}
-                <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1&entry_1730054643={{entry.city}}&entry.826059317=Ask+for+an+invite">
-                  {%if entry.date%}
-                    Request an invite
-                  {%else%}
-                    Show your interest
-                  {% endif %}
-                </a>
+              {%unless oldevent == 'true'%}
+                {% if entry.soldOut %}
+                  Registration closed
+                {% else %}
+                  <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1&entry_1730054643={{entry.city}}&entry.826059317=Ask+for+an+invite">
+                    {%if entry.date%}
+                      Request an invite
+                    {%else%}
+                      Show your interest
+                    {% endif %}
+                  </a>
+                {% endif %}
               {% endunless %}
             </div>
           </div>

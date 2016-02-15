@@ -49,6 +49,7 @@
   date: 2016/02/16
   location: FabLab London
   locationLink: http://fablablondon.org/
+  soldOut: true
   
 - city: Lyon
   country: FRA
@@ -58,6 +59,7 @@
   date: 2016/02/11 14:00
   location: Startup Lisboa
   locationLink: http://startuplisboa.com/
+  soldOut: true
   
   
 - city: Porto
@@ -65,6 +67,7 @@
   date: 2016/02/12 14:00
   location: UPTEC
   locationLink: http://uptec.up.pt/en/corporate/uptec/technology-center
+  soldOut: true
 
 - city: Copenhagen
   country: DEN    
