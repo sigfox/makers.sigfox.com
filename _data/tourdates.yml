@@ -97,5 +97,10 @@
 
 - city: Luxembourg
   country: LUX
+
 - city: Bordeaux
   country: FRA
+  
+- city: Dublin
+  country: IRL
+  date: 2016/03/09
