@@ -6,61 +6,137 @@ $lightgreen: #028C7E;
 $almostwhite: #fffffe;
 $darkgray: #8c8c8c;
 $lighgray: #d8d8d8;
-$shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.24), 0 0px 2px 0px rgba(0, 0, 0, 0.12);  
+$shadow: 0px 5px 5px rgba(0, 0, 0, 0.19);
 $greenshadow: 2px 2px 2px 2px rgba(1, 93, 91, 0.5);
 
+$purple: #796A87;
+
 body{
-  padding:70px 0 35px 0;
-}
-.navbar, .navbar-inverse{
-  background-color: $lightgreen;
-}
-.navbar{
-  background-image: url('/img/logo-sigfox.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  .container{
-    width:100%;
-    padding-left:180px;
+  padding:130px 0 35px 0;
+  font-family: "Ubuntu",sans-serif;
+  font-weight: lighter;
+  @media (max-width: 768px){
+    padding-top: 80px;
   }
 }
 
-.navbar-inverse{
-  border-color: $darkgreen;
-  .navbar-toggle{
-    border-color: $almostwhite;
+.navbar, .navbar-inverse{
+  
+  vertical-align: baseline;
+  padding: 20px 3%;
+  background-image: url(../img/bg-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  border:none;
+  
+  color: #fff;
+  font-size: 20px;
+  box-shadow: $shadow;
+  
+  @media (max-width: 768px){
+    padding:0;
   }
-  .navbar-nav > li > a{
-    color:$almostwhite;
+  
+  .sigfox-logo{
+    float: left;
+    width:30%;
+    
+    img{
+      width: 346px;
+      max-width: 100%;
+    }
+    
+    
+  }
+ 
+  
+  .navbar-nav{
+    float:right;
+    width: 70%;
+    height:65px;
+    padding-top: 15px;
+    
+    > li > a{
+      color:#fff;
+      text-decoration:none;
+    }
+  }
+  
+  
+  
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover{
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle{
+  border-color:#fff;
+  
+  .icon-bar{
+    background-color:#000;
+  }
+  
+  &.collapsed{
+    .icon-bar{
+      background-color:#fff;
+    }   
+  }
+}
+.navbar-inverse button{
+    margin-top:20px;
+  }
+
+.navbar-inverse .collapsed.sigfox-logo{
+  border:none;
+  width:50%;
+  margin-top:8px;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+  background-color:transparent;
+  
+  .icon-bar{
+    color:#fff,
+  }
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+  border:none;
+}
+/* mobile nav revealed */
+.collapse.in, .collapsing{
+  height:120px;
+  .sigfox-logo{
+    display: none;
   }
   .navbar-nav{
-    > .open, .active{
-      > a, > a:focus, > a:hover{
-        background: $darkgreen;    
+    float:left;
+    width:100%;
+    padding-top:0;
+    font-size:16px;
+    margin-left:10px;
+    
+    li{
+      float:left;
+      width:120px;
+      height:2.5em;
+      margin:3px;
+      padding: 0 2px;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      a{
+        max-height: 80%;
+        overflow: hidden;
+        padding:10px;
+        text-align: center;
       }
     }
-    
-  }  > a, .navbar-nav > .open > a:focus, .navbar-nav > .open > a:hover, .navbar-nav > .active > a, .navbar-nav > .open > a{
-    
-  }
-  
-  .navbar-toggle:focus, .navbar-toggle:hover{
-    background: $almostwhite;
-    border-color: $darkgreen;
-    .icon-bar{
-      background: $lightgreen;  
-    }
   }
 }
-.navbar-brand{
-  padding:0 15px;
-}
-.navbar-brand img{
-  height:100%;
-}
-
-.product{
-  
+/* /nav */
+h2{
+  color: $purple;
+  font-size:30px;
+  margin: 0px 0px 15px;
+  border-bottom:1px dashed $purple;
 }
 .product-intro{
   font-weight: bold;
