@@ -2,9 +2,9 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 $darkgreen: #0f5451;
-$lightgreen: #028C7E;
+$lightgreen: #009680;
 $almostwhite: #fffffe;
-$darkgray: #8c8c8c;
+$darkgray: #636363;
 $lighgray: #d8d8d8;
 $shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.24), 0 0px 2px 0px rgba(0, 0, 0, 0.12);
 $verticalmargins : 70px;
@@ -12,9 +12,27 @@ $verticalmargins : 70px;
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:500,400,300);
 body{
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-family: "Ubuntu",sans-serif;
+  font-weight: lighter;
 }
+
+.navbar, .navbar-inverse{
+  background-image:none;
+  background-color:#fff;
+  .navbar-nav{
+    li > a{
+      color:$darkgray;
+     
+    }
+   >.active > a:focus, > .active > a:hover, > .active> a, > li > a:focus, > li > a:hover{
+      
+      color:$lightgreen;
+    }
+    
+  }
+  
+}
+.navbar-inverse .navbar-nav
 .container{
   width: 100%;
   padding:0;
@@ -33,60 +51,6 @@ h1{
 }
 section{
   padding: $verticalmargins 0;
-}
-.navbar{
-  box-shadow: $shadow;
-  text-transform: uppercase;
-  font-weight: 400;
-  background: $lightgreen;
-  height:48px;
-  max-height: 48px;
-  
-  .navbar-header{
-    margin-left:5%;
-  }
-  #navbar{
-    margin-right:10%;
-  }
-  .nav-logo{
-    max-height: 48px;
-  }
-  
-  li{
-    line-height: 16px;
-    font-size: 14px;
-  }
-  
-  
-}
-.navbar-inverse{
-  border:none;
-  .navbar-toggle{
-    border:1px solid #fff;
-  }
-  .icon-bar{
-    background-color: #fff;
-  }
-  .navbar-toggle:focus, .navbar-toggle:hover{
-    background: #fff;
-    border-color: $lightgreen;
-    .icon-bar{
-      background: $lightgreen;  
-    }
-  }
-}
-.navbar, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, .navbar li a{
-  min-height:48px;
-  height:48px;
- 
-}
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
-  background: $lightgreen;
-  color:#fff;
-  border-bottom: 2px solid #fff;
-}
-.navbar-inverse .navbar-nav>li>a{
-  color:#fff;
 }
 
 #header{
