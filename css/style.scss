@@ -63,11 +63,11 @@ p{
 
 .twittericon::before{
    background-image:url(/img/sprite-socials.svg);
-  background-position: -11px 0;
+  background-position: -11px 3px;
   width: 36px;
-  background-size: 63px 42px;
+  background-size: 63px 21px;
   background-repeat: no-repeat;
-  height:30px;
+  height:25px;
 
         
 }
@@ -144,4 +144,18 @@ p{
   
 
   
+}
+.news{
+  box-shadow: $shadow;
+  height:100px;
+  margin-bottom: 20px;
+  padding:20px;
+  
+  .news-thumbnail{
+    max-width: 180px;
+    max-height: 80px; 
+  }
+  a{
+    color:#000;
+  }
 }
