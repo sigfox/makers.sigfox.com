@@ -4,7 +4,7 @@
 $darkgreen: #0f5451;
 $lightgreen: #009680;
 $almostwhite: #fffffe;
-$darkgray: #636363;
+$darkgray: #3e3e3e;
 $lighgray: #d8d8d8;
 $shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.24), 0 0px 2px 0px rgba(0, 0, 0, 0.12);
 $verticalmargins : 70px;
@@ -121,7 +121,7 @@ section{
 }
 
 
-#program, #contact, #footer{
+#program, #contact{
   h1{
     color: #fff;
   }
@@ -246,11 +246,4 @@ section{
   a{
     color:#fff;
   }
-}
-.footer {
-  text-align: center;
-  font-size:12px;
-  width: 100%;
-  height: 29px;
-  color:$almostwhite;
 }

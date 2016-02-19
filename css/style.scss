@@ -2,17 +2,24 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 $darkgreen: #015D5B;
-$lightgreen: #028C7E;
+$lightgreen: #009680;
 $almostwhite: #fffffe;
-$darkgray: #8c8c8c;
+$darkgray: #3e3e3e;
 $lighgray: #d8d8d8;
 $shadow: 0px 5px 5px rgba(0, 0, 0, 0.19);
 $greenshadow: 2px 2px 2px 2px rgba(1, 93, 91, 0.5);
 
 $purple: #796A87;
 
+*, *:after, *:before{
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 body{
-  padding:130px 0 35px 0;
+  padding:130px 0 0 0;
   font-family: "Ubuntu",sans-serif;
   font-weight: lighter;
   @media (max-width: 768px){
@@ -21,12 +28,27 @@ body{
 }
 
 
-h2{
-  color: $purple;
-  font-size:30px;
+h1, h2{
+  color: $lightgreen;
+  text-align: center;
   margin: 0px 0px 15px;
-  border-bottom:1px dashed $purple;
+  font-weight: 100;
 }
+h1{
+  font-size:46px;
+  
+}
+h2{
+  font-size:30px;
+}
+p{
+    
+  
+  text-align: justify;
+  margin: 0 auto 10px;
+}
+
+
 .product-intro{
   font-weight: bold;
   font-style: italic;
@@ -37,35 +59,28 @@ h2{
 }
 
 .twittericon::before{
-  background-image: url('/img/twitter.png');
+   background-image:url(/img/sprite-socials.svg);
+  background-position: -11px 0;
+  width: 36px;
+  background-size: 63px 42px;
+  background-repeat: no-repeat;
+  height:30px;
+
+        
 }
 .githubicon::before{
     background-image: url('/img/github.png');
+  height:28px;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center center;
+  width:36px;
+  
 
 }
 .twittericon::before, .githubicon::before{
   content: " ";
-  
-  background-size:contain;
   display: inline-block;
-  width:25px;
-  height:25px;
-}
-.footer {
-  position: fixed;
-  z-index:2;
-  font-size:12px;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 25px;
-  background-color: $lightgreen;
-  color:$almostwhite;
-
-  p{
-    padding-top:4px;
-    padding-left: 10px;
-  }
 }
 
 
@@ -96,4 +111,38 @@ h2{
       margin:.5em;
     }
   }
+}
+
+.contact-container{
+  background-image: url('/img/centralpark.jpg');
+  background-size: cover;
+
+  left:0;
+  right:0;
+  color:#fff;
+  padding:50px 0 80px;
+  
+  h1,h2,p{
+    color:#fff;
+  }
+  p{
+    text-align: center;
+    font-size:20px;
+    line-height: 30px;
+    margin:1em 0;
+    a{
+      color:#fff;
+      &:hover{
+        background:url(../img/hover-link.png) repeat-x;
+        background-position: bottom;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  .contact-details p{
+    text-align: justify;
+  }
+
+  
 }
