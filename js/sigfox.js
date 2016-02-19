@@ -1,6 +1,6 @@
 (function(){
   $(document).ready(function() {
-    initNav();
+   // initNav();
   });
   
   function initNav(){
