@@ -145,17 +145,3 @@ p{
 
   
 }
-.news{
-  box-shadow: $shadow;
-  height:100px;
-  margin-bottom: 20px;
-  padding:20px;
-  
-  .news-thumbnail{
-    max-width: 180px;
-    max-height: 80px; 
-  }
-  a{
-    color:#000;
-  }
-}

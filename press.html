@@ -1,0 +1,23 @@
+---
+layout: news
+---
+<div class="news-list container theme-showcase" role="main">
+  <h1>Press releases</h1>
+  <div class="row">
+    {% for entry in site.posts %}
+    
+      <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+          <div class="news">
+            {% if entry.image %}
+              <div class="thumbnail">
+                <a href="{{ entry.url }}"><img src="{{entry.image}}" /></a>
+              </div>
+            {% endif%}
+            <div class="title">
+              <a href="{{ entry.url }}">{{ entry.title }}</a>
+            </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

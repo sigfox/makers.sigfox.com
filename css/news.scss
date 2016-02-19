@@ -1,0 +1,51 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+$darkgreen: #015D5B;
+$lightgreen: #009680;
+$darkgray: #3e3e3e;
+$lighgray: #d8d8d8;
+$shadow: 0px 5px 5px rgba(0, 0, 0, 0.19);
+.news-list{
+  
+}
+.news{
+  box-shadow: $shadow;
+  height:260px;
+  margin-bottom: 20px;
+  
+  color: $darkgray;
+  font-size:20px;
+  overflow: hidden;
+  
+  .thumbnail{
+    margin-bottom:8px;
+    border: none;
+    
+    img{
+      max-height:100px;
+    }
+  }
+  .title{
+    margin: 15px;
+  }
+  a{
+    color:#000;
+  }
+}
+
+.news-body{
+  .illustration{
+    margin:20px;
+    img{
+      max-width:100%;
+    max-height: 200px;  
+    }
+  }
+  p{
+    font-size:18px;
+    line-height: 28px;
+    text-align: justify;
+  }
+}
