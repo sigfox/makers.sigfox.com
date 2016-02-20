@@ -13,6 +13,7 @@ layout: news
                 <a href="{{ entry.url }}"><img src="{{entry.image}}" /></a>
               </div>
             {% endif%}
+            <div class="date">{{ entry.date | date: '%B %d, %Y' }}</div>
             <div class="title">
               <a href="{{ entry.url }}">{{ entry.title }}</a>
             </div>
