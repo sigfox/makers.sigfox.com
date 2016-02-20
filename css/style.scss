@@ -62,7 +62,7 @@ p{
 }
 
 .twittericon::before{
-   background-image:url(../img/sprite-socials.svg);
+   background-image:url({{site.url}}/img/sprite-socials.svg);
   background-position: -11px 3px;
   width: 36px;
   background-size: 63px 21px;
@@ -117,7 +117,7 @@ p{
 }
 
 .contact-container{
-  background-image: url('../img/centralpark.jpg');
+  background-image: url('{{site.url}}/img/centralpark.jpg');
   background-size: cover;
 
   left:0;
@@ -135,7 +135,7 @@ p{
     a{
       color:#fff;
       &:hover{
-        background:url(../img/hover-link.png) repeat-x;
+        background:url({{site.url}}/img/hover-link.png) repeat-x;
         background-position: bottom;
         text-decoration: none;
       }

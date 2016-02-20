@@ -104,7 +104,7 @@ section{
 }
 
 .butterfly{
-  background-image: url(../img/tour/butterfly.png);
+  background-image: url({{site.url}}/img/tour/butterfly.png);
   background-repeat: no-repeat;
   background-position: center center;
   height:51px;
@@ -129,19 +129,19 @@ section{
     background-position: center center;
     padding-top:70%;
     &.program-pres{
-      background-image: url(../img/tour/presentation.png)      
+      background-image: url({{site.url}}/img/tour/presentation.png)      
     }
     &.program-demo{
-      background-image: url(../img/tour/demo.png)    
+      background-image: url({{site.url}}/img/tour/demo.png)    
     }
     &.program-work{
-      background-image: url(../img/tour/tools.png)    
+      background-image: url({{site.url}}/img/tour/tools.png)    
     }
     &.program-party{
-      background-image: url(../img/tour/beer.png)    
+      background-image: url({{site.url}}/img/tour/beer.png)    
     }
     &.program-gift{
-      background-image: url(../img/tour/kit.png)    
+      background-image: url({{site.url}}/img/tour/kit.png)    
     }
   }
 }
@@ -193,31 +193,31 @@ section{
       background-position: 50% 50%;
 
       &.FRA{
-        background-image: url(../img/tour/france.png);
+        background-image: url({{site.url}}/img/tour/france.png);
       }
       &.GBR{
-        background-image: url(../img/tour/uk.png);
+        background-image: url({{site.url}}/img/tour/uk.png);
       }
       &.ESP{
-        background-image: url(../img/tour/spain.png);
+        background-image: url({{site.url}}/img/tour/spain.png);
       }
       &.ITA{
-        background-image: url(../img/tour/italy.png);
+        background-image: url({{site.url}}/img/tour/italy.png);
       }
       &.FIN{
-        background-image: url(../img/tour/finland.png);
+        background-image: url({{site.url}}/img/tour/finland.png);
       }
       &.DEN{
-        background-image: url(../img/tour/denmark.png);
+        background-image: url({{site.url}}/img/tour/denmark.png);
       }
       &.NED{
-        background-image: url(../img/tour/netherlands.png);
+        background-image: url({{site.url}}/img/tour/netherlands.png);
       }
       &.POR{
-        background-image: url(../img/tour/portugal.png);
+        background-image: url({{site.url}}/img/tour/portugal.png);
       }
       &.BEL{
-        background-image: url(../img/tour/belgium.png);
+        background-image: url({{site.url}}/img/tour/belgium.png);
       }
     }
     @media (max-width: 768px) {

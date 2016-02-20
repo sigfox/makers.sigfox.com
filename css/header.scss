@@ -7,7 +7,7 @@ $shadow: 0px 5px 5px rgba(0, 0, 0, 0.19);
   background-color:#fff;
   vertical-align: baseline;
   padding: 20px 3%;
-  background-image: url(../img/bg-header.jpg);
+  background-image: url({{site.url}}/img/bg-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -45,7 +45,7 @@ $shadow: 0px 5px 5px rgba(0, 0, 0, 0.19);
       text-decoration:none;
     }
      li >a:focus, li > a:hover{
-      background:url(../img/hover-link.png) repeat-x;
+      background:url({{site.url}}/img/hover-link.png) repeat-x;
       background-position: 0 80%;
     }
   }
