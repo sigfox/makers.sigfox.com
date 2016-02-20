@@ -2,6 +2,28 @@
 layout: news
 ---
 <div class="news-list container theme-showcase" role="main">
+  <h1>Press</h1>
+  <div class="row">
+    {% for entry in site.categories.press %}
+    
+      <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+          <div class="news">
+            {% if entry.image %}
+              <div class="thumbnail">
+                <a href="{{site.url}}{{ entry.url }}"><img src="{{site.url}}{{entry.image}}" /></a>
+              </div>
+            {% endif%}
+            {%if entry.date %}
+              <div class="date">{{ entry.date | date: '%B %d, %Y' }}</div>
+            {% endif %}
+            <div class="title">
+              <a href="{{site.url}}{{ entry.url }}">{{ entry.title }}</a>
+            </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  
   <h1>News</h1>
   <div class="row">
     {% for entry in site.categories.news %}
