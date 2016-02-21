@@ -1,0 +1,109 @@
+- city: Lille
+  country: FRA
+  date: 2015/10/08 14:00
+  location: Euratech
+  locationLink: http://www.euratechnologies.com/en/location
+  
+- city: Paris
+  country: FRA
+  date: 2015/10/22 14:00
+  location: Usine IO
+  locationLink: http://www.usine.io/contact/
+
+- city: Grenoble
+  country: FRA
+  date: 2015/10/27 14:00
+  location: La Casemate
+  locationLink: http://lacasemate.fr/qui-sommes-nous/infos-pratiques/
+
+- city: Madrid
+  country: ESP
+  date: 2015/11/25 16:00
+  location: Makespace Madrid
+  locationLink: http://makespacemadrid.org
+
+- city: Barcelona
+  country: ESP
+  date: 2015/11/26 15:00
+  location: FabLab Barcelona
+  locationLink: http://beta.fablabbcn.org/contact.html
+  
+
+- city: Toulouse
+  country: FRA
+  date: 2015/11/19
+  location: IoT Valley
+  locationLink: http://www.iot-valley.fr/
+  
+- city: Paris
+  country: FRA
+  date: 2015/12/10
+  location: le Fab Shop
+  locationLink: http://www.lefabshop.fr/
+  
+- city: Amsterdam
+  country: NED
+  
+- city: London
+  country: GBR
+  date: 2016/02/16
+  location: FabLab London
+  locationLink: http://fablablondon.org/
+  soldOut: true
+  
+- city: Lyon
+  country: FRA
+  
+- city: Lisbon
+  country: POR
+  date: 2016/02/11 14:00
+  location: Startup Lisboa
+  locationLink: http://startuplisboa.com/
+  soldOut: true
+  
+  
+- city: Porto
+  country: POR
+  date: 2016/02/12 14:00
+  location: UPTEC
+  locationLink: http://uptec.up.pt/en/corporate/uptec/technology-center
+  soldOut: true
+
+- city: Copenhagen
+  country: DEN    
+    
+- city: Angers
+  country: FRA
+  
+- city: Prague
+  country: CZE  
+
+- city: Helsinki
+  country: FIN
+  date: 2015/11/10
+  location: Aalto Design Factory
+  locationLink: http://www.aaltodesignfactory.fi/
+  
+  
+- city: Nice
+  country: FRA
+  
+
+- city: Brussels
+  country: BEL
+
+- city: Rome
+  country: ITA
+
+- city: Luxembourg
+  country: LUX
+
+- city: Bordeaux
+  country: FRA
+  date: 2016/04/05 
+  
+- city: Dublin
+  country: IRL
+  date: 2016/03/09
+  location: DCU Alpha
+  locationLink: http://www.dcualpha.ie/

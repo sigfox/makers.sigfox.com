@@ -1,0 +1,34 @@
+<section id="prototyping">
+  <h1>Prototyping</h1>
+  {% for platform in site.data.prototyping %}
+    <h2 id="proto-{{platform.type}}">{{platform.fullname}}</h2>
+    <div class="row">
+      {% for entry in platform.items%}
+        <div class="col-md-4 col-sm-6 col-xs-12 product">
+          <h3>{{ entry.name}}</h3>
+          {% if entry.intro %}
+            <div class="product-intro">{{entry.intro}}</div>
+          {% endif %}
+          {% if entry.image%}
+            <div class="product-illustration">
+              <img src="{{ entry.image}}" class="img-responsive" />
+            </div>
+          {% endif %}
+          <p>
+            {{entry.description}}
+          </p>
+          {%if entry.codeSample %}
+            <pre class="pre-scrollable">
+              {{entry.codeSample}}
+            </pre>
+          {% endif %}
+          {% if entry.linkUrl %}
+            <p>
+              <a href="{{entry.linkUrl}}">{{entry.linkText}}</a>
+            </p>
+          {% endif %}
+        </div>
+      {% endfor %}
+      </div>
+    {% endfor %}
+  </section>

@@ -1,0 +1,147 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+$darkgreen: #015D5B;
+$lightgreen: #009680;
+$almostwhite: #fffffe;
+$darkgray: #3e3e3e;
+$lighgray: #d8d8d8;
+$shadow: 0px 5px 5px rgba(0, 0, 0, 0.19);
+$greenshadow: 2px 2px 2px 2px rgba(1, 93, 91, 0.5);
+
+$purple: #796A87;
+
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300);
+
+*, *:after, *:before{
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body{
+  padding:130px 0 0 0;
+  font-family: "Ubuntu",sans-serif;
+  font-weight: lighter;
+  @media (max-width: 768px){
+    padding-top: 80px;
+  }
+}
+
+
+h1, h2{
+  color: $lightgreen;
+  text-align: center;
+  margin: 0px 0px 15px;
+  font-weight: 100;
+}
+h1{
+  font-size:46px;
+  
+}
+h2{
+  font-size:30px;
+}
+p{
+    
+  
+  text-align: justify;
+  margin: 0 auto 10px;
+}
+
+
+.product-intro{
+  font-weight: bold;
+  font-style: italic;
+}
+
+#transceivers .row h3{
+  text-align: center;
+}
+
+.twittericon::before{
+   background-image:url({{site.url}}/img/sprite-socials.svg);
+  background-position: -11px 3px;
+  width: 36px;
+  background-size: 63px 21px;
+  background-repeat: no-repeat;
+  height:25px;
+
+        
+}
+.githubicon::before{
+    background-image: url('../img/github.png');
+  height:28px;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center center;
+  width:36px;
+  
+
+}
+.twittericon::before, .githubicon::before{
+  content: " ";
+  display: inline-block;
+}
+
+
+#evalkits{
+  .row > div{
+    min-height:310px;
+  }
+}
+
+
+.hardware-solution{
+  padding: 1px 20px;
+  box-shadow: $shadow;
+  border-radius: 3px;
+  min-height: 280px;
+  margin-bottom: 2em;
+  
+  .more{
+    font-style: italic;
+  }
+  
+  .hw-img{
+    width: 100%;
+    text-align:center;
+    img{
+      max-height: 15em;
+      max-width: 100%;
+      margin:.5em;
+    }
+  }
+}
+
+.contact-container{
+  background-image: url('{{site.url}}/img/centralpark.jpg');
+  background-size: cover;
+
+  left:0;
+  right:0;
+  color:#fff;
+  padding:50px 0 80px;
+  
+  h1,h2,p{
+    color:#fff;
+  }
+  p{
+    font-size:20px;
+    line-height: 30px;
+    margin:1em 0;
+    a{
+      color:#fff;
+      &:hover{
+        background:url({{site.url}}/img/hover-link.png) repeat-x;
+        background-position: bottom;
+        text-decoration: none;
+      }
+    }
+  }
+  
+
+  
+}

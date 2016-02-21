@@ -1,0 +1,104 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+$darkgray: #3e3e3e;
+$lighgray: #d8d8d8;
+footer{
+  font-size: 16px;
+  background-color: $darkgray;
+  color:#fff;
+  overflow: auto;
+  float:none;
+  clear:both;
+  padding:46px 36px 0;
+  
+  h2{
+    color:#fff;
+    text-align: left;
+    font-size:  25px;
+    margin-bottom: 16px;
+  }
+  ul{
+    list-style: none;
+    li{
+      margin-bottom: 16px;
+    }
+  }
+  a{
+    color:#fff;
+    text-decoration:none;
+  }
+  
+  h2, p, li{
+    margin-bottom: 16px;
+  }
+  
+  #social-links li{
+    margin-right: 14px;
+    display: inline-block;
+        
+    a{
+      background-image:url({{site.url}}/img/sprite-socials.svg);
+      background-size: 94px 26px;
+      background-repeat: no-repeat;
+      transition: opacity .3s;
+      height:30px;
+      display: block;
+      text-indent: -999px;
+
+      &.fb{
+       background-position:4px 0;
+        width:20px;
+
+      }
+      &.tw{
+        background-position: -28px 0;
+        width: 36px;
+
+      }
+    }
+  }
+  
+  form{
+    margin-top: 28px;
+    label{
+      display: none;
+    }
+    input[type=email]{
+      margin: 0;
+      padding: 0 66px 0 16px;
+      height: 38px;
+      width: 100%;
+      line-height: 38px;
+      font-size: 16px;
+      border: 1px solid #fff;
+      background-color: $darkgray;
+      float:left;
+    }
+    input[type=submit]{
+      cursor:pointer;
+      margin: 0;
+      padding:0;
+      height: 38px;
+      width: 50px;
+      border: 1px solid #fff;
+      background: url({{site.url}}/img/bg-submit-nl.png) #fff no-repeat center;
+      text-indent:-999px;
+      top:0;
+      right:0;
+      z-index:1;
+      float: left;
+      margin-left: -50px;
+    }
+  }
+  
+  .footer-signature{
+    text-align: center;
+    font-size:20px;
+    margin:20px 0;
+    img{
+      height:30px;
+      margin: 0 5px;
+    }
+  }
+}

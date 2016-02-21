@@ -1,0 +1,73 @@
+{% assign today = site.time | date:"%Y-%m-%d"%}
+<section id="agenda">
+  <div class="container">
+    <h1>Agenda</h1>
+    <div class="row">
+      {% assign entries = site.data.tourdates | sort:"date","first" | reverse%}
+      {% for entry in entries %}
+        {% assign eventdate = entry.date | date:"%Y-%m-%d"%}
+        {% capture oldevent%}{%if today > eventdate %}true{%else%}false{%endif%}{%endcapture%}
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+          <div class="agenda-entry country {{entry.country}}{% if oldevent == 'true'%} old-event{% endif %} ">
+            {%if entry.date%}
+              <div class="agenda-date">
+                <date datetime="{{entry.date}}">
+                  
+                  {{entry.date | date:"%B %d" | upcase }}
+
+                  {% assign time = entry.date|date:"%H" %}
+                  {%if time != "00" %}
+                    {{entry.date | date:"%H:%M"}}
+                  {% endif%}
+                </date>
+                 {% if entry.location %}
+                  <div class="agenda-location">
+                    {% if entry.locationLink%}
+                      @&nbsp;<a target="_blank"   href="{{entry.locationLink}}">{{entry.location}}</a>
+                    {%else%}
+                      @&nbsp;{{entry.location}}
+                    {%endif%}
+                  </div>
+                {%endif%}
+              </div>
+            {%else%}
+              <div class="agenda-date agenda-date-tbd">
+                Considering this city
+              </div>
+            {% endif %}
+            <div class="agenda-city">
+              {{entry.city}}
+            </div>
+            <div class="agenda-invite">
+              {%unless oldevent == 'true'%}
+                {% if entry.soldOut %}
+                  Registration closed
+                {% else %}
+                  <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1&entry_1730054643={{entry.city}}&entry.826059317=Ask+for+an+invite">
+                    {%if entry.date%}
+                      Request an invite
+                    {%else%}
+                      Show your interest
+                    {% endif %}
+                  </a>
+                {% endif %}
+              {% endunless %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="agenda-entry">
+          <div class="agenda-city">
+            Want the SIGFOX makers tour to come to your city ?
+          </div>
+          <div class="agenda-date">
+            <a target="_blank" href="https://docs.google.com/a/sigfox.com/forms/d/1018ap9owfiMG25OaEzZ5rNzWvQeDQIf8owPHBLUxlmo/viewform?pli=1">
+              Let us know
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,242 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+$darkgreen: #0f5451;
+$lightgreen: #009680;
+$almostwhite: #fffffe;
+$darkgray: #3e3e3e;
+$lighgray: #d8d8d8;
+$shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.24), 0 0px 2px 0px rgba(0, 0, 0, 0.12);
+$verticalmargins : 70px;
+
+.navbar, .navbar-inverse{
+  background-image:none;
+  background-color:#fff;
+  .navbar-nav{
+    li > a{
+      color:$darkgray;
+     
+    }
+   >.active > a:focus, > .active > a:hover, > .active> a, > li > a:focus, > li > a:hover{
+      
+      color:$lightgreen;
+    }
+    
+  }
+  
+}
+.navbar-inverse .navbar-nav
+.container{
+  width: 100%;
+  padding:0;
+}
+.row{
+  margin:0;
+}
+h1{
+  color: $lightgreen;  
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  margin-top:0;
+  margin-bottom:$verticalmargins/2;
+
+}
+section{
+  padding: $verticalmargins 0;
+}
+
+#header{
+  padding-top: 0;
+  .banner img{
+    width: 100%;
+  }
+  .request{
+    background-color: $lightgreen;
+    box-shadow: $shadow;
+    margin-top:-100px;
+    font-size:14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    width: 195px;
+    height:40px;
+    line-height: 40px;
+    opacity: 0.99;
+    margin-left: calc(50% - (195px/2));
+    
+    a{
+      color:#fff;
+    }
+      
+  }
+  @media (max-width: 992px) {
+    .banner{
+      display: none;
+    }
+  }
+}
+
+#about{
+  font-size:16px;
+  line-height: 24px;
+  h1{
+    color: $lightgreen;
+
+  }
+  a{
+    color:$darkgreen;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+
+  .demo-img{
+    img{
+      width:460px;
+      max-width: 100%;
+      height:360px;
+      
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.butterfly{
+  background-image: url({{site.url}}/img/tour/butterfly.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height:51px;
+  width: 100%;
+  
+  margin: 50px 0;
+}
+
+
+#program, #contact{
+  h1{
+    color: #fff;
+  }
+  background-color:$lightgreen;
+  color:#fff; 
+  padding-bottom: $verticalmargins;
+}
+#program{
+  .program-entry{
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center center;
+    padding-top:70%;
+    &.program-pres{
+      background-image: url({{site.url}}/img/tour/presentation.png)      
+    }
+    &.program-demo{
+      background-image: url({{site.url}}/img/tour/demo.png)    
+    }
+    &.program-work{
+      background-image: url({{site.url}}/img/tour/tools.png)    
+    }
+    &.program-party{
+      background-image: url({{site.url}}/img/tour/beer.png)    
+    }
+    &.program-gift{
+      background-image: url({{site.url}}/img/tour/kit.png)    
+    }
+  }
+}
+
+.agenda-entry, .program-entry{
+  text-align:center;
+}
+
+#agenda{
+  .row{
+    padding: 0 11%;
+  }
+  .agenda-entry{
+    &.old-event{
+      opacity: .5;
+    }
+    max-height: 190px;
+    min-height: 190px;
+    box-shadow: $shadow;
+    color: $darkgray;
+    padding: 35px 40px;
+    margin-bottom: 30px;
+    a{
+      color: $lightgreen;
+      &:after{
+        content: "→";
+      }
+    }
+    .agenda-city{
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #000;
+      margin:20px 0;
+    }
+    .agenda-date{
+      height: 40px;
+      
+      a:after{
+        content:""
+      }
+    }
+    .agenda-invite{
+      font-weight: 400;
+      color: $lightgreen;
+    }
+    &.country{
+      background-repeat: no-repeat;
+      background-size:33%;
+      background-position: 50% 50%;
+
+      &.FRA{
+        background-image: url({{site.url}}/img/tour/france.png);
+      }
+      &.GBR{
+        background-image: url({{site.url}}/img/tour/uk.png);
+      }
+      &.ESP{
+        background-image: url({{site.url}}/img/tour/spain.png);
+      }
+      &.ITA{
+        background-image: url({{site.url}}/img/tour/italy.png);
+      }
+      &.FIN{
+        background-image: url({{site.url}}/img/tour/finland.png);
+      }
+      &.DEN{
+        background-image: url({{site.url}}/img/tour/denmark.png);
+      }
+      &.NED{
+        background-image: url({{site.url}}/img/tour/netherlands.png);
+      }
+      &.POR{
+        background-image: url({{site.url}}/img/tour/portugal.png);
+      }
+      &.BEL{
+        background-image: url({{site.url}}/img/tour/belgium.png);
+      }
+    }
+    @media (max-width: 768px) {
+      padding: 15px 9px; 
+      &.country{
+       background-size:85%;
+      }
+      .agenda-date-tbd{
+        font-size:11px;
+        line-height: 20px;
+      }
+      
+
+        
+    }
+  }
+}
+#contact{
+  a{
+    color:#fff;
+  }
+}

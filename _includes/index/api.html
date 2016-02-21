@@ -1,0 +1,93 @@
+<section id="api">
+    <h1>API & Callbacks</h1>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>
+          Once a device sends a message, there are 3 ways to fetch & use the data :
+          <ul>
+            <li>Web interface on http://backend.sigfox.com</li>
+            <li>REST API</li>
+            <li>Callback mechanism</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>REST API</h3>
+        <p>
+          To access the API, you need to set up your access first.<br />
+          To do so, go to the <a href="https://backend.sigfox.com/group/">Group</a> section on http://backend.sigfox.com .<br />
+          In the sidebar, click on API access & then click <i>New</i> in the top-right corner.<br />
+          You should now see your credentials, and a link to the API documentation relevant to your access rights
+        </p>
+        <p>
+          Using the API you can :
+          <ul>
+            <li>Retrieve the list of devices associated to a device type</li>
+            <li>Retrieve the messages of a given device</li>
+            <li>Get metrics about a device's messages</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Callbacks</h3>
+        <p>
+          You can subscribe to receive an HTTP callback for every message received & processed by the SIGFOX backend.<br />
+          The following data will be sent to your application : 
+          <div class="row">
+            <div class="col-sm-9">
+              <div class="panel panel-default">
+                <div class="panel-heading">Data sent in the callback body</div>
+                <div class="panel-body">
+                  One callback is called per emitted message. <br />
+                  You can optionally subscribe to receive a callback each time a station receives your message. Deduplication will then occur on your side.<br /><br />
+                  You can choose to receive the callback using a GET or POST HTTP request.
+                </div>
+                <table class="table table-condensed table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th>Variable</th>
+                      <th>Meaning</th>
+                      <th>Unit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>device</td>
+                      <td>Device unique ID</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>time</td>
+                      <td>Timestamp of the message</td>
+                      <td>seconds</td>
+                    </tr>
+                    <tr>
+                      <td>data</td>
+                      <td>The data payload you sent</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>rssi</td>
+                      <td>Received Signal Strength Intensity on the base station that received your message. </td>
+                      <td>dBm</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </p>
+        <p>
+          To avoid side effects, you should send an <code>HTTP 200</code> response as soon as the callback is received on your side.<br />
+          If the SIGFOX backend receives an error status, it assumes that the message wasn't properly received, and send a retry shortly after. This will be seen as another message by your system.<br />
+        </p>
+        <p>
+          An example of a quick implementation of a callback handler is available <a href="http://github.com/nicolsc/sigfox-callback-demo">here</a>.
+        </p>
+      </div>
+    </div>
+  </section>

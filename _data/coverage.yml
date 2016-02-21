@@ -1,0 +1,45 @@
+update: 2016/01/11
+countries:
+  - name: France
+    status: nationwide
+  - name: The Netherlands
+    status: nationwide
+  - name: Spain
+    status: nationwide
+  - name: The United Kingdom (10 of the largest cities)
+    status: nationwide
+  - name: Belgium
+    status: rollout
+  - name: Luxembourg
+    status: rollout
+  - name: Denmark
+    status: rollout
+  - name: Portugal
+    status: nationwide
+  - name: USA
+    status: rollout
+  - name: Czech Republic
+    status: rollout
+  - name: Italy
+    status: rollout
+  - name: Ireland
+    status: rollout
+cities:
+  - name: Milan
+    country: Italy
+  - name: Munich
+    country: Germany
+  - name: Dublin
+    country: Ireland
+  - name: San Francisco
+    country: USA
+  - name: Bogota
+    country: Colombia
+  - name: Santiago
+    country: Chile
+  - name: Warsaw
+    country: Poland
+  - name: Prague
+    country: Czech Republic
+  - name: Vienna
+    country: Austria
