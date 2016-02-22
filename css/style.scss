@@ -142,6 +142,13 @@ p{
     }
   }
   
+  
+  @media (max-width: 768px) {
+    .contact-details .col-xs-12 p{
+      text-align: left;
+    }
+  }
+  
 
   
 }
