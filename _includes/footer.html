@@ -27,20 +27,7 @@
         </ul>
       </div>
       <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-        <h2>Keep in touch !</h2>
-        <div id="newsletter_form">
-          <p>Subscribe to our corporate newsletter</p>
-          <form id="newsletter" name="newsletter" class="emkH5form salesforceForm" method="post" action="//www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" novalidate="true">
-            <input type="hidden" name="oid" value="00D250000004qrt">
-
-            <input type="hidden" name="retURL" value="//ssl2.ovh.net/~sigfoxcofs/?f=newsletter#newsletter-form">
-            <input type="hidden" id="lead_source" name="lead_source" value="Web">
-            <input type="hidden" id="00Nb0000009i26a" name="00Nb0000009i26a" title="Formulaire web" value="Newsletter">
-            <label for="email">Email*</label>
-            <input type="email" name="email" id="email" placeholder="Your email address *" class="email required" required="required" maxlength="80">
-            <input type="submit" name="button" id="submit-form" value="Send">
-          </form>
-        </div>
+        {% include newsletter.html %}
       </div>
     </div>
     <div class="footer-signature">Made by<img alt="sigfox" title="sigfox" src="/img/tour/butterfly@3x.png" />with ♡</div>

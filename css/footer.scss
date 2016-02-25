@@ -3,6 +3,7 @@
 ---
 $darkgray: #3e3e3e;
 $lighgray: #d8d8d8;
+$lightgreen: #009680;
 footer{
   font-size: 16px;
   background-color: $darkgray;
@@ -58,7 +59,10 @@ footer{
       }
     }
   }
-  
+  .newsletter .message{
+    display: none;
+    color: $lightgreen;
+  }
   form{
     margin-top: 28px;
     label{
