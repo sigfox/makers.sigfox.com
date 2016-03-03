@@ -110,7 +110,7 @@ solutions:
           - name: Akeru
             img: snootlab-akeru.png
             desc: Make prototypes with SIGFOX IoT technology and Arduino C language.<br /><br />This new version of Akeru offers a better access to advanced features of the modem and a low power usage. Many applications have been developed with Akeru (weather station, bee hive monitoring, trackers, etc.).<br /><br />Gives you the possibility to use the IoT SIGFOX technology as easy as sending data to a serial port or blinking a LED with Arduino.
-            buy:
+            more:
               link: http://akeru.cc
               text: Available on Snootlab.com
       - name: Adeunis
@@ -118,11 +118,17 @@ solutions:
           - name: Demonstrator
             img: adeunis-demonstrator.png
             desc: The SIGFOX demonstrator is a ready to use system which provides connection to the SIGFOX network.<br />With 3 integrated sensors (GPS, accelerometer, temperature) this demonstrator allows to transmit and instantly view the radio frames on a dedicated web app<br /><br />This demonstrator is particularly suitable for the validation of applications like sensor networks, environment, intelligent buildings, metering, security, or M2M.
+            more: 
+                link: http://www.adeunis-rf.com/en/products/sigfox-ready-products/sigfox-by-adeunis-rf-demonstrator
+                text: Adeunis website
       - name: Connit
         solutions:
           - name: Live black USB
             img: connit-usb.png
             desc: Device with USB output can be connected to the SIGFOX network thanks to Live Black USB.<br /> It allows for a quick setup with multiple sensors.<br />It can be used as a backup channel in addition to other networks.<br /><br />Connected to a computer like a Raspberry Pi, Live Black USB is made for rapid prototyping.
+            more: 
+                link: http://connit.fr/
+                text: Connit website
       - name: AXEL Elettronica
         solutions:
           - name: Smart Everything
