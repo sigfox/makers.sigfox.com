@@ -94,7 +94,7 @@ solutions:
           - name: TD1208 EVK
             img: td-evb.png
             desc: Evaluate the SIGFOX technology and our modules by sending simple AT commands!<br />Available for TD1207, TD1208, TD1508, TD1204, TD1205<br />Included&colon; 1 EVB with a TD module, 1 antenna, 1 FDTI cable, 1 year subscription to the SIGFOX network, 1 year access to TD Next's developer backend
-      - name: Telit
+      - name: Telit 
         solutions:
           - name: LE51-868SEVK
             img: telit-le51.jpg
