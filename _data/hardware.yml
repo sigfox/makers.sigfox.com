@@ -3,7 +3,7 @@ intro:
   - text: SIGFOX enables bi-directional as well as mono-directional communications and can co-exist with other communication protocols, both short and long range.
   - text: High energy consumption has been a major obstacle with regards to unleashing the potential of the Internet of Things, which is why one of the key elements of the SIGFOX strategy is to continue to push the boundaries for energy consumption lower and  low
   - text: The increasing number of M2M and Internet of Things solutions calls for better interoperability solutions, which can only come through standardization. As the first Internet of Things operator, SIGFOX has taken a lead in this process through the foundation of dedicated standardization groups within recognized standards bodies such as ETSI and others.
-  - text: Check the <a href="http//sigfox.com/en/#!/connected-world/technology-enablers">Technology Enablers</a> section of our website to keep posted on the list of available modules & transceivers from our partners.
+  - text: Check the <a href="//partners.sigfox.com" target="_partners">SIGFOX Partner Network</a> to check the full list of available solutions from our partners.
 
 solutions:
   - name: Transceivers
