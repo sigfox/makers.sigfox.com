@@ -1,3 +1,2 @@
 exclude: [scripts, README.md, .git, .gitignore]
 permalink: pretty
-url: http://makers.sigfox.com
