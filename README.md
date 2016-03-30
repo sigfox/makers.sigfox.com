@@ -1,12 +1,5 @@
 #makers.sigfox.com
 
-Designed as a static website (no web server required)
-
-As it will be hosted first on Github, i'm using jekyll to manage it.
-
-The `master` branch contains the whole source (layouts, includes & other jekyll stuff).  
-The `gh-pages` branch contains only the generated static website (copy of the `_site` folder
-
 ##Dependencies
 
 ###Ruby
@@ -35,25 +28,3 @@ $ gem install jekyll
 ```
 $ jekyll serve
 ```
-
-##Release
-
-To release only the static files, run :
-
-```
-$ sh scripts/release.sh "commit msg"
-```
-
-It will 
-
-* Check the repo status
-  * The current branch is `master`
-  * There are no uncommited changes
-  * There is a build present in `_site`
-* Stop the jekyll process if needed
-  * Will avoid the undesired side effect of deleting the build when removing the source file
-* Create an orphan `gh-pages` branch if needed
-* Keep only the content of `_site` & move it to `.``
-* Commit & push to `gh-pages`
-* Checkout back to the `master` branch
-  
