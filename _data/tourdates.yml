@@ -97,6 +97,7 @@
 
 - city: Luxembourg
   country: LUX
+  date: 2016/05/11
 
 - city: Bordeaux
   country: FRA
@@ -110,3 +111,4 @@
   location: DCU Alpha
   locationLink: http://www.dcualpha.ie/
   soldOut: true
+  
