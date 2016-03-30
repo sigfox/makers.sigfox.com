@@ -1,0 +1,24 @@
+
+<div class="partners">
+    <h3 class="text-center">We also join forces with some of the <b>best incubators</b> to encourage the development of new products, which receives premium support from the SIGFOX teams.</h3>
+    {% for entry in site.data.startupspartners %}
+        <h3 class="text-center">{{entry.type}}</h3>
+        <div class="row">
+        {% for partner in entry.partners%}
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="startups-partner text-center">
+                    <div>
+                {% if partner.logo %}
+                    <a href="{{partner.url}}"><img alt="{{partner.name}}" title="{{partner.name}}" src="{{site.url}}/img/startups/{{partner.logo}}" /></a>
+                {% else %}
+                    {{partner.name}}
+                {% endif %}
+                    </div></div>
+                <p><h4 class="text-center">{{partner.name}}, <i>{{partner.country}}</i></h4></p>
+            </div> 
+        {% endfor %}
+        </div>
+    {% endfor %}
+
+</div>
+<hr />
