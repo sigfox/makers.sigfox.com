@@ -104,6 +104,7 @@
   date: 2016/04/05 
   location:  Hangar 14
   locationLink: http://www.bordeaux-expo.com/jorganise/our-spaces/hangar-14/?lang=en
+  soldOut: true
   
 - city: Dublin
   country: IRL
