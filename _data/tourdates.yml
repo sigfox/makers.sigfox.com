@@ -98,6 +98,7 @@
 - city: Luxembourg
   country: LUX
   date: 2016/05/11
+  soldOut: true
 
 - city: Bordeaux
   country: FRA
