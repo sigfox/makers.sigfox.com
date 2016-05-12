@@ -24,4 +24,12 @@ countries:
     status: rollout
   - name: Ireland
     status: nationwide
+  - name: Mauritius
+    status: rollout
+  - name: Australia
+    status: rollout
+  - name: New Zealand
+    status: rollout
+  - name: Brazil
+    status: rollout
   
