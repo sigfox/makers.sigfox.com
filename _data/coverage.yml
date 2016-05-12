@@ -11,7 +11,7 @@ countries:
   - name: Belgium
     status: rollout
   - name: Luxembourg
-    status: rollout
+    status: nationwide
   - name: Denmark
     status: rollout
   - name: Portugal
@@ -23,23 +23,5 @@ countries:
   - name: Italy
     status: rollout
   - name: Ireland
-    status: rollout
-cities:
-  - name: Milan
-    country: Italy
-  - name: Munich
-    country: Germany
-  - name: Dublin
-    country: Ireland
-  - name: San Francisco
-    country: USA
-  - name: Bogota
-    country: Colombia
-  - name: Santiago
-    country: Chile
-  - name: Warsaw
-    country: Poland
-  - name: Prague
-    country: Czech Republic
-  - name: Vienna
-    country: Austria
+    status: nationwide
+  
