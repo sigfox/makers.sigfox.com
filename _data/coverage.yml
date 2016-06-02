@@ -32,4 +32,5 @@ countries:
     status: rollout
   - name: Brazil
     status: rollout
-  
+  - name: Finland
+    status: rollout
