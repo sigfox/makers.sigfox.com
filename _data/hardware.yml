@@ -22,7 +22,7 @@ solutions:
   - name: SoC
     info: Descriptions provided by vendors
     partners:
-      - name: On Semiconductors
+      - name: ON Semiconductor
         solutions:
           - name: AX-SIGFOX SoC
             desc: The AX-SIGFOX is a SoC solution adding SIGFOX functionality for up-link and down-link to any existing system at the cost of 20x13 mm2 PCB area.<br /><br />The radio part of AX-SIGFOX makes use of the AX5043 lowest power radio. <br /><br />Design and application notes are downloadable from the product web site.
