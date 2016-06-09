@@ -162,7 +162,7 @@ section{
     min-height: 190px;
     box-shadow: $shadow;
     color: $darkgray;
-    padding: 35px 40px;
+    padding: 35px 25px;
     margin-bottom: 30px;
     a{
       color: $lightgreen;
@@ -189,7 +189,7 @@ section{
     }
     &.country{
       background-repeat: no-repeat;
-      background-size:33%;
+      background-size:50%;
       background-position: 50% 50%;
 
       &.FRA{
