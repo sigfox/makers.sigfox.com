@@ -1,11 +1,18 @@
 ---
-title: SIGFOX — Makers & Developers Portal
 ---
 <!DOCTYPE html>
 <html>
   <head>
     {% include head.html %}
     <link rel="stylesheet" href="{{site.url}}/css/news.css" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@sigfox" />
+    <meta name="twitter:title" content="{{page.title}}" />
+    {% if page.image %}
+      <meta name="twitter:image" content="{{site.url}}{{page.image}}" />
+    {% endif %}
+    <meta name="twitter:creator" content="{% if page.author  %}@{{page.author}}{% else %}@sigfox{% endif %}" />
+    <meta name="twitter:description" content="{{page.excerpt | strip_html | truncatewords: 30}}" />
   </head>
 
   <body>
@@ -13,6 +20,7 @@ title: SIGFOX — Makers & Developers Portal
     {% include news/nav.html %}
 
     <div class="container news-body">
+    <h1>{{page.title}}</h1>
     {{ content }}
     </div>
 
