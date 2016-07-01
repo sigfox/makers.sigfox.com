@@ -1,0 +1,46 @@
+<section id="technology">
+    <h2>Frequencies</h2>
+    <p>The SIGFOX network is relying on Ultra-Narrow Band(UNB) modulation, and operating in unlicensed sub-GHz frequency bands. <br />
+    This protocol offer a great resistance to jamming & standard interferers, as well as a great capacity per receiving base stations
+    SIGFOX complies with local regulations, adjusting central frequency, power output and duty cycles. 
+      <table class="table table-condensed table-striped table-hover">
+        <thead>
+          <tr>
+          <th>Region</th>
+            <th>Frequency</th>
+            <th>Regulation</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Europe</td> 
+          <td>868MHz</td>
+          <td>ETSI 300-220</td>
+        </tr>
+          <tr>
+          <td>North America</td>
+            <td>902MHz</td>
+            <td>FCC part 15</td>
+          </tr>
+          <tr>
+          <td>South America & Asia/Pacific</td>
+            <td>920MHz</td>
+            <td>ANATEL 506, AS/NZS 4268</td>
+          </tr>
+        </tbody>
+  </table>
+  </p>
+    <h2>Sending a message</h2>
+  <p>There is no signaling, nor negotiation between a device and a receiving station. <br />
+  The device decices when to send its message, picking up a pseudo-random frequency.<br />
+  It's up to the network to detect the incoming messages, as well as validating & deduplicating them.<br />
+  The message is then available in the Sigfox cloud, and forwarded to any 3rd party cloud platform chosen by the user.<
+    </p>
+    <h2>Security</h2>
+  <p>
+  Every message is signed, with informations proper to the device (incl. a unique private key) and to the message itself. <br />
+  This prevent spoofing, alteration or replay of genuine messages. <br />
+  Encryption & scrambling of the data are supported, with the choice of the more appropriate solution up to the consumer.
+  </p>
+  
+</section>
