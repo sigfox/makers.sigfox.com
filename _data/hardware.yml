@@ -14,11 +14,17 @@ solutions:
         - name: SI446x
           desc: Silicon Labs’ Si446x devices are high-performance, low-current transceivers covering the sub-GHz frequency bands from 119 to 1050MHz.
           img: silabs-si446.png
+          url: https://partners.sigfox.com/products/si446x-family
       - name: Texas Instruments
         solutions:
-        - name: CC112x
+        - name: CC1120
           desc: The CC120 device is a fully integrated single-chip radio transceiver designed for high performance at very low-power and low-voltage operation in cost-effective wireless systems.
           img: ti-cc1120.png
+          url: https://partners.sigfox.com/products/cc1120
+        - name: CC1125
+          desc: The CC1125 device is a fully integrated single-chip radio transceiver designed for high performance at very low-power and low-voltage operation in cost-effective wireless systems. <br />All filters are integrated, thus removing the need for costly external SAW and IF filters.
+          img: ti-cc1125.png
+          url: https://partners.sigfox.com/products/cc1125
   - name: SoC
     info: Descriptions provided by vendors
     partners:
@@ -32,6 +38,11 @@ solutions:
           - name: ATA 8520
             desc: The ATA8520 incorporates a RF front end, a digital baseband and a microcontroller in a single chip.<br />Firmware stored in internal memory supports the chip’s operations, including handling of the SIGFOX protocol.<br />A serial peripheral interface provides for external control and configuration.<br />The single chip solution provides extremely low power consumption.
             img: atmel-ata8520.png
+            url: https://partners.sigfox.com/products/ata8520
+          - name: ATA 8520D
+            desc: The ATA8520D incorporates an RF front end, a digital baseband and a microcontroller in a single chip.<br />Firmware stored in internal memory supports the chip’s operations, including handling of the SIGFOX protocol.<br />A serial peripheral interface provides for external control and configuration. The single chip solution provide extreme low power consumption (down to 5nA in off-mode).
+            img: atmel-ata8520.png
+            url: https://partners.sigfox.com/products/ata8520d
   - name: Modules
     info: Descriptions provided by vendors
     partners:
