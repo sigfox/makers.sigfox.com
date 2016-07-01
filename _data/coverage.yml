@@ -1,4 +1,4 @@
-update: 2016/01/11
+update: 2016/06/30
 countries:
   - name: France
     status: nationwide
@@ -6,8 +6,8 @@ countries:
     status: nationwide
   - name: Spain
     status: nationwide
-  - name: The United Kingdom (10 of the largest cities)
-    status: nationwide
+  - name: The United Kingdom
+    status: rollout
   - name: Belgium
     status: rollout
   - name: Luxembourg
@@ -33,4 +33,14 @@ countries:
   - name: Brazil
     status: rollout
   - name: Finland
+    status: rollout
+  - name: Malta
+    status: rollout
+  - name: French Polynesia
+    status: rollout
+  - name: Oman
+    status: rollout
+  - name: Germany
+    status: rollout
+  - name: French West Indies
     status: rollout
