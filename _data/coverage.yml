@@ -1,4 +1,4 @@
-update: 2016/07/05
+update: 2016/07/11
 countries:
   - name: France
     status: nationwide
@@ -45,4 +45,6 @@ countries:
   - name: French West Indies
     status: rollout
   - name: Mexico
+    status: rollout
+  - name: Singapore
     status: rollout
