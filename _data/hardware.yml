@@ -155,7 +155,7 @@ solutions:
           - name: The AirBoard
             img: airboard.png
             desc: The AirBoard is a wireless, modular and ultra low-power prototyping platform for the Internet of Things, designed to explore, hack and deploy your killer idea out in the field.<br /><br />Forget about your sensors with the built-in battery and Power Management System.<br />The AirBoard is designed for ultra low-power applications, yet capable to drive long range wireless shields.<br />It offers an ultra-low power sleep mode with switchable radio for most efficient communication strategy.
-            url: theairboard.cc
+            url: http://theairboard.cc
       - name: Texas Instruments
         solutions:
           - name: CC1125 BoosterPack for ETSI applications
