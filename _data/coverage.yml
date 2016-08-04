@@ -48,3 +48,5 @@ countries:
     status: rollout
   - name: Singapore
     status: rollout
+  - name: Taiwan
+    status: rollout
