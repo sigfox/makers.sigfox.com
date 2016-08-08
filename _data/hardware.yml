@@ -83,6 +83,10 @@ solutions:
             img: td-1208.png
             desc: Because each customer is unique and each business has its own special features...<br /> TD next gives you the ability to embed your own application into the TD1208.<br />The TD1208 is the most integrated and lowest-power engine for most battery-operated SIGFOX devices.<br /><br />• Efficient & Powerful<br />• Easily adaptable to each specific business<br />• Low consumption<br />• Easy integration into a device (25.4mm x 12.7mm x 3.80mm)<br />• Short range function<br />• Packaged for mass production
             url: https://partners.sigfox.com/products/td-1208
+          - name: TD1508
+            img: td-1508.png
+            desc: Because each customer is unique and each business has its own special features...<br />TD next gives you the ability to embed your own application into the TD1508 modules.<br /><br />Highly programmable with our free SDK, the TD1508 is the most integrated and lowest-power engine for most battery-operated Sigfox devices in the US.
+            url: https://partners.sigfox.com/products/td1508-fcc-certified-module-for-the-us-market
       - name: Telit
         solutions:
           - name: Le51-868S
