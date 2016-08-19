@@ -1,3 +1,10 @@
+- city: Clermont
+  country: FRA
+  date: 2016/10/06
+- city: Turin
+  country: ITA
+
+
 - city: Lille
   country: FRA
   date: 2015/10/08 14:00
