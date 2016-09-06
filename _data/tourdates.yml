@@ -1,9 +1,19 @@
 - city: Clermont
   country: FRA
   date: 2016/10/06
+  locationLink: http://lebivouac.com/
+  location: Le Bivouac
+  
 - city: Turin
   country: ITA
-
+  date: 2016/10/26
+  location: Toolbox Office Lab
+  locationLink: http://www.toolboxoffice.it/
+  
+- city: Rome
+  country: ITA
+  date: 2016/10/14
+  location: Date TBC
 
 - city: Lille
   country: FRA
@@ -98,9 +108,6 @@
 
 - city: Brussels
   country: BEL
-
-- city: Rome
-  country: ITA
 
 - city: Luxembourg
   country: LUX
