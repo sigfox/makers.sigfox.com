@@ -1,0 +1,20 @@
+- text: About
+  url: /about
+- text: Getting Started
+  url: /getting-started
+- text: Docs
+  url: /docs
+- text: Startups
+  url: /startups
+- text: Coverage
+  url: http://sigfox.com/coverage
+- text: Solutions
+  url: /solutions
+#- text: Scaling
+#  url: #scaling
+- text: Ambassadors
+  url: /ambassadors
+- text: Events
+  url: /#events
+#- text: Ask
+#  url : http://ask.sigfox.com

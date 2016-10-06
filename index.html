@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<main class="mdl-layout__content">
+  <div class="mdl-layout__tab-panel is-active" id="overview">
+    {% include home/about.html %}
+    {% include home/getting-started.html %}
+    {% include home/hardware.html %}
+    {% comment %}
+      {% include home/featured.html %}
+      {% include home/events.html %}
+      {% include home/ask.html %}
+    {% endcomment %}
+    {% include home/events.html %}
+  </div>
+  {% include footer.html %}
+</main>
