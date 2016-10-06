@@ -2,14 +2,14 @@
   url: /about
 - text: Getting Started
   url: /getting-started
-- text: Docs
-  url: /docs
+#- text: Docs
+#  url: /docs
 - text: Startups
   url: /startups
 - text: Coverage
   url: http://sigfox.com/coverage
 - text: Solutions
-  url: /solutions
+  url: //partners.sigfox.com
 #- text: Scaling
 #  url: #scaling
 - text: Ambassadors
