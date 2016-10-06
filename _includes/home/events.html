@@ -1,0 +1,49 @@
+{% assign entries = site.data.events | sort:"date","first"%}
+{% assign now = 'now' | date:'%s' %}
+<section id="events" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+      <h4 class="mdl-cell mdl-cell--12-col">Events</h4>
+      <h5 class="mdl-cell mdl-cell--12-col mdl-typography--font-thin">When & where to meet the Sigfox Developer & Startup Relations Team</h5>
+      <div class="mdl-cell mdl-cell--12-col mdl-typography--font-thin events-info">
+        <i class="material-icons">info outline</i><a href="{{site.url}}/tour">More information about the Sigfox Makers Tour, and registration page</a>
+      </div>
+      {% for event in entries %}
+      {% assign timestamp = event.date|date:'%s' %}
+        {% unless timestamp < now %}
+          <div class="event-card mdl-card mdl-shadow--2dp mdl-color--primary">
+            <div class="mdl-card__title mdl-card--expand">
+              <h5 class="event-date">
+                {% if event.date %}
+                  <span class="event-date mdl-typography--font-thin">
+                  {% if event.approx %}
+                    {{event.date | date:"%B"}}
+                  {%else %}
+                    {{event.date | date:"%b %d"}}
+                  {%endif%}
+                {%endif%}
+                </span>
+              </h5>
+              <h4 class="event-location">
+                {{event.location}}
+              </h4>
+              <h5 class="mdl-typography--font-thin">{{event.name}}</h5>
+            </div>
+
+            <div class="mdl-card__actions mdl-card--border">
+              <a l="noopener noreferrer" target="_blank "class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"{% if event.link %} href="{{event.link}}"{%endif%}>
+                {%if event.desc %}
+                  {{event.desc}}
+                {% else if event.link %}
+                  More info
+                {% endif %}
+              </a>
+              <div class="mdl-layout-spacer"></div>
+              <i class="material-icons">event</i>
+            </div>
+          </div>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
