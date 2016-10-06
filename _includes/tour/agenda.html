@@ -1,0 +1,70 @@
+{% assign today = site.time | date:"%Y-%m-%d"%}
+{% assign entries = site.data.tourdates | sort:"date","first" | reverse%}
+<section id="agenda">
+<h4 class="mdl-cell mdl-cell--12-col">Events</h4>  
+  <div class="mdl-card mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+  
+      
+      {% for event in entries %}
+      {% assign eventdate = event.date | date:"%Y-%m-%d"%}
+      {% capture oldevent%}{%if today > eventdate %}true{%else%}false{%endif%}{%endcapture%}
+        {% unless timestamp < now %}
+          <div class="event-card mdl-card mdl-shadow--2dp mdl-color--primary">
+            <div class="mdl-card__title mdl-card--expand">
+              <h5 class="event-date">
+                {% if event.date %}
+                  <span class="event-date mdl-typography--font-thin">
+                    <date datetime="{{event.date}}">
+                  
+                  {{event.date | date:"%B %d" | upcase }}
+
+                  {% assign time = event.date|date:"%H" %}
+                  {%if time != "00" %}
+                    {{event.date | date:"%H:%M"}}
+                  {% endif%}
+                </date>
+                </span>
+                {%else%}
+                  <div class="event-date mdl-typography--font-thin">
+                    Considering this city
+                  </div>
+                {% endif%}
+              </h5>
+              <h4 class="event-location">
+                {{event.city}}
+              </h4>
+              <p>
+                {% if event.location %}
+                  {% if event.locationLink%}
+                    @&nbsp;<a target="_blank"   href="{{event.locationLink}}">{{event.location}}</a>
+                  {%else%}
+                    @&nbsp;{{event.location}}
+                  {%endif%}
+                {% endif %}
+              </p>
+              <h5 class="mdl-typography--font-thin">{{event.name}}</h5>
+            </div>
+
+            <div class="mdl-card__actions mdl-card--border">
+              
+               {%unless oldevent == 'true'%}
+                <a rel="noopener noreferrer" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" {% unless event.soldOut %}href="{{site.url}}/tour/register"{%endunless%}>
+                  {% if event.soldOut %}
+                  Sold out
+                {% else %}
+                  
+                    Register
+                  
+                {% endif %}
+                  </a>
+              {% endunless %}
+              </a>
+              <div class="mdl-layout-spacer"></div>
+              <i class="material-icons">event</i>
+            </div>
+          </div>
+        {% endunless %}
+      {% endfor %}
+</div></div>
+</section>
