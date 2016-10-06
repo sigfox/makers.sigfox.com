@@ -286,6 +286,77 @@ main.mdl-layout__content{
       margin-top: 0;
     }
   }
+  #hardware{
+    .devkits, .modules{
+      .mdl-card{
+        display:flex;
+        width: 256px;
+        height: 256px;
+        
+        width: 31%;
+        margin: 10px 1%;
+      }
+      a{
+        text-decoration: none;
+      }
+      .mdl-spinner{
+        &:not(.is-active){
+          display: none;
+        }
+      }
+       .mdl-card__title {
+        align-items: flex-start;
+      }
+      > .mdl-card__title > h4 {
+        margin-top: 0;
+      }
+      > .mdl-card__actions {
+        display: flex;
+        box-sizing:border-box;
+        align-items: center;
+      }
+      .mdl-card__actions {
+        height: 52px;
+        padding: 16px;
+        background: rgba(0, 0, 0, 0.4);
+        
+        > a > span{
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
+          
+        }
+      }
+    }
+  }
+}
+#startups{
+  #partners{
+    .startups-partner-card{
+      display:flex;
+      
+      width: 31%;
+      margin: 10px 1%;
+    }
+    img{
+      max-width:100%;
+      max-height: 120px;
+    }
+    
+    .mdl-card__actions {
+      height: 52px;
+      padding: 16px;
+
+      > a > span{
+        font-size: 14px;
+        font-weight: 500;
+
+      }
+    }
+  }
+}
+.hidden{
+  display: none;
 }
 #add {
   position: absolute;

@@ -1,0 +1,18 @@
+- type: 
+  partners:
+    - name: Euratechnologies
+      logo: euratechnologies.gif
+      url: http://euratechnologies.com/
+      country: France
+    - name: The Faktory
+      logo: thefaktory.png
+      url: http://www.thefaktory.com/
+      country: Belgium
+    - name: Connected Camp
+      logo: connectedcamp.png
+      url: http://www.leconnected.camp/
+      country: France
+    - name: Helsinki Ventures
+      logo: helsinki.png
+      url: http://www.helsinkiventures.com/
+      country: Finland
