@@ -216,39 +216,49 @@ main.mdl-layout__content{
       }
     }
   }
-}
-#ambassadors{
-  .ambassador-card.mdl-card{
-    height: 120px;
-  }
-  img.ambassador-image{
-    border-radius: 50%;
-    height: 100px;
-    margin: 0px 10px;
-    float: left;
-  }
-  .ambassador-location{
-    span.flag{
-      display: inline-block;
-      width:30px;
-      height: 30px;
+  #ambassadors{
+    .ambassador-card.mdl-card{
+      height: 280px;
     }
-  }
-  h4{
-    margin-bottom: 10px;
-  }
-  h6{
-    margin: 0 auto 6px;
-  }
-  .ambassador-lang{
-    color: #fff;
-    margin-top:30px;
-    span{ 
-      border: 1px solid #fff;  
-      padding: .1em .5em;
-      margin: 0 1em;
+    img.ambassador-image{
+      border-radius: 50%;
+      height: 100px;
+      margin: 0px 10px;
+      float: left;
+    }
+    .ambassador-location{
+      span.flag, div.ambassador-city{
+        display: inline-block;
+        height: 30px;
+      }
+      span.flag{
+        width:30px;
+      }
+      div.ambassador-city{
+        vertical-align: bottom;
+        height: 25px;
+      }
+    }
+    h4{
+      margin-bottom: 10px;
+    }
+    h6{
+      margin: 0 auto 6px;
+      font-weight: 300;
+    }
+    .ambassador-lang, .ambassador-skills{
+      color: #fff;
+      margin-top:30px;
+      span{ 
+        border: 1px solid #fff;  
+        padding: .2em .5em;
+        margin: 0 0.5em 0.5em 0;
+        display: inline-block;
+      }
+    }
+    .ambassador-lang{
       .lang-english{
-        
+
       }
       .lang-french{
         color: blue;
@@ -271,6 +281,9 @@ main.mdl-layout__content{
       .lang-czech{
 
       }
+    }
+    .ambassador-skills{
+      margin-top: 0;
     }
   }
 }

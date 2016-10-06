@@ -2,6 +2,13 @@
 layout: default
 ---
 {% assign ambassadors = site.data.ambassadors | sort: "name" %}
+<style>
+      html, body, #wrapper { height: 100%; }
+      #wrapper { display: table; width: 100%; } /* Create space */
+      #wrapper > * { display: table-cell; vertical-align: middle; } /* table-cells can be verticaly aligned! */
+      #wrapper > * > .container { display: block; margin: auto; width: 600px; border: 1px solid #000000; } /* Horizontal align */
+</style>
+
 <main class="mdl-layout__content">
   <div class="mdl-layout__tab-panel is-active" id="overview">
    <section id="ambassadors" class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
@@ -17,20 +24,22 @@ layout: default
               <img class="ambassador-image" src="{{site.url}}/assets/media/ambassadors/{{amb.img}}" alt="{{amb.name}} {{amb.firstname}}">
             {% endif %}
             <h4>{{amb.firstname}} {{amb.name}}</h4>
-            <p class="ambassador-location">
-              <span class="flag {{amb.country | lowercase}}"></span>
-              {%if amb.city%}{{amb.city}}{%endif%}
-            </p>
+            <div class="ambassador-location">
+              <span class="flag {{amb.country | downcase}}"></span>
+              {%if amb.city%}
+                <div class="ambassador-city">{{amb.city}}</div>
+              {%endif%}
+            </div>
             <div class="ambassador-lang mdl-typography--font-thin">
               <h6>Speaking</h6>
               {% for lang in amb.languages %}
-                <span class="lang-{{lang | lowercase}}">{{lang}}</span>
+                <span class="lang-{{lang | downcase}}">{{lang}}</span>
               {% endfor %}
             </div>
             <div class="ambassador-skills mdl-typography--font-thin">
                 <h6>Skills</h6>
                 {% for skill in amb.skills %}
-                  <span class="skill-{{skill}}">{{lang}}</span>
+                  <span class="skill-{{skill | slugify}}">{{skill | capitalize}}</span>
                 {% endfor %}
             </div>
           </div>
