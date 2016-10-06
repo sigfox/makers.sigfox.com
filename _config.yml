@@ -1,5 +1,5 @@
 exclude: [scripts, README.md, .git, .gitignore, Gemfile, assets/stylesheets/sass_imports]
 permalink: pretty
-url: ""
+url: "http://makers.sigfox.com"
 sass:
     sass_dir: assets/stylesheets/sass_imports
