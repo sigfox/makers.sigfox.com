@@ -30,5 +30,6 @@ markdown: kramdown
 exclude: [scripts, README.md, .git, .gitignore, Gemfile, assets/stylesheets/sass_imports]
 permalink: pretty
 url: "http://makers.sigfox.com" # the base hostname & protocol for your site
+
 sass:
     sass_dir: assets/stylesheets/sass_imports
