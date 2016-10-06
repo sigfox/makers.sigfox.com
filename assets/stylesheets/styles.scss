@@ -1,7 +1,7 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
-
+$sigfox-night-blue: #230066;
 //@import "css/mdl_colours.scss";
 
 html, body {
@@ -426,4 +426,17 @@ section.section--center .section__text:not(:last-child) {
 }
 .mdl-menu__container {
   z-index: 99;
+}
+.ribbon{
+  width: 100%;
+  height: 40vh;
+  background-color: $sigfox-night-blue;
+  flex-shrink: 0;
+}
+main#about{
+  margin-top: -35vh;
+  
+  .about-inner{
+    padding: 1em;
+  }
 }
