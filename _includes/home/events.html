@@ -31,7 +31,7 @@
             </div>
 
             <div class="mdl-card__actions mdl-card--border">
-              <a l="noopener noreferrer" target="_blank "class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"{% if event.link %} href="{{event.link}}"{%endif%}>
+              <a rel="noopener noreferrer" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"{% if event.link %} href="{{event.link}}"{%endif%}>
                 {%if event.desc %}
                   {{event.desc}}
                 {% else if event.link %}
