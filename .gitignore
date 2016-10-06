@@ -1,0 +1,4 @@
+#jekyll
+_site/
+Gemfile.lock
+colors.html
