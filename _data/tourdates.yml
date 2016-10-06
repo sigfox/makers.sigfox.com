@@ -1,0 +1,75 @@
+- city: Clermont
+  country: FRA
+  date: 2016/10/06
+  locationLink: http://lebivouac.com/
+  location: Le Bivouac
+  soldOut: true
+  
+- city: Turin
+  country: ITA
+  date: 2016/10/26
+  location: Toolbox Office Lab
+  locationLink: http://www.toolboxoffice.it/
+  
+- city: Rome
+  country: ITA
+
+- city: Lille
+  country: FRA
+  
+- city: Paris
+  country: FRA
+
+- city: Grenoble
+  country: FRA
+
+- city: Madrid
+  country: ESP
+
+- city: Barcelona
+  country: ESP
+  
+
+- city: Toulouse
+  country: FRA
+
+- city: Amsterdam
+  country: NED
+  
+- city: London
+  country: GBR
+  
+- city: Lyon
+  country: FRA
+  
+- city: Lisbon
+  country: POR
+  
+  
+- city: Copenhagen
+  country: DEN    
+    
+- city: Angers
+  country: FRA
+  
+- city: Prague
+  country: CZE  
+
+- city: Helsinki
+  country: FIN
+  
+  
+- city: Nice
+  country: FRA
+  
+
+- city: Brussels
+  country: BEL
+
+- city: Luxembourg
+  country: LUX
+
+- city: Dublin
+  country: IRL
+
+
