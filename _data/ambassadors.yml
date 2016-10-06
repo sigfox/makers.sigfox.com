@@ -1,0 +1,128 @@
+- name: " Pinault"
+  firstname: Paul
+  rank: 1
+  country: FR
+  img: paulpinault.jpg
+  city: Clermont-Ferrand
+  website : //disk91.com
+  languages:
+    - French
+    - English
+  skills:
+    - hardware design
+    - embedded software
+
+- name: Chapelet
+  firstname: Adrien
+  country: FR
+  city: Lille
+  img: adrienchapelet.jpg
+  links: 
+    website: http://adrien.iotech.fr/
+    github: https://github.com/adrien3d
+    twitter: https://twitter.com/adrien3d
+    linkedin: https://www.linkedin.com/in/adriot
+  languages :
+    - French
+    - English
+    - Spanish
+  skills:
+    - hardware design
+    - radio
+
+- name: Bechynský
+  firstname: Štěpán
+  country: CZ
+  city: Prague
+  img: stepanbechynsky.jpg
+  links: 
+    linkedin: https://cz.linkedin.com/in/stepanbechynsky
+    twitter: https://twitter.com/stepanb
+    github: https://github.com/bechynsky/
+  languages: 
+    - Czech
+    - English
+  skills:
+    - cloud applications
+    - Microsoft Azure
+
+- name: Pino
+  firstname: Claudio
+  country: IT
+  img: claudiopino.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/pinoclaudio
+    twitter: https://twitter.com/cpino61
+    website: http://www.ioteam.it/
+  languages:
+    - Italian
+    - English
+  skills:
+    - hardware design
+    - firmware design
+
+- name: Driussi
+  firstname: Stéphane
+  country: FR
+  city: Grenoble
+  img: stephanedriussi.jpg
+  links: 
+    linkedin: https://www.linkedin.com/in/stephanedriussi
+    github: https://github.com/hidnseek
+  languages:
+    - French
+    - English
+  skills:
+    - hardware design
+    - embedded software
+
+- name: Pous
+  firstname: Marc
+  country: SP
+  city: Barcelona
+  img: marcpous.jpg
+  links: 
+    linkedin: https://www.linkedin.com/in/marcpous
+    website: //marcpous.com
+    twitter: https://twitter.com/gy4nt
+    github: https://github.com/mpous
+  languages:
+    - Spanish
+    - English
+    - Catalan
+    - German
+  skills:
+    - cloud applications
+    - IoT Platforms
+    - software programming
+    - basket-ball
+- name: Douze
+  firstname: Yann
+  country: FR
+  city: Paris
+  img: yanndouze.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/yanndouze
+    twitter: https://twitter.com/yann_douze
+  languages:
+    - French
+    - Dutch
+    - English
+  skills:
+    - embedded systems
+    - embedded software
+    - VHDL
+    - teaching
+    
+- name: Marcelino
+  firstname: Jose
+  country: GB
+  city: Newcastle
+  img: josemarcelino.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/jmarcelino
+  languages:
+    - Portuguese
+    - English
+  skills:
+    - software programming

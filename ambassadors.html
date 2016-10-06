@@ -1,0 +1,43 @@
+---
+layout: default
+---
+{% assign ambassadors = site.data.ambassadors | sort: "name" %}
+<main class="mdl-layout__content">
+  <div class="mdl-layout__tab-panel is-active" id="overview">
+   <section id="ambassadors" class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+     
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+      <h3>Sigfox Ambassadors</h2> 
+      <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+      
+      {% for amb in ambassadors %}
+        <div class="ambassador-card mdl-card mdl-shadow--2dp mdl-color--primary">
+          <div class="mdl-card__title mdl-card--expand">
+            {%if amb.img%}
+              <img class="ambassador-image" src="{{site.url}}/assets/media/ambassadors/{{amb.img}}" alt="{{amb.name}} {{amb.firstname}}">
+            {% endif %}
+            <h4>{{amb.firstname}} {{amb.name}}</h4>
+            <p class="ambassador-location">
+              <span class="flag {{amb.country | lowercase}}"></span>
+              {%if amb.city%}{{amb.city}}{%endif%}
+            </p>
+            <div class="ambassador-lang mdl-typography--font-thin">
+              <h6>Speaking</h6>
+              {% for lang in amb.languages %}
+                <span class="lang-{{lang | lowercase}}">{{lang}}</span>
+              {% endfor %}
+            </div>
+            <div class="ambassador-skills mdl-typography--font-thin">
+                <h6>Skills</h6>
+                {% for skill in amb.skills %}
+                  <span class="skill-{{skill}}">{{lang}}</span>
+                {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% include footer.html %}
+</main>
