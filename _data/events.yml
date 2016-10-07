@@ -2,55 +2,55 @@
   url : http://makers.sigfox.com/tour
   date : 2016/10/12
   location: Turin
-  link: /tour
+  url: /tour
   desc: Register
   
 - name : Sigfox Makers Tour
   location: Prague
   date: 2016/11/24
-  link: /tour
+  url: /tour
   desc: Register
 
 - name: Sigfox Makers Tour
   location: Helsinki
   date: 2016/12/31
   approx: true
-  link: /tour
+  url: /tour
   desc: Register
   
 - name: Sigfox Makers Tour
   location: Copenhagen
   date: 2016/12/31
   approx: true
-  link: /tour
+  url: /tour
   desc: Register
   
 - name: Sigfox Makers Tour
   location: San Francisco
   date: 2016/12/31
   approx: true
-  link: /tour
+  url: /tour
   desc: Register
 
 - name: Riot Conference
   location: Berlin
   date: 2016/11/23
-  link: //riot.berlin
+  url: //riot.berlin
   
 - name: Sigfox Makers Tour
   location: Clermont
   date: 2016/10/06
-  link: /tour
+  url: /tour
   desc: Register
 
 - name: Sigfox Makers Tour
   location: Berlin
   date: 2016/11/30
   approx: true
-  link: /tour
+  url: /tour
   desc: Register
   
 - name: Web Summit
   location: Lisbon
   date: 2016/11/07
-  link: //websummit.net
+  url: //websummit.net
