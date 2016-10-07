@@ -1,3 +1,9 @@
+- name: Maker Faire Rome
+  date: 2016/10/14
+  url: //www.makerfairerome.eu/en/
+  desc: Meet there
+  location: Rome
+
 - name: Sigfox Makers Tour
   url : http://makers.sigfox.com/tour
   date : 2016/10/12
