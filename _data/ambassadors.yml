@@ -49,6 +49,7 @@
 - name: Pino
   firstname: Claudio
   country: IT
+  city: Milano
   img: claudiopino.jpg
   links:
     linkedin: https://www.linkedin.com/in/pinoclaudio
