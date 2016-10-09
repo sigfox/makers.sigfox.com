@@ -12,7 +12,7 @@
 
 - name: Sigfox Makers Tour
   url : http://makers.sigfox.com/tour
-  date : 2016/10/12
+  date : 2016/10/26
   location: Turin
   url: /tour
   desc: Register
@@ -68,3 +68,25 @@
   date: 2016/11/07
   url: //websummit.net
   desc: Meet there
+  
+- name: Workshop Avnet/ON
+  location: Paris
+  date: 2016/10/11
+  url: https://www.eventbrite.fr/e/billets-solutions-sigfox-on-semiconductor-27576068764
+  desc: Register
+  
+- name: Workshop Avnet/ON
+  location: Lyon
+  date: 2016/10/12
+  url: https://www.eventbrite.fr/e/billets-solutions-sigfox-on-semiconductor-27616902900
+  desc: Register
+  
+- name: Workshop Avnet/ON
+  location: Toulouse/Labège
+  date: 2016/10/13
+  url: https://www.eventbrite.fr/e/billets-solutions-sigfox-on-semiconductor-27616592973
+  desc: Register
+  
+  
+  
+  
