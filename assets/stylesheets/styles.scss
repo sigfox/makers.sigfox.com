@@ -50,7 +50,12 @@ header.mdl-layout__header{
   }
 }
 main.mdl-layout__content{
- > .mdl-layout__tab-panel {
+  
+  
+  img.logo{
+    max-width: 100%;
+  }  
+  > .mdl-layout__tab-panel {
     padding: 8px;
     padding-top: 48px;
   }
