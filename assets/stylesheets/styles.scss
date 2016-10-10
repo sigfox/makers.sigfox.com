@@ -338,9 +338,6 @@ main.mdl-layout__content{
 #startups{
   #partners{
     .startups-partner-card{
-      display:flex;
-      
-      width: 31%;
       margin: 10px 1%;
     }
     img{
@@ -438,7 +435,7 @@ section.section--center .section__text:not(:last-child) {
   background-color: unquote("rgb(#{$color-primary-dark})");
   flex-shrink: 0;
 }
-main#about, main#tour{
+main#about, main#tour, main#getting-started, main#startups{
   margin-top: -35vh;
   
   .about-inner, .tour-inner{

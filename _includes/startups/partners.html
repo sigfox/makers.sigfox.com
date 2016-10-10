@@ -1,14 +1,14 @@
-<section id="partners" class=" mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+<section id="partners">
     <h4>Partners</h4>
     <p>
     We also join forces with some of the <b>best incubators</b> to encourage the development of new products, which receives premium support from the SIGFOX teams.
     </p>
   <div class="mdl-card mdl-cell mdl-cell--12-col">
-    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+    <div class="mdl-card__supporting-text mdl-grid">
       {% for type in site.data.startupspartners %}
         <h5 class="text-center">{{entry.type}}</h5>
         {% for partner in type.partners%}
-          <div class="startups-partner-card mdl-card mdl-shadow--2dp">
+          <div class="startups-partner-card mdl-card mdl-shadow--2dp mdl-cell--6-col">
             <div class="mdl-card__title mdl-card--expand">
              {% if partner.logo %}
                     <a href="{{partner.url}}"><img alt="{{partner.name}}" title="{{partner.name}}" src="{{site.url}}/assets/media/startups/{{partner.logo}}" /></a>
