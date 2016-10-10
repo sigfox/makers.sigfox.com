@@ -1,3 +1,9 @@
+- name: Hacktoberfest
+  date: 2016/10/24
+  location: Paris
+  url: https://www.eventbrite.fr/e/billets-hacktoberfest-paris-28500299162
+  desc: Register
+
 - name: Startup Weekend Maker
   date: 2016/10/28
   location: Marseille
