@@ -182,6 +182,9 @@ main.mdl-layout__content{
   }
   
   #events, #ambassadors, #agenda{
+    h3{
+      width: 100%;
+    }
     div > .material-icons{
       vertical-align: bottom;
       width:1.5em;
