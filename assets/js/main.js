@@ -75,6 +75,6 @@ function showItem(parentDiv, item){
   
 }
 document.addEventListener("DOMContentLoaded", function() {
-  fetchKits(3);
-  fetchModules(3);
+  fetchKits(4);
+  fetchModules(4);
 });

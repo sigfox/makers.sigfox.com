@@ -318,17 +318,18 @@ main.mdl-layout__content{
     }
   }
   #hardware{
+    margin: 0 -8px 48px -8px;
+    padding: 20px 0;
+    > .mdl-card{
+      margin:0;
+      padding: 8px;
+    }
     .devkits, .modules{
       .mdl-card{
         display:flex;
         width: 256px;
         height: 256px;
-        
-        width: 31%;
         margin: 10px 1%;
-      }
-      a{
-        text-decoration: none;
       }
       .mdl-spinner{
         &:not(.is-active){
