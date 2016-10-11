@@ -194,7 +194,6 @@ main.mdl-layout__content{
     }
     .event-card.mdl-card, .ambassador-card.mdl-card {
       width: 31%;
-      height: 256px;
       margin: 10px 1%;
     
       > .mdl-card__actions {
@@ -225,9 +224,7 @@ main.mdl-layout__content{
     }
   }
   #ambassadors{
-    .ambassador-card.mdl-card{
-      height: 280px;
-    }
+    
     img.ambassador-image{
       border-radius: 50%;
       height: 100px;
@@ -292,6 +289,29 @@ main.mdl-layout__content{
     }
     .ambassador-skills{
       margin-top: 0;
+    }
+    .ambassador-links{
+      margin-top: .5em;
+      > a{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        
+        &.link-twitter{
+          background: url(../media/icons/twitter.png) no-repeat;
+          background-size: cover;
+        }
+        &.link-linkedin{
+          background: url(../media/icons/linkedin.png) no-repeat;
+          background-size: cover;
+        }
+        &.link-github{
+          background: url(../media/icons/github.png) no-repeat;
+          background-size: cover;
+        }
+        
+      }
     }
   }
   #hardware{

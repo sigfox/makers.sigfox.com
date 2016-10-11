@@ -48,6 +48,25 @@ layout: default
                   <span class="skill-{{skill | slugify}}">{{skill | capitalize}}</span>
                 {% endfor %}
             </div>
+            {% if amb.links  %}
+              <div class="ambassador-links mdl-typography--font-thin">
+                {% for link in amb.links %}
+                  
+                  {% case link.type %}
+                    {% when 'linkedin' %}{% assign prefix="//linkedin.com/in/" %}
+                    {% when 'twitter' %}{% assign prefix="//twitter.com/" %}
+                    {% when 'github' %}{% assign prefix="//github.com/" %}
+                    {% else %}{% assign prefix = "" %}
+                  {% endcase %}
+                  {% if prefix != "" %}
+                    <a class="link-{{link.type}}" href="{{prefix}}{{link.url}}" rel="noopener noreferrer"  target="_blank"></a>
+                  {% else %}
+                    <a class="link-website" href="{{link.url}}" rel="noopener noreferrer"  target="_blank"><i class="material-icons mdl-color-text--white">public</i></a>
+                  {% endif %}
+                {% endfor %}
+              </div>  
+            {%endif%}
+              
           </div>
         </div>
       {% endfor %}

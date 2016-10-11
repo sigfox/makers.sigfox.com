@@ -4,13 +4,21 @@
   country: FR
   img: paulpinault.jpg
   city: Clermont-Ferrand
-  website : //disk91.com
   languages:
     - French
     - English
   skills:
     - hardware design
     - embedded software
+  links:
+    - type: website
+      url: //disk91.com
+    - type: twitter
+      url: disk91
+    - type: linkedin
+      url: paulpinault
+    - type: github
+      url: disk91
 
 - name: Chapelet
   firstname: Adrien
@@ -18,10 +26,14 @@
   city: Lille
   img: adrienchapelet.jpg
   links: 
-    website: http://adrien.iotech.fr/
-    github: https://github.com/adrien3d
-    twitter: https://twitter.com/adrien3d
-    linkedin: https://www.linkedin.com/in/adriot
+    - type: website
+      url: http://adrien.iotech.fr/
+    - type: github
+      url: adrien3d
+    - type: twitter
+      url: adrien3d
+    - type: linkedin
+      url: adriot
   languages :
     - French
     - English
@@ -36,9 +48,12 @@
   city: Prague
   img: stepanbechynsky.jpg
   links: 
-    linkedin: https://cz.linkedin.com/in/stepanbechynsky
-    twitter: https://twitter.com/stepanb
-    github: https://github.com/bechynsky/
+    - type: linkedin
+      url: stepanbechynsky
+    - type: twitter
+      url: stepanb
+    - type: github
+      url: bechynsky
   languages: 
     - Czech
     - English
@@ -52,9 +67,12 @@
   city: Milano
   img: claudiopino.jpg
   links:
-    linkedin: https://www.linkedin.com/in/pinoclaudio
-    twitter: https://twitter.com/cpino61
-    website: http://www.ioteam.it/
+    - type: linkedin
+      url: pinoclaudio
+    - type: twitter
+      url: cpino61
+    - type: website
+      url: http://www.ioteam.it/
   languages:
     - Italian
     - English
@@ -68,8 +86,10 @@
   city: Grenoble
   img: stephanedriussi.jpg
   links: 
-    linkedin: https://www.linkedin.com/in/stephanedriussi
-    github: https://github.com/hidnseek
+    - type: linkedin
+      url: stephanedriussi
+    - type: github
+      url: hidnseek
   languages:
     - French
     - English
@@ -83,10 +103,14 @@
   city: Barcelona
   img: marcpous.jpg
   links: 
-    linkedin: https://www.linkedin.com/in/marcpous
-    website: //marcpous.com
-    twitter: https://twitter.com/gy4nt
-    github: https://github.com/mpous
+    - type: linkedin
+      url: marcpous
+    - type: website
+      url: //marcpous.com
+    - type: twitter
+      url: gy4nt
+    - type: github
+      url: mpous
   languages:
     - Spanish
     - English
@@ -103,8 +127,10 @@
   city: Paris
   img: yanndouze.jpg
   links:
-    linkedin: https://www.linkedin.com/in/yanndouze
-    twitter: https://twitter.com/yann_douze
+    - type: linkedin
+      url: yanndouze
+    - type: twitter
+      url: yann_douze
   languages:
     - French
     - Dutch
@@ -121,7 +147,8 @@
   city: Newcastle
   img: josemarcelino.jpg
   links:
-    linkedin: https://www.linkedin.com/in/jmarcelino
+    - type: linkedin
+      url: jmarcelino
   languages:
     - Portuguese
     - English
