@@ -12,6 +12,12 @@ a{
   text-decoration: none;
 }
 .mdl-layout.is-small-screen{
+  #about header{
+    display: none;
+  }
+  main.mdl-layout__content > .mdl-layout__tab-panel{
+    padding-top: 0;
+  }
   .mdl-layout__header-row h3 {
     font-size: inherit;
   }
