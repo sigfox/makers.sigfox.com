@@ -196,7 +196,8 @@ main.mdl-layout__content{
       margin-top:10px;
     }
     .event-card.mdl-card, .ambassador-card.mdl-card {
-      width: 31%;
+      width: auto;
+      min-width: 242px;
       margin: 10px 1%;
     
       > .mdl-card__actions {
@@ -227,7 +228,9 @@ main.mdl-layout__content{
     }
   }
   #ambassadors{
-    
+    .ambassador-card.mdl-card{
+      width: 360px;
+    }
     img.ambassador-image{
       border-radius: 50%;
       height: 100px;
