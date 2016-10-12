@@ -475,3 +475,7 @@ main#about, main#tour, main#getting-started, main#startups{
     padding: 1em;
   }
 }
+
+main.mdl-layout__content footer img.logo{
+  max-height: 60px;
+}
