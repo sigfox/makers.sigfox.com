@@ -16,6 +16,10 @@
       logo: helsinki.png
       url: http://www.helsinkiventures.com/
       country: Finland
+    - name: H-Farm
+      logo: H-farm.png
+      url: http://www.h-farm.com/
+      country: Italy
 
 
 #- type: Other Partners
