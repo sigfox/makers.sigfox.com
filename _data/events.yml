@@ -69,12 +69,6 @@
   url: /tour
   desc: Register
 
-- name: Hacktoberfest
-  date: 2016/10/24
-  url: //https://www.eventbrite.fr/e/billets-hacktoberfest-paris-meetup-28500299162
-  desc: Register
-  location: Paris
-
 - name: Web Summit
   location: Lisbon
   date: 2016/11/07
