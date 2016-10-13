@@ -8,7 +8,16 @@ html, body {
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
 .mdl-layout.is-small-screen{
+  #about header{
+    display: none;
+  }
+  main.mdl-layout__content > .mdl-layout__tab-panel{
+    padding-top: 0;
+  }
   .mdl-layout__header-row h3 {
     font-size: inherit;
   }
@@ -193,8 +202,8 @@ main.mdl-layout__content{
       margin-top:10px;
     }
     .event-card.mdl-card, .ambassador-card.mdl-card {
-      width: 31%;
-      height: 256px;
+      width: auto;
+      min-width: 242px;
       margin: 10px 1%;
 
       > .mdl-card__actions {
@@ -226,7 +235,7 @@ main.mdl-layout__content{
   }
   #ambassadors{
     .ambassador-card.mdl-card{
-      height: 280px;
+      width: 360px;
     }
     img.ambassador-image{
       border-radius: 50%;
@@ -293,19 +302,45 @@ main.mdl-layout__content{
     .ambassador-skills{
       margin-top: 0;
     }
+    .ambassador-links{
+      margin-top: .5em;
+      > a{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+
+        &.link-twitter{
+          background: url(../media/icons/twitter.png) no-repeat;
+          background-size: cover;
+        }
+        &.link-linkedin{
+          background: url(../media/icons/linkedin.png) no-repeat;
+          background-size: cover;
+        }
+        &.link-github{
+          background: url(../media/icons/github.png) no-repeat;
+          background-size: cover;
+        }
+
+      }
+    }
   }
   #hardware{
+    margin: 0 -8px 48px -8px;
+    padding: 20px 0;
+    > .mdl-card{
+      margin:0;
+      padding: 8px;
+    }
     .devkits, .modules{
       .mdl-card{
         display:flex;
-        width: 256px;
         height: 256px;
 
         width: 31%;
+
         margin: 10px 1%;
-      }
-      a{
-        text-decoration: none;
       }
       .mdl-spinner{
         &:not(.is-active){
@@ -398,9 +433,6 @@ section.section--footer {
 section.section--center .section__text:not(:last-child) {
   border-bottom: 1px solid rgba(0,0,0,.13);
 }
-.mdl-card .mdl-card__supporting-text > h3:first-child {
-  margin-bottom: 24px;
-}
 .mdl-layout__tab-panel:not(#overview) {
   background-color: white;
 }
@@ -448,6 +480,10 @@ main#about, main#tour, main#getting-started, main#startups{
   .about-inner, .tour-inner{
     padding: 1em;
   }
+}
+
+main.mdl-layout__content footer img.logo{
+  max-height: 60px;
 }
 
 .mdl-card__actions-purple {

@@ -15,7 +15,8 @@
     <nav>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
             {% for entry in site.data.top-nav-entries %}
-            <a href="{{entry.url}}" class="mdl-typography--font-thin mdl-layout__tab">{{entry.text}}</a> {% endfor %}
+            <a href="{{entry.url}}" class="mdl-typography--font-thin mdl-layout__tab">{{entry.text}}</a>
+            {% endfor %}
         </div>
     </nav>
 </header>
