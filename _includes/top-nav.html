@@ -1,15 +1,21 @@
 <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-  <div class=" mdl-layout__header-row">
-    <img src="/assets/media/Sigfox_Logo_RGB_R.png" alt="Sigfox" title="Sigfox" class="logo"/>
-    <span class="mdl-layout-title mdl-typography--font-thin">
-      Sigfox Developer Portal
+    <div class=" mdl-layout__header-row">
+        <span class="android-title mdl-layout-title">
+      <a href="{{site.url}}"><img src="/assets/media/Sigfox_Logo_RGB_R.png" style="height:100px;"alt="Sigfox" title="Sigfox" class="logo"/></a>
     </span>
-  </div>
-  <nav>
-    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark ">
-      {% for entry in site.data.top-nav-entries %}
-        <a href="{{entry.url}}" class="mdl-typography--font-thin mdl-layout__tab">{{entry.text}}</a>
-      {% endfor %}
+        <div class="android-header-spacer mdl-layout-spacer"></div>
+        <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{site.url}}">
+                Developer Portal
+              </a>
+            </nav>
+        </div>
     </div>
-  </nav>
+    <nav>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+            {% for entry in site.data.top-nav-entries %}
+            <a href="{{entry.url}}" class="mdl-typography--font-thin mdl-layout__tab">{{entry.text}}</a> {% endfor %}
+        </div>
+    </nav>
 </header>

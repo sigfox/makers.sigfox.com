@@ -12,11 +12,11 @@ layout: default
 <main class="mdl-layout__content">
   <div class="mdl-layout__tab-panel is-active">
    <section id="ambassadors" class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-     
+
     <div class="mdl-card mdl-cell mdl-cell--12-col">
-      <h3>Sigfox Ambassadors</h2> 
+      <h3>Sigfox Ambassadors</h2>
       <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-      
+
       {% for amb in ambassadors %}
         <div class="ambassador-card mdl-card mdl-shadow--2dp mdl-color--primary">
           <div class="mdl-card__title mdl-card--expand mdl-typography--font-thin">
@@ -31,7 +31,7 @@ layout: default
               {%endif%}
             </div>
             <div class="ambassador-lang mdl-typography--font-thin">
-              <h6>Speaking</h6>
+              <h6>Languages</h6>
               {% for lang in amb.languages %}
                 <span class="lang-{{lang | downcase}}">{{lang}}</span>
               {% endfor %}
