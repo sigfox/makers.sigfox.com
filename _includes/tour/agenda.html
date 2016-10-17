@@ -15,7 +15,12 @@
                   <span class="event-date mdl-typography--font-thin">
                     <date datetime="{{event.date}}">
                   
-                  {{event.date | date:"%B %d" | upcase }}
+                   {% if event.approx %}
+                    {{event.date | date:"%B"}}
+                  {%else %}
+                    {{event.date | date:"%b %d"}}
+                  {%endif%}
+                      
 
                   {% assign time = event.date|date:"%H" %}
                   {%if time != "00" %}
@@ -29,19 +34,19 @@
                   </div>
                 {% endif%}
               </h5>
-              <h4 class="event-location mdl-typography--font-thin">
+              <p>
+                
+              </p>
+              <h4 class="mdl-typography--font-thin">{{event.location}}</h4>
+              <h5 class="event-location mdl-typography--font-thin">
                 {% if event.host %}
                   {% if event.hostLink%}
-                    @&nbsp;<a target="_blank" class="mdl-typography--font-thin mdl-color-text--white" href="{{event.hostLink}}">{{event.host}}</a>
+                    @&nbsp;<a rel="noopener noreferrer" target="_blank" class="mdl-typography--font-thin mdl-color-text--white" href="{{event.hostLink}}">{{event.host}}</a>
                   {%else%}
                     @&nbsp;{{event.host}}
                   {%endif%}
                 {% endif %}
-              </h4>
-              <p>
-                
-              </p>
-              <h5 class="mdl-typography--font-thin">{{event.location}}</h5>
+              </h5>
             </div>
 
             <div class="mdl-card__actions mdl-card--border">
