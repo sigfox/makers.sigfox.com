@@ -1,4 +1,4 @@
-- type: 
+- type:
   partners:
     - name: Euratechnologies
       logo: euratechnologies.gif
@@ -16,3 +16,11 @@
       logo: helsinki.png
       url: http://www.helsinkiventures.com/
       country: Finland
+    - name: H Farm
+      logo: hfarm.png
+      url: http://www.h-farm.com/en/
+      country: Italy
+    - name: Le Bivouac
+      logo: bivouac.png
+      url: http://www.lebivouac.com/
+      country: France
