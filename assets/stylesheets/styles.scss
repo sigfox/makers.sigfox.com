@@ -332,14 +332,14 @@ main.mdl-layout__content{
     > .mdl-card{
       margin:0;
       padding: 8px;
+      width: 100%;
     }
     .devkits, .modules{
       .mdl-card{
         display:flex;
         height: 256px;
-
-        width: 31%;
-
+        width: 256px;
+        
         margin: 10px 1%;
       }
       .mdl-spinner{
