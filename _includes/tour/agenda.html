@@ -7,7 +7,7 @@
       {% for event in entries %}
       {% assign eventdate = event.date | date:"%Y-%m-%d"%}
       {% capture oldevent%}{%if today > eventdate %}true{%else%}false{%endif%}{%endcapture%}
-        {% if event.SMT && oldevent=='true'%}
+        {% if event.SMT and oldevent=='false'%}
           <div class="event-card mdl-card mdl-shadow--2dp mdl-color--primary">
             <div class="mdl-card__title mdl-card--expand">
               <h5 class="event-date">
