@@ -1,15 +1,13 @@
 {% assign today = site.time | date:"%Y-%m-%d"%}
-{% assign entries = site.data.tourdates | sort:"date","first" | reverse%}
+{% assign entries = site.data.events | sort:"date","first"%}
 <section id="agenda">
 <h4 class="mdl-cell mdl-cell--12-col">Events</h4>  
-  <div class="mdl-card mdl-cell mdl-cell--12-col">
-    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-  
+  <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
       
       {% for event in entries %}
       {% assign eventdate = event.date | date:"%Y-%m-%d"%}
       {% capture oldevent%}{%if today > eventdate %}true{%else%}false{%endif%}{%endcapture%}
-        {% unless timestamp < now %}
+        {% if event.SMT && oldevent=='true'%}
           <div class="event-card mdl-card mdl-shadow--2dp mdl-color--primary">
             <div class="mdl-card__title mdl-card--expand">
               <h5 class="event-date">
@@ -31,19 +29,19 @@
                   </div>
                 {% endif%}
               </h5>
-              <h4 class="event-location">
-                {{event.city}}
-              </h4>
-              <p>
-                {% if event.location %}
-                  {% if event.locationLink%}
-                    @&nbsp;<a target="_blank"   href="{{event.locationLink}}">{{event.location}}</a>
+              <h4 class="event-location mdl-typography--font-thin">
+                {% if event.host %}
+                  {% if event.hostLink%}
+                    @&nbsp;<a target="_blank" class="mdl-typography--font-thin mdl-color-text--white" href="{{event.hostLink}}">{{event.host}}</a>
                   {%else%}
-                    @&nbsp;{{event.location}}
+                    @&nbsp;{{event.host}}
                   {%endif%}
                 {% endif %}
+              </h4>
+              <p>
+                
               </p>
-              <h5 class="mdl-typography--font-thin">{{event.name}}</h5>
+              <h5 class="mdl-typography--font-thin">{{event.location}}</h5>
             </div>
 
             <div class="mdl-card__actions mdl-card--border">
@@ -64,7 +62,7 @@
               <i class="material-icons">event</i>
             </div>
           </div>
-        {% endunless %}
+        {% endif %}
       {% endfor %}
-</div></div>
+</div>
 </section>

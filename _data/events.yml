@@ -22,12 +22,16 @@
   location: Turin
   url: /tour
   desc: Register
+  SMT: true
+  host: Toolbox Office Lab
+  hostLink: http://www.toolboxoffice.it/
 
 - name : Sigfox Makers Tour
   location: Prague
   date: 2016/11/24
   url: /tour
   desc: Register
+  SMT: true
 
 - name: Sigfox Makers Tour
   location: Helsinki
@@ -35,6 +39,7 @@
   approx: true
   url: /tour
   desc: Register
+  SMT: true
 
 - name: Sigfox Makers Tour
   location: Copenhagen
@@ -42,6 +47,7 @@
   approx: true
   url: /tour
   desc: Register
+  SMT: true
 
 - name: Sigfox Makers Tour
   location: San Francisco
@@ -49,6 +55,7 @@
   approx: true
   url: /tour
   desc: Register
+  SMT: true
 
 - name: Riot Conference
   location: Berlin
@@ -61,6 +68,7 @@
   date: 2016/10/06
   url: /tour
   desc: Register
+  SMT: true
 
 - name: Sigfox Makers Tour
   location: Berlin
@@ -68,12 +76,13 @@
   approx: true
   url: /tour
   desc: Register
+  SMT: true
 
 - name: Web Summit
   location: Lisbon
   date: 2016/11/07
   url: //websummit.net
-  desc: Meet there
+  desc: Meet there  
 
 - name: Workshop Avnet/ON
   location: Paris
