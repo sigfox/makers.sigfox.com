@@ -9,7 +9,7 @@
   location: Marseille
   url: http://www.swaixmarseille.fr/
   desc: Mentoring
-  
+
 - name: Maker Faire Rome
   date: 2016/10/14
   url: //www.makerfairerome.eu/en/
@@ -22,7 +22,7 @@
   location: Turin
   url: /tour
   desc: Register
-  
+
 - name : Sigfox Makers Tour
   location: Prague
   date: 2016/11/24
@@ -35,14 +35,14 @@
   approx: true
   url: /tour
   desc: Register
-  
+
 - name: Sigfox Makers Tour
   location: Copenhagen
   date: 2016/12/31
   approx: true
   url: /tour
   desc: Register
-  
+
 - name: Sigfox Makers Tour
   location: San Francisco
   date: 2016/12/31
@@ -55,7 +55,7 @@
   date: 2016/11/23
   url: //riot.berlin
   desc: Meet there
-  
+
 - name: Sigfox Makers Tour
   location: Clermont
   date: 2016/10/06
@@ -68,31 +68,27 @@
   approx: true
   url: /tour
   desc: Register
-  
+
 - name: Web Summit
   location: Lisbon
   date: 2016/11/07
   url: //websummit.net
   desc: Meet there
-  
+
 - name: Workshop Avnet/ON
   location: Paris
   date: 2016/10/11
   url: https://www.eventbrite.fr/e/billets-solutions-sigfox-on-semiconductor-27576068764
   desc: Register
-  
+
 - name: Workshop Avnet/ON
   location: Lyon
   date: 2016/10/12
   url: https://www.eventbrite.fr/e/billets-solutions-sigfox-on-semiconductor-27616902900
   desc: Register
-  
+
 - name: Workshop Avnet/ON
   location: Toulouse/Labège
   date: 2016/10/13
   url: https://www.eventbrite.fr/e/billets-solutions-sigfox-on-semiconductor-27616592973
   desc: Register
-  
-  
-  
-  
