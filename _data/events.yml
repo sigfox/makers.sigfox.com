@@ -103,6 +103,13 @@
   desc: Register
 
 - name: Sigfox Makers Tour
+  location: Amsterdam
+  url: /tour
+  desc: Register
+  SMT: true
+  date: 2100/1/1
+
+- name: Sigfox Makers Tour
   location: Boston
   url: /tour
   desc: Register
