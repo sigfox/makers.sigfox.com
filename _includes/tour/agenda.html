@@ -6,12 +6,14 @@
       
       {% for event in entries %}
       {% assign eventdate = event.date | date:"%Y-%m-%d"%}
+  
       {% capture oldevent%}{%if today > eventdate %}true{%else%}false{%endif%}{%endcapture%}
         {% if event.SMT and oldevent=='false'%}
           <div class="event-card mdl-card mdl-shadow--2dp mdl-color--primary">
             <div class="mdl-card__title mdl-card--expand">
               <h5 class="event-date">
-                {% if event.date %}
+                {% if event.date and eventdate < "2099-1-1" %}
+                                                                
                   <span class="event-date mdl-typography--font-thin">
                     <date datetime="{{event.date}}">
                   
@@ -56,8 +58,11 @@
                   {% if event.soldOut %}
                   Sold out
                 {% else %}
-                  
+                  {% if event.date and eventdate < "2099-1-1" %}
                     Register
+                 {% else %}
+                    Interested
+                 {%endif%}
                   
                 {% endif %}
                   </a>

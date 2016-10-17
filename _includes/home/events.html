@@ -10,7 +10,13 @@
 
       {% for event in entries %}
       {% assign timestamp = event.date|date:'%s' %}
-        {% unless timestamp < now %}
+      {%comment%}
+        Don't show events that are in the past, or too far in the future
+        4070822400000 means Dec 31, 2098
+        Why ? because liquid templates don't make it easy to do two-criteria sort
+        So ... i'm using 2099/1/1 as the date for "may happen in the future" SMT events
+      {%endcomment%}
+        {% unless timestamp < now or timestamp > '4070822400000' %}
           <div class="event-card mdl-card mdl-shadow--2dp mdl-color--primary">
             <div class="mdl-card__title mdl-card--expand">
               <h5 class="event-date">
