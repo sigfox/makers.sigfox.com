@@ -12,8 +12,15 @@ a{
   text-decoration: none;
 }
 .mdl-layout.is-small-screen{
-  #about header{
+  .ribbon{
     display: none;
+  }
+  
+  #about header{
+    min-height: auto;
+    img{
+      height: 60px;
+    }
   }
   main.mdl-layout__content > .mdl-layout__tab-panel{
     padding-top: 0;
@@ -24,10 +31,33 @@ a{
   .mdl-layout__tab-bar .mdl-button {
     display: none;
   }
+  
+  footer{
+    padding:0;
+    text-align: center;
+    .mdl-mega-footer--middle-section{
+      display: none;
+    }
+    .mdl-mega-footer--bottom-section{
+      margin: 0;
+      padding: 0;
+      
+      .mdl-logo{
+        margin: 0;
+        
+        .logo{
+          max-height: 40px;
+        }
+      }
+    }
+  }
 }
 .mdl-layout:not(.is-small-screen){
   .mdl-layout__tab-bar, .mdl-layout__tab-bar-container {
     overflow: visible;
+  }
+  main#about, main#tour,  main#startups{
+    margin-top: -35vh;
   }
 }
 header.mdl-layout__header{
