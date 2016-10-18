@@ -484,7 +484,12 @@ main#about, main#tour, main#getting-started, main#startups{
     padding: 1em;
   }
 }
-
+main#tour{
+  h5.event-location{
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
 footer img.logo{
   max-height: 60px;
 }

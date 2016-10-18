@@ -31,6 +31,8 @@
   date: 2016/11/24
   url: /tour
   desc: Register
+  host: CAS Technology Centre
+  hostLink: http://www.tc.cz/en/contacts
   SMT: true
 
 - name: Sigfox Makers Tour
