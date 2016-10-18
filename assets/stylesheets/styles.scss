@@ -453,9 +453,7 @@ section.section--center .section__text:not(:last-child) {
   background-color: unquote("rgb(#{$color-primary-dark})");
   flex-shrink: 0;
 }
-main#about, main#tour, main#getting-started, main#startups{
-  margin-top: -35vh;
-
+main#about, main#tour,  main#startups, main#getting-started{
   .about-inner, .tour-inner{
     padding: 1em;
   }
