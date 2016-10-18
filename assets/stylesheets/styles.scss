@@ -207,7 +207,7 @@ main.mdl-layout__content{
     
   }
 
-  #events, #ambassadors, #agenda{
+  #events, #ambassadors, #agenda, &#startups{
     h3{
       width: 100%;
     }
@@ -218,9 +218,8 @@ main.mdl-layout__content{
     .events-info{
       margin-top:10px;
     }
-    .event-card.mdl-card, .ambassador-card.mdl-card {
-      width: auto;
-      min-width: 242px;
+    .event-card.mdl-card, .ambassador-card.mdl-card, .startups-partner-card {
+      width: 256px;
       margin: 10px 1%;
 
       > .mdl-card__actions {
@@ -392,13 +391,6 @@ main.mdl-layout__content{
 }
 #startups{
   #partners{
-    .startups-partner-card{
-      display:flex;
-
-      width: 31%;
-
-      margin: 10px 1%;
-    }
     img{
       max-width:100%;
       max-height: 120px;
