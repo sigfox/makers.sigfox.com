@@ -14,7 +14,7 @@
               <h5 class="event-date">
                 {% if event.date and eventdate < "2099-1-1" %}
                                                                 
-                  <span class="event-date mdl-typography--font-thin">
+                  <span class="event-date mdl-typography--font-thin mdl-color-text--white">
                     <date datetime="{{event.date}}">
                   
                    {% if event.approx %}
@@ -31,7 +31,7 @@
                 </date>
                 </span>
                 {%else%}
-                  <div class="event-date mdl-typography--font-thin">
+                  <div class="event-date mdl-typography--font-thin mdl-color-text--white">
                     Considering this city
                   </div>
                 {% endif%}
@@ -39,7 +39,7 @@
               <p>
                 
               </p>
-              <h4 class="mdl-typography--font-thin">{{event.location}}</h4>
+              <h4 class="mdl-typography--font-thin mdl-color-text--white">{{event.location}}</h4>
               <h5 class="event-location mdl-typography--font-thin">
                 {% if event.host %}
                   {% if event.hostLink%}
@@ -69,7 +69,7 @@
               {% endunless %}
               </a>
               <div class="mdl-layout-spacer"></div>
-              <i class="material-icons">event</i>
+              <i class="material-icons mdl-color-text--white">event</i>
             </div>
           </div>
         {% endif %}
