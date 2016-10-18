@@ -174,20 +174,7 @@ main.mdl-layout__content{
         text-decoration: none;
       }
     }
-    .section__circle-container > .section__circle-container__circle {
-      width: 64px;
-      height: 64px;
-      border-radius: 32px;
-      margin: 8px 0;
-    }
-    &.section--footer{
-      .section__circle--big {
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        margin: 8px 32px;
-      }
-    }
+    
   }
 
   #events, #ambassadors, #agenda{
@@ -422,17 +409,6 @@ section.section--center, .tour-inner.section--center {
 #features section.section--center {
   max-width: 620px;
 }
-
-.is-small-screen section.section--footer .section__circle--big {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  margin: 8px 16px;
-}
-section.section--footer {
-  padding: 64px 0;
-  margin: 0 -8px -8px -8px;
-}
 section.section--center .section__text:not(:last-child) {
   border-bottom: 1px solid rgba(0,0,0,.13);
 }
@@ -445,29 +421,7 @@ section.section--center .section__text:not(:last-child) {
 #features h4, #features h5 {
   margin-bottom: 16px;
 }
-.toc {
-  border-left: 4px solid #C1EEF4;
-  margin: 24px;
-  padding: 0;
-  padding-left: 8px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.toc h4 {
-  font-size: 0.9rem;
-  margin-top: 0;
-}
-.toc a {
-  color: #4DD0E1;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 28px;
-  display: block;
-}
+
 .mdl-menu__container {
   z-index: 99;
 }
