@@ -204,7 +204,12 @@ main.mdl-layout__content{
         text-decoration: none;
       }
     }
-    
+    .section__circle-container > .section__circle-container__circle {    
+       width: 64px;		
+       height: 64px;		
+       border-radius: 32px;		
+       margin: 20% 0;		
+     }
   }
 
   #events, #ambassadors, #agenda, &#startups{
@@ -433,6 +438,8 @@ section.section--center, .tour-inner.section--center {
 }
 section.section--center .section__text:not(:last-child) {
   border-bottom: 1px solid rgba(0,0,0,.13);
+  margin-bottom: .5em;
+  padding-bottom: .5em;
 }
 .mdl-layout__tab-panel:not(#overview) {
   background-color: white;
