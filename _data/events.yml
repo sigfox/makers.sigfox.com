@@ -31,6 +31,8 @@
   date: 2016/11/24
   url: /tour
   desc: Register
+  host: CAS Technology Centre
+  hostLink: http://www.tc.cz/en/contacts
   SMT: true
 
 - name: Sigfox Makers Tour
@@ -82,7 +84,7 @@
   location: Lisbon
   date: 2016/11/07
   url: //websummit.net
-  desc: Meet there  
+  desc: Meet there
 
 - name: Workshop Avnet/ON
   location: Paris
@@ -115,91 +117,91 @@
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: Madrid
   url: /tour
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: Barcelona
   url: /tour
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: Munich
   url: /tour
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: Rome
   url: /tour
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: London
   url: /tour
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: New York
   url: /tour
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: Mexico
   url: /tour
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: Rio de Janeiro
   url: /tour
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: Bogota
   url: /tour
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: Taipei
   url: /tour
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: Singapore
   url: /tour
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: Sydney
   url: /tour
   desc: Register
   SMT: true
   date: 2100/1/1
-  
+
 - name: Sigfox Makers Tour
   location: Auckland
   url: /tour
