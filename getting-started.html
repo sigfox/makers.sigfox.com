@@ -1,18 +1,365 @@
 ---
 layout: default
 ---
-<main class="mdl-layout__content" id="getting-started">
-  <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-    <div class="about-inner mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+<link rel="stylesheet" href="../assets/stylesheets/highlight/styles/default.css">
+<main class="mdl-layout__content">
+    <div class="mdl-layout__tab-panel is-active" id="overview">
+    <section id="intro" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
 
-      <h3>Getting Started </h3>
-      <p>
-        The <i>Getting Started</i> is just getting started, visit us back in a few days for more content !
-      </p>
-      <p>
-      Meanwhile, please <a href="#contact">contact us</a> if you have any question or need any help.</p>
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                    <h2 class="mdl-card__title-text">Getting Started</h2>
+              </div>
+
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <p>
+                            This getting started guide will walk you through sending your first Sigfox message, setting up basic callbacks and configuring the downlink protocol. If you're new to Sigfox and want to jump start your Sigfox development, you'll find everything you need here! This guide will start by assuming you are using an external processor/MCU to communicate with the Sigfox module.
+                        </p>
+                        <p>
+                            You'll find information here about the following:
+                        </p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <ul>
+                            <li>
+                                <a href="#register">Registering a Sigfox Device</a>
+                            </li>
+                            <li>
+                                <a href="#send-sigfox">Sending a Message</a>
+                            </li>
+                            <li>
+                                <a href="#callbacks">Creating a Callback</a>
+                            </li>
+                            <li>
+                                <a href="#downlink">Requesting a Downlink Message</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Sigfox Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--12-col">
+
+                        <p>
+                            If you have any questions or concerns that are outside of the range of this guide, do not hesitate to contact us through any means via the details at the bottom of the page. We're active on Twitter and will try to respond to any questions or problems you have!
+                        </p>
+                    </div>
+
+        </div>
+    </section>
+    <section id="register" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                    <h2 class="mdl-card__title-text">Registering with Sigfox</h2>
+              </div>
+
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h4>Sigfox Network</h4>
+                        <p>
+                            In order to start using the Sigfox network, you'll need to firstly register your device and an account on the Sigfox network. If you're joining the network as a Maker with a Dev Kit or with a small number of prototypes you'll be able to start using Sigfox immediately. If you're already building devices at scale and want to start deploying them, please get in touch and we'll make sure you have the right account set up.
+                        </p>
+                    </div>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <h4>Activate a Device</h4>
+
+                        <p>
+                            Navigate to the <a href="https://backend.sigfox.com/activate">activate</a> webpage and choose your Dev Kit provider. Next select your country and respective service provider. Find your device's Device ID and PAC number as you'll need these for activation (can be found on the box of your device). You'll then be asked to enter a few details and to create an account. </p>
+                        <p>
+                        Once you've done this, you should be registered on the SIGFOX Backend! Check the email account that you registered with and you should have a link inviting you to activate your account. The device you registered should now appear in your account.
+                        </p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col">
+
+
+                    </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="send-sigfox" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                <h2 class="mdl-card__title-text">Send a Sigfox Message</h2>
+            </div>
+
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h4>Message Payload</h4>
+                        <p>
+                            Sigfox messages are designed to be smaller, optimised for sensors and require only a small amount of power to transmit. The Sigfox payload is limited to 12 bytes (excluding the payload headers). An 'uplink' or device to base station message is broadcast by the device for approximately <strong>6 seconds</strong> at a rate of <strong>100 bit/s</strong> (within the RCZ1). Although this might seem like a very restricted message payload, there's actually a lot that can be done with 12 bytes!
+                        </p>
+                        <p>
+                            The example below shows how you could structure 12 bytes to send a set of GPS coordinates along with speed, acquistion time and the voltage of a battery.
+                        </p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--10-col">
+                        <div class="mdl-layout-spacer"></div>
+
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                      <tbody>
+                        <tr>
+                          <td class="mdl-data-table__cell">0</td>
+                          <td class="mdl-data-table__cell">1</td>
+                          <td class="mdl-data-table__cell">2</td>
+                          <td class="mdl-data-table__cell">3</td>
+                          <td class="mdl-data-table__cell">4</td>
+                          <td class="mdl-data-table__cell">5</td>
+                          <td class="mdl-data-table__cell">6</td>
+                          <td class="mdl-data-table__cell">7</td>
+                          <td class="mdl-data-table__cell">8</td>
+                          <td class="mdl-data-table__cell">9</td>
+                          <td class="mdl-data-table__cell">10</td>
+                          <td class="mdl-data-table__cell">11</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">Lat.</td>
+                          <td class="mdl-data-table__cell--non-numeric">Lat.</td>
+                          <td class="mdl-data-table__cell--non-numeric">Lat.</td>
+                          <td class="mdl-data-table__cell--non-numeric">Lat.</td>
+                          <td class="mdl-data-table__cell--non-numeric">Lon.</td>
+                          <td class="mdl-data-table__cell--non-numeric">Lon.</td>
+                          <td class="mdl-data-table__cell--non-numeric">Lon.</td>
+                          <td class="mdl-data-table__cell--non-numeric">Lon.</td>
+                          <td class="mdl-data-table__cell--non-numeric">Vol.</td>
+                          <td class="mdl-data-table__cell--non-numeric">Sats.</td>
+                          <td class="mdl-data-table__cell--non-numeric">Acq.</td>
+                          <td class="mdl-data-table__cell--non-numeric">Spd.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="mdl-layout-spacer"></div>
+
+
+                </div>
+                <div class="mdl-cell mdl-cell--12-col">
+                </br>
+                <p>There are a few of different ways to send a Sigfox message, this guide will walk you through the two simplest; using AT commands and utilising a device library.</p>
+            </div>
+
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h5>AT Commands</h5>
+                        <p>
+                            AT Commands at the lowest level of interaction that you'll interact with a Sigfox Module (Unless you're using an SDK). Most commonly you'll interact with a Sigfox Module by using a serial interface, specifically UART. You'll address the module with a command to initalise it, prepare it for transmission and then pass your payload or message to it for transmission.
+                        </p>
+                        <pre><code class="round-code">AT$SF=0123CAFE\r</code></pre>
+                        <p>
+                            <strong>Note -</strong> AT commands are sent in Hexidecimal so ensure that you encode your data in this format.
+                        </p>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h5>Connecting with Serial UART</h5>
+                        <p>
+                            In order to send across the AT command shown earlier, we need to communicate between a device and it's Sigfox module. Below is an example of opening a serial connection between and Arduino Uno and a Sigfox module.
+                        </p>
+
+<pre><code class="round-code">#include &lt;SerialSoftware.h&gt;
+#define TX 4
+#define RX 5
+
+SoftwareSerial sigfox(RX,TX);
+
+void setup()
+{
+sigfox.begin(9600); // Initalise Serial connection
+sigfox.write("AT$SF=0123CAFE\r"); // Serial write to Sigfox Module
+}
+
+void loop(){}
+</code></pre>
+                        <p>
+                            There are various Sigfox module solutions and packages. If you wish to find out more about specific solutions, check out our <a href="https://partners.sigfox.com">partners</a> website.
+                        </p>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h5>Using Libraries</h5>
+                        <p>
+                            Libraries are abstractions of the AT Command interface and allow you to quickly and easily send messages without worrying about changing your payload into its hexidemical representation and ensuring that you're complying with the ETSI Duty Cycle Restrictions. There are a number of custom libraries that have been for various platforms. Examples of these are coming soon...
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="callbacks" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                    <h2 class="mdl-card__title-text">Setting up a Callback</h2>
+              </div>
+
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                  <div class="mdl-cell mdl-cell--12-col">
+                      <h4>What is a Callback?</h4>
+                      <p>Sending your message is easy... what about retrieving it? Sigfox makes it easy to retrieve your data from our cloud service by the use of Callbacks. Callbacks are a service that allows Sigfox to push an event to your server upon an event. For example, your device might send a Sigfox message upon an external trigger; you might want to be notified once this event had occured. This would be the idea case to use a Callback; the Sigfox server would relay your message via a POST/GET request to your own server. In addition to defining your own server and data, Sigfox also allows you to transfer your data with simplified bridges such as AWS IoT and Microsoft Azure.</p>
+                      <p>We'll start by looking at how to utilise Custom Callbacks and then move onto utilising specific services.</p>
+                  </div>
+                  <div class="mdl-cell mdl-cell--12-col">
+                      <h4>Custom Callback</h4>
+                      <p>To setup a custom Callback, you need to initalise a few different features on the Sigfox Backend. We'll assume at this point your device and account have already been registered and that you know how to transmit a message.</p>
+                      <div class="mdl-grid">
+                           <div class="mdl-layout-spacer"></div>
+                           <div class="mdl-cell mdl-cell--3-col">
+                               <img src="../assets/media/icons/custom_callback.png" style="height: 128px;width: 128px;"/>
+                           </div>
+                           <div class="mdl-layout-spacer"></div>
+                        </div>
+                        <p>We'll start by looking at how to utilise Custom Callbacks and then move onto utilising specific services. We'll assume you've set up a Device with a Device Type and group.</p>
+                        <p>Navigate to the 'Device Type' tab in the navbar. Then search for your Device's Device Type and click the filter button. Select the 'Name' of the device within the search entry. You'll be brought to an 'Information' page. From here you can see all the data about the device you set up. Now navigate to the 'Callbacks' on the left side of the page. If this is the first time you've set up a callback the page should be empty. Click the 'New' button in the top right and you'll be presented with a list of different types of callbacks
+                        </p>
+                        <p>
+                            Click on the 'Custom Callbacks' element. You'll now have a page that looks similar to the one below, with a number of different configuration options.
+                        </p>
+                        <div class="mdl-grid">
+                             <div class="mdl-layout-spacer"></div>
+                             <div class="mdl-cell mdl-cell--10-col">
+                                 <img src="../assets/media/getting_started/callbacks.png" style="width:inherit;display: block;margin:0 auto;"/>
+                             </div>
+                             <div class="mdl-layout-spacer"></div>
+                          </div>
+                        </div>
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <h6><strong>Custom Payload Config</strong></h6>
+						  <p>
+							  This field allows you to specify how you would like Sigfox to decode your device's payload. You might for example wish to decode an incoming byte as an unsigned integer. An example of this is the first line of the sample below:
+						  </p>
+<pre><code>int1::uint:8 // Unsigned integer of 8 bits with name int1
+str::char:6 // Character String of 6 letters with name str
+b1::bool:7 // Boolean based on value of bit in position 7 with name b1
+</code></pre>
+						  <p>
+							Where "int1" is the name of the value, "uint:8" specifies the datatype and the number of bits, respectively.
+						  </p>
+                      </div>
+                      <div class="mdl-cell mdl-cell--12-col">
+                          <h6><strong>Body</strong></h6>
+                          This is the main content of your message. You'll be able to specify any custom data you want to configure within the payload. You can see all of the available variables in the URL Syntax section. An example callback payload (in json format) is shown below.
+<pre><code class="round-code">{
+    "data": {
+        "temperature": "{customData#temperature}",
+        "humidity": "{customData#humidity}",
+        "battery": "{customData#battery}",
+        "mode": "{customData#mode}"
+    },
+    "deviceId":"{device}",
+    "time":"{time}"
+}
+</code></pre>
+                      </div>
+
+                  <div class="mdl-cell mdl-cell--12-col">
+                      <h4>Simplified Bridges</h4>
+                      <p>Currently the Sigfox Backend offers simplified bridges with AWS IoT, AWS Kinesis, Microsoft Azure Event Hub and IoT Hub. Check back soon for more information about using these services.</p>
+                      <div class="mdl-grid">
+                          <div class="mdl-layout-spacer"></div>
+
+                           <div class="mdl-cell mdl-cell--2-col">
+                               <a href="https://aws.amazon.com/documentation/iot/"><img src="../assets/media/icons/awsiot_callback.png" style="height: 64px;width: 64px;"/></a>
+                           </div>
+                           <div class="mdl-cell mdl-cell--2-col">
+                               <a href="https://aws.amazon.com/documentation/kinesis"><img src="../assets/media/icons/kinesis_callback.png" style="height: 64px;width: 64px;"/></a>
+                           </div>
+                           <div class="mdl-cell mdl-cell--2-col">
+                               <a href="https://azure.microsoft.com/en-us/services/event-hubs/"><img src="../assets/media/icons/eventhub_callback.png" style="height: 64px;width: 64px;"/></a>
+                           </div>
+                           <div class="mdl-cell mdl-cell--2-col">
+                               <a href="https://azure.microsoft.com/en-us/services/iot-hub/"><img src="../assets/media/icons/iothub_callback.png" style="height: 64px;width: 64px;"/></a>
+                           </div>
+                           <div class="mdl-layout-spacer"></div>
+
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <section id="downlink" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                    <h2 class="mdl-card__title-text">Downlinks Messages</h2>
+              </div>
+
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h4>What is a Downlink Message?</h4>
+                        <p>The Sigfox protocol supports bi-directional communication. This means that you can set up your Sigfox module to request data from the Sigfox servers. This is called a downlink message. Your Sigfox device sends an uplink message to the Sigfox servers requesting a downlink message, waits for a specified period of 30 seconds. As with the uplink message the device expects to receive a 8 byte payload.</p>
+                        <p>
+                            Due to the nature of how the device initates the downlink rather than the base station, the downlink messages are commonly used for configuration. An example might be a device that has multiple sensors on board for collecting data.
+                        </p>
+                        <p>
+                            Due to ETSI regulation, the devices are limited to 4 downlink messages a day.
+                        </p>
+                        <p>
+                            <strong>A tutorial on how to request a Downlink message is coming soon...</strong>
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                    <h2 class="mdl-card__title-text">What's Next?</h2>
+              </div>
+
+            <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h4>Tutorials</h4>
+                        <p>
+                            If you're more interested in learning more about implementation in specific language, using different Callbacks or even hardware design, you may be interested in some of our technical guides.
+                        </p>
+                        <p>
+                            These guides are still in development but check back here soon for updates. In the meantime, have a look at some of our GitHub repos!
+                        </p>
+                        <p>
+                            <a href="https://github.com/Bucknalla/sigfox-python-flask">Sigfox Python Flask</a> by <a href="https://twitter.com/AlexRBucknall">Alex Bucknall</a>
+                        </p>
+                        <p>
+                            <a href="https://github.com/nicolsc/sigfox-callback-demo">Sigfox Node JS Callbacks Demo</a> by <a href="https://twitter.com/nlesconnec">Nicolas Lesconnec</a>
+                        </p>
+
+                </div>
+				<div class="mdl-cell mdl-cell--12-col">
+					<h4>Projects</h4>
+					<p>
+						So you're all set up, you're sending messages and retrieving your data... but what's next?
+					</p>
+					<p>
+						Well that's up to you! You're only limited by your imagination! To help get you started we've put together some fun Sigfox based projects that might inspire you.
+					</p>
+					<p>
+						<a href="http://www.instructables.com/id/Nerf-Connected-Target-on-Steroid/?ALLSTEPS">Connected Nerf Target</a> by <a href="https://twitter.com/luisomoreau">Louis Moreau</a>
+					</p>
+					<p>
+						<a href="https://www.hackster.io/18194/sigfox-talking-plant-0d21bc">Sigfox Plant</a> by <a href="https://twitter.com/luisomoreau">Louis Moreau</a>
+					</p>
+                    <h5>Hardware</h5>
+                    <p>
+                        We also have some hardware projects as well as a collection of information about developing Sigfox devices.
+                    </p>
+                    <p>
+                        <a href="http://www.instructables.com/id/Nerf-Connected-Target-on-Steroid/?ALLSTEPS">Sigfox HidnSeek Dev Board</a> by <a href="https://twitter.com/AlexRBucknall">Alex Bucknall</a>
+                    </p>
+                    <h4>GitHub</h4>
+                    <p>
+                        If you can't find what you're looking for, check out our <a href="https://github.com/sigfox">GitHub</a> for additional projects and support.
+                    </p>
+
+
+				</div>
+
+        </div>
+
     </div>
-  </div>
+    </section>
+</br>
+</div>
+    {% include footer.html %}
 </main>
-{% include footer.html %}
+
+<script src="../assets/stylesheets/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
