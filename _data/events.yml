@@ -28,7 +28,7 @@
 
 - name : Sigfox Makers Tour
   location: Prague
-  date: 2016/11/24
+  date: 2016/11/24 14:00:00
   url: /tour
   desc: Register
   host: CAS Technology Centre
@@ -40,8 +40,8 @@
   url: /tour
   desc: Register
   SMT: true
-  date: 2016/11/25
-
+  date: 2016/11/25 10:00:00 
+  
 
 - name: Sigfox Makers Tour
   location: Helsinki
