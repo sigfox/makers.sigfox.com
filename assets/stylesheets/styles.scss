@@ -15,7 +15,7 @@ a{
   .ribbon{
     display: none;
   }
-  
+
   #about header{
     min-height: auto;
     img{
@@ -31,7 +31,7 @@ a{
   .mdl-layout__tab-bar .mdl-button {
     display: none;
   }
-  
+
   footer{
     padding:0;
     text-align: center;
@@ -44,7 +44,7 @@ a{
       
       .mdl-logo{
         margin: 0;
-        
+
         .logo{
           max-height: 40px;
         }
@@ -204,11 +204,11 @@ main.mdl-layout__content{
         text-decoration: none;
       }
     }
-    .section__circle-container > .section__circle-container__circle {    
-       width: 64px;		
-       height: 64px;		
-       border-radius: 32px;		
-       margin: 20% 0;		
+    .section__circle-container > .section__circle-container__circle {
+       width: 64px;
+       height: 64px;
+       border-radius: 32px;
+       margin: 20% 0;
      }
   }
 
@@ -247,7 +247,7 @@ main.mdl-layout__content{
       > .mdl-card__title,
       > .mdl-card__actions,
       > .mdl-card__actions > .mdl-button {
-        
+
       }
       .mdl-card__title{
         display: block;
@@ -350,6 +350,7 @@ main.mdl-layout__content{
   #hardware{
     margin: 0 -8px 48px -8px;
     padding: 20px 0;
+	  width: inherit;
     > .mdl-card{
       margin:0;
       padding: 8px;
@@ -360,7 +361,7 @@ main.mdl-layout__content{
         display:flex;
         height: 256px;
         width: 256px;
-        
+
         margin: 10px 1%;
       }
       .mdl-spinner{
