@@ -34,6 +34,14 @@
   host: CAS Technology Centre
   hostLink: http://www.tc.cz/en/contacts
   SMT: true
+  
+- name: Sigfox Makers Tour
+  location: Bratislava
+  url: /tour
+  desc: Register
+  SMT: true
+  date: 2016/11/25
+
 
 - name: Sigfox Makers Tour
   location: Helsinki
