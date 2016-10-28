@@ -60,20 +60,32 @@ layout: default
                     <div class="mdl-cell mdl-cell--12-col">
                         <h4>Sigfox Network</h4>
                         <p>
-                            In order to start using the Sigfox network, you'll need to firstly register your device and an account on the Sigfox network. If you're joining the network as a Maker with a Dev Kit or with a small number of prototypes you'll be able to start using Sigfox immediately. If you're already building devices at scale and want to start deploying them, please get in touch and we'll make sure you have the right account set up.
+                          To be able to receive the data sent by your device(s) over the Sigfox network and to manage them, you need to associate them with a valid subscription to the Sigfox service.
                         </p>
                     </div>
                         <div class="mdl-cell mdl-cell--12-col">
-                            <h4>Activate a Device</h4>
+                            <h4>Activate a Development Kit</h4>
+                          
+                          <p>The following procedure is relevant <strong>for dev kits only</strong>, as they come with an included subscription to the full Sigfox service. If you bought a developement kit (Arduino, Raspberry Pi, ...) or an evaluation board from one of our partners, you'll be able to activate your accounts within 3 minutes. </p>
 
                         <p>
                             Navigate to the <a href="https://backend.sigfox.com/activate">activate</a> webpage and choose your Dev Kit provider. Next select your country and respective service provider. Find your device's Device ID and PAC number as you'll need these for activation (can be found on the box of your device). You'll then be asked to enter a few details and to create an account. </p>
                         <p>
                         Once you've done this, you should be registered on the SIGFOX Backend! Check the email account that you registered with and you should have a link inviting you to activate your account. The device you registered should now appear in your account.
                         </p>
+                          <p>
+                          You can associate <i>n</i> development kits to a single Sigfox account. Each of them will be associated to a dedicated group + device type, and you won't be able to group them in a single device type. For bulk registrations, please follow the procedure below.
+                          </p>
                     </div>
+            
                     <div class="mdl-cell mdl-cell--12-col">
+                      <h4>Activate another device</h4>
+                      <p>This procedure apply to : 
+                        <ul><li>End devices</li><li>Standalone modules</li><li>Prototypes you built yourself</li><li>Bulk registrations</li></ul>
+                    </p>
 
+                      <p>If you already have an account and an ongoing contract with available tokens, simply <i>create a new device</i>, to associate it to your account using its ID & PAC. You can do it either through the online interface or through the API.</p>
+              <p>Otherwise, you need to get in touch with your local <a rel="noopener noreferrer"  target="_blank" href="//sigfox.com/coverage">Sigfox Operator</a> to subscribe the appropriate number of <i>tokens</i>. One token = One year subscription for one device.</p>
 
                     </div>
             </div>
