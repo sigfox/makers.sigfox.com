@@ -65,28 +65,27 @@ layout: default
                     </div>
                         <div class="mdl-cell mdl-cell--12-col">
                             <h4>Activate a Development Kit</h4>
-                          
+
                           <p>The following procedure is relevant <strong>for dev kits only</strong>, as they come with an included subscription to the full Sigfox service. If you bought a developement kit (Arduino, Raspberry Pi, ...) or an evaluation board from one of our partners, you'll be able to activate your accounts within 3 minutes. </p>
 
                         <p>
                             Navigate to the <a href="https://backend.sigfox.com/activate">activate</a> webpage and choose your Dev Kit provider. Next select your country and respective service provider. Find your device's Device ID and PAC number as you'll need these for activation (can be found on the box of your device). You'll then be asked to enter a few details and to create an account. </p>
                         <p>
-                        Once you've done this, you should be registered on the SIGFOX Backend! Check the email account that you registered with and you should have a link inviting you to activate your account. The device you registered should now appear in your account.
+                        Once you've done this, you should be registered on the SIGFOX Backend. Check the email account that you registered with and you should have a link inviting you to activate your account. The device you registered should now appear in your account.
                         </p>
                           <p>
-                          You can associate <i>n</i> development kits to a single Sigfox account. Each of them will be associated to a dedicated group + device type, and you won't be able to group them in a single device type. For bulk registrations, please follow the procedure below.
+                          You can associate <i>n</i> development kits to a single Sigfox account. Each of them will be associated to a dedicated group + device type and you won't be able to group them in a single device type. For bulk registrations, please follow the procedure below.
                           </p>
                     </div>
-            
+
                     <div class="mdl-cell mdl-cell--12-col">
-                      <h4>Activate another device</h4>
-                      <p>This procedure apply to : 
-                        <ul><li>End devices</li><li>Standalone modules</li><li>Prototypes you built yourself</li><li>Bulk registrations</li></ul>
+                      <h4>Activating Other Devices</h4>
+                      <p>This procedure applies to:
+                        <ul><li>End Devices</li><li>Standalone Modules</li><li>Prototypes</li><li>Bulk Registrations</li></ul>
                     </p>
 
-                      <p>If you already have an account and an ongoing contract with available tokens, simply <i>create a new device</i>, to associate it to your account using its ID & PAC. You can do it either through the online interface or through the API.</p>
-              <p>Otherwise, you need to get in touch with your local <a rel="noopener noreferrer"  target="_blank" href="//sigfox.com/coverage">Sigfox Operator</a> to subscribe the appropriate number of <i>tokens</i>. One token = One year subscription for one device.</p>
-
+                      <p>If you already have an account and an ongoing contract with available tokens, simply <i>create a new device</i>, to associate it to your account using its ID &amp; PAC. You can do it either through the online interface or via the API.</p>
+              <p>Otherwise, you need to get in touch with your local <a rel="noopener noreferrer"  target="_blank" href="//sigfox.com/coverage">Sigfox Operator</a> to subscribe the appropriate number of <i>tokens</i>. One token is equal to one year subscription for one device.</p>
                     </div>
             </div>
 
@@ -105,7 +104,7 @@ layout: default
                             Sigfox messages are designed to be smaller, optimised for sensors and require only a small amount of power to transmit. The Sigfox payload is limited to 12 bytes (excluding the payload headers). An 'uplink' or device to base station message is broadcast by the device for approximately <strong>6 seconds</strong> at a rate of <strong>100 bit/s</strong> (within the RCZ1). Although this might seem like a very restricted message payload, there's actually a lot that can be done with 12 bytes!
                         </p>
                         <p>
-                            The example below shows how you could structure 12 bytes to send a set of GPS coordinates along with speed, acquistion time and the voltage of a battery.
+                            The example below shows how you might structure 12 bytes to send a set of GPS coordinates along with speed, acquistion time and the voltage of a battery.
                         </p>
                     </div>
                     <div class="mdl-cell mdl-cell--10-col">
