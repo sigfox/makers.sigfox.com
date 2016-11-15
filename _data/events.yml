@@ -75,7 +75,7 @@
 
 - name: Over the Air
   location: London
-  date: 2016/11/25
+  date: 2016/11/25 14:00:00
   url: http://overtheair.org/
   desc: Meet there
 
