@@ -113,11 +113,16 @@
   desc: Meet there
 
 - name: Workshop Avnet/ON
+  location: Lille
+  date: 2016/12/09
+  desc: Sold o 14:00:00ut
+
+- name: Workshop Avnet/ON
   location: Paris
   date: 2016/10/11
   url: https://www.eventbrite.fr/e/billets-solutions-sigfox-on-semiconductor-27576068764
   desc: Register
-
+  
 - name: Workshop Avnet/ON
   location: Lyon
   date: 2016/10/12
