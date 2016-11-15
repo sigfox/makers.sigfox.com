@@ -40,14 +40,14 @@
   host: CAS Technology Centre
   hostLink: http://www.tc.cz/en/contacts
   SMT: true
-  
+
 - name: Sigfox Makers Tour
   location: Bratislava
   url: /tour
   desc: Register
   SMT: true
-  date: 2016/11/25 10:00:00 
-  
+  date: 2016/11/25 10:00:00
+
 
 - name: Sigfox Makers Tour
   location: Helsinki
@@ -73,10 +73,28 @@
   desc: Register
   SMT: true
 
+- name: Over the Air
+  location: London
+  date: 2016/11/25
+  url: http://overtheair.org/
+  desc: Meet there
+
 - name: Riot Conference
   location: Berlin
   date: 2016/11/23
   url: //riot.berlin
+  desc: Meet there
+
+- name: Dev Rel Con
+  location: London
+  date: 2016/12/07
+  url: https://london-2016.devrel.net/
+  desc: Meet there
+
+- name: SENSO
+  location: Marseille
+  date: 2016/11/17
+  url: sensoconference.com
   desc: Meet there
 
 - name: Sigfox Makers Tour
