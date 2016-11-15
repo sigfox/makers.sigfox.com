@@ -88,7 +88,7 @@
 - name: SENSO
   location: Marseille
   date: 2016/11/17
-  url: sensoconference.com
+  url: //sensoconference.com
   desc: Meet there
 
 - name: Sigfox Makers Tour
