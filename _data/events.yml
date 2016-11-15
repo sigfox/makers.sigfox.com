@@ -75,14 +75,8 @@
 
 - name: Over the Air
   location: London
-  date: 2016/11/25
+  date: 2016/11/25 14:00:00
   url: http://overtheair.org/
-  desc: Meet there
-
-- name: Riot Conference
-  location: Berlin
-  date: 2016/11/23
-  url: //riot.berlin
   desc: Meet there
 
 - name: Dev Rel Con
@@ -94,7 +88,7 @@
 - name: SENSO
   location: Marseille
   date: 2016/11/17
-  url: sensoconference.com
+  url: //sensoconference.com
   desc: Meet there
 
 - name: Sigfox Makers Tour
@@ -106,7 +100,7 @@
 
 - name: Sigfox Makers Tour
   location: Berlin
-  date: 2016/11/30
+  date: 2016/12/30
   approx: true
   url: /tour
   desc: Register
@@ -119,11 +113,16 @@
   desc: Meet there
 
 - name: Workshop Avnet/ON
+  location: Lille
+  date: 2016/12/09
+  desc: Sold o 14:00:00ut
+
+- name: Workshop Avnet/ON
   location: Paris
   date: 2016/10/11
   url: https://www.eventbrite.fr/e/billets-solutions-sigfox-on-semiconductor-27576068764
   desc: Register
-
+  
 - name: Workshop Avnet/ON
   location: Lyon
   date: 2016/10/12
