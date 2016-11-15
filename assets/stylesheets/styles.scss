@@ -4,7 +4,7 @@
 @import "variables";
 $sigfox-night-blue: #230066;
 html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -41,7 +41,7 @@ a{
     .mdl-mega-footer--bottom-section{
       margin: 0;
       padding: 0;
-      
+
       .mdl-logo{
         margin: 0;
 
@@ -476,7 +476,18 @@ main#tour{
   }
 }
 footer img.logo{
-  max-height: 60px;
+  max-height: 25px;
+  padding: 4px;
+}
+
+footer img.social{
+  max-height: 50px;
+}
+
+footer img.heart{
+  -webkit-filter: grayscale(65%);
+  height: 25px;
+  padding: 10px;
 }
 
 .mdl-card__actions-purple {
