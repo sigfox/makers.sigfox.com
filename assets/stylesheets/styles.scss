@@ -523,3 +523,29 @@ footer img.heart{
   color: #ffffff !important;
   height: 65px !important;
 }
+
+
+table#ask-activity{
+  table-layout: fixed;
+  width: 100%;
+  th{
+    text-align: center;
+    
+    &.ask-table-headers-user, &.ask-table-headers-date{
+      width: 25%;
+    }
+    &.ask-table-headers-title{
+      width: 50%;
+    }
+  }
+  th, td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    a{
+      color: #000;
+      font-weight: normal;
+    }
+  }
+}

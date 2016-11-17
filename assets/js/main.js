@@ -74,7 +74,73 @@ function showHWCard(parentDiv, item){
     
   
 }
+function fetchAskActivity(){
+  fetch('http://ask.sigfox.com/services/v1/question/list.json?sort=date&pageSize=10')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    displayAskActivity(json.result);
+  })
+  .catch(function(ex) {
+    console.error('Unable to load ask.sigfox activity', ex);
+  });
+}
+function displayAskActivity(entries){
+  var container = document.querySelector('table#ask-activity');
+  var entriesHost = container.querySelector('tbody');
+  entries.forEach(function(item){
+    showAskQuestion(entriesHost, item);
+  });
+  container.classList.remove('hidden');
+}
+function showAskQuestion(hostNode, entry){
+  
+  if (!entry){
+    return false;
+  }
+  var date = entry.lastActiveDate;
+  var link = "http://ask.sigfox.com/questions/"+entry.id+"/"+entry.plug+".html";
+  
+  function getLinkNode(url, innerHTML){
+    var a = document.createElement('a');
+    a.innerHTML = innerHTML;
+    a.href = url;
+    a.target = "_blank";
+    a.rel="noopener noreferrer";
+    
+    return a;
+  }
+  
+  
+  
+  var tableLine = document.createElement('tr');
+  var dateCol = document.createElement('td');
+  dateCol.classList.add('mdl-data-table__cell--non-numeric');
+  dateCol.appendChild(getLinkNode(link, moment(date).fromNow()));
+  
+  var userCol = document.createElement('td');
+  userCol.classList.add('mdl-data-table__cell--non-numeric');
+  userCol.classList.add('mdl-cell--hide-tablet');
+  userCol.classList.add('mdl-cell--hide-phone');
+  userCol.appendChild(getLinkNode(link, entry.author.username));
+
+  var titleCol = document.createElement('td');
+  titleCol.classList.add('mdl-data-table__cell--non-numeric');
+  titleCol.appendChild(getLinkNode(link, entry.title));
+  
+  
+  tableLine.appendChild(titleCol);
+  tableLine.appendChild(dateCol);
+  tableLine.appendChild(userCol);
+  
+  
+  
+  hostNode.appendChild(tableLine);
+  
+}
 document.addEventListener("DOMContentLoaded", function() {
   fetchKits(4);
   fetchModules(4);
+  fetchAskActivity();
 });
