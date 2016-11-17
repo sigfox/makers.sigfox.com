@@ -51,8 +51,7 @@
 
 - name: Sigfox Makers Tour
   location: Helsinki
-  date: 2016/12/31
-  approx: true
+  date: 2016/12/14
   url: /tour
   desc: Register
   SMT: true
