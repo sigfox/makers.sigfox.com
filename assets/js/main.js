@@ -30,12 +30,12 @@ function fetchProducts(type, hostNode, max){
     }
     
     items.forEach(function(item){
-      showItem(hostNode, item);
+      showHWCard(hostNode, item);
     });
     hostNode.classList.remove('hidden');
   });
 }
-function showItem(parentDiv, item){
+function showHWCard(parentDiv, item){
     var baseUrl =  '//partners.sigfox.com/';
     var imgUrl = baseUrl + 'assets/media-for/';
     var productUrl = baseUrl + 'products/';
