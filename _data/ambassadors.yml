@@ -42,25 +42,6 @@
     - hardware design
     - radio
 
-- name: Bechynský
-  firstname: Štěpán
-  country: CZ
-  city: Prague
-  img: stepanbechynsky.jpg
-  links: 
-    - type: linkedin
-      url: stepanbechynsky
-    - type: twitter
-      url: stepanb
-    - type: github
-      url: bechynsky
-  languages: 
-    - Czech
-    - English
-  skills:
-    - cloud applications
-    - Microsoft Azure
-
 - name: Pino
   firstname: Claudio
   country: IT
