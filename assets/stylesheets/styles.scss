@@ -3,12 +3,15 @@
 ---
 @import "variables";
 $sigfox-night-blue: #230066;
-html, body {
-  font-family: 'Ubuntu', 'Helvetica', sans-serif;
+html, body{
   margin: 0;
   padding: 0;
 }
-a{
+p, h2, h5, li, ul {
+  font-family: 'Ubuntu', 'Helvetica', sans-serif;
+}
+a {
+  font-family: 'Ubuntu', 'Helvetica', sans-serif;
   text-decoration: none;
 }
 .mdl-layout.is-small-screen{
@@ -39,11 +42,13 @@ a{
       display: none;
     }
     .mdl-mega-footer--bottom-section{
-      margin: 0;
-      padding: 0;
-
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
       .mdl-logo{
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
 
         .logo{
           max-height: 40px;
@@ -524,13 +529,24 @@ footer img.heart{
   height: 65px !important;
 }
 
+.card-header--hardware{
+  text-align: center;
+  background-color: #230066 !important;
+  color: #ffffff !important;
+  height: 65px !important;
+}
+
+.full-width {
+padding:0px !important;
+text-align:center;
+}
 
 table#ask-activity{
   table-layout: fixed;
   width: 100%;
   th{
     text-align: center;
-    
+
     &.ask-table-headers-user, &.ask-table-headers-date{
       width: 25%;
     }
@@ -542,7 +558,7 @@ table#ask-activity{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    
+
     a{
       color: #000;
       font-weight: normal;
