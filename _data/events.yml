@@ -47,6 +47,8 @@
   desc: Register
   SMT: true
   date: 2016/11/25 10:00:00
+  host: Science park Comenius University
+  hostLink: https://cusp.uniba.sk/en/
 
 
 - name: Sigfox Makers Tour
