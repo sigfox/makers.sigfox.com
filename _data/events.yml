@@ -60,7 +60,7 @@
 
 - name: Sigfox Makers Tour
   location: Copenhagen
-  date: 2016/12/31
+  date: 2017/01/31
   approx: true
   url: /tour
   desc: Register
@@ -68,7 +68,7 @@
 
 - name: Sigfox Makers Tour
   location: San Francisco
-  date: 2016/12/31
+  date: 2017/01/31
   approx: true
   url: /tour
   desc: Register
@@ -101,7 +101,7 @@
 
 - name: Sigfox Makers Tour
   location: Berlin
-  date: 2016/12/30
+  date: 2017/01/30
   approx: true
   url: /tour
   desc: Register
