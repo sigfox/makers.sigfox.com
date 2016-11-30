@@ -62,8 +62,7 @@
 
 - name: Sigfox Makers Tour
   location: Copenhagen
-  date: 2017/01/31
-  approx: true
+  date: 2017/01/25
   url: /tour
   desc: Register
   SMT: true
