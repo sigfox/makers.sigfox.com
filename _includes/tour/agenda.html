@@ -43,7 +43,7 @@
               <h5 class="event-location mdl-typography--font-thin">
                 {% if event.host %}
                   {% if event.hostLink%}
-                    @<a rel="noopener noreferrer" target="_blank" class="mdl-typography--font-thin mdl-color-text--white" href="{{event.hostLink}}">{{event.host}}</a>
+                    <a rel="noopener noreferrer" target="_blank" class="mdl-typography--font-thin mdl-color-text--white" href="{{event.hostLink}}">@{{event.host}}</a>
                   {%else%}
                     @{{event.host}}
                   {%endif%}
