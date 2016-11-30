@@ -56,6 +56,8 @@
   date: 2016/12/14
   url: /tour
   desc: Register
+  host: Startup Sauna
+  hostLink: http://startupsauna.com/
   SMT: true
 
 - name: Sigfox Makers Tour
