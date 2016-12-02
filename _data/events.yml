@@ -66,6 +66,8 @@
   url: /tour
   desc: Register
   SMT: true
+  host: Scion-DTU
+  hostLink: http://sciondtu.com/
 
 - name: Sigfox Makers Tour
   location: San Francisco
