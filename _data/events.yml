@@ -243,3 +243,11 @@
   desc: Register
   SMT: true
   date: 2100/1/1
+
+- name: Sigfox Makers Tour
+  location: Reunion Island
+  url: /tour
+  desc: Register
+  SMT: true
+  date: 2100/1/1
+
