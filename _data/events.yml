@@ -251,3 +251,8 @@
   SMT: true
   date: 2100/1/1
 
+- name: CES
+  location: Las Vegas
+  url: //ces.tech
+  date: 2017/1/5
+  desc: Meet there
