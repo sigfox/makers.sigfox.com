@@ -71,7 +71,7 @@
 
 - name: Sigfox Makers Tour
   location: San Francisco
-  date: 2017/01/31
+  date: 2100/1/1
   approx: true
   url: /tour
   desc: Register
@@ -104,7 +104,7 @@
 
 - name: Sigfox Makers Tour
   location: Berlin
-  date: 2017/01/30
+  date: 2100/1/1
   approx: true
   url: /tour
   desc: Register
