@@ -1,3 +1,46 @@
+- name: UnaHack
+  date: 2017/02/17
+  location: Taipei
+  desc: Mentoring
+  url: unahack.unabiz.com
+  
+- name: Bosch Connected Week
+  date: 2017/03/14
+  location: Berlin
+  desc: Mentoring
+  url: //bcw.bosch-si.com/berlin/?refresh=1
+
+- name: Mobile World Congress
+  date: 2017/02/27
+  location: Barcelona
+  desc: Exposing
+  url: //www.mobileworldcongress.com/
+
+- name: 4YFN
+  date: 2017/03/01
+  location: Barcelona
+  desc: Attending
+  url: //www.4yfn.com
+
+- name: IoT Stars
+  date: 2017/02/27
+  location: Barcelona
+  desc: Attending
+  url: //iotstars.com/
+
+- name: Eclipse IoT Day
+  date: 2017/03/10
+  location: Grenoble
+  desc: Workshop
+  url: //wiki.eclipse.org/Eclipse_IoT_Day_Grenoble_2017
+  
+- name: Tech it easy
+  date: 2017/03/02
+  location: Venezia
+  desc: Speaking
+  url: //www.eventbrite.it/e/biglietti-tech-it-easy-iot-and-industry-40-31707610316
+ 
+  
 - name: Africa4Tech
   date: 2016/11/03
   location: Casablanca
