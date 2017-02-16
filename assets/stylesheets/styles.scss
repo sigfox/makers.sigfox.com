@@ -61,8 +61,11 @@ a {
   .mdl-layout__tab-bar, .mdl-layout__tab-bar-container {
     overflow: visible;
   }
-  main#about, main#tour,  main#startups{
+  main#tour,  main#startups{
     margin-top: -35vh;
+  }
+  main#about{
+    margin-top: 5vh;
   }
 }
 header.mdl-layout__header{

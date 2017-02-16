@@ -1,57 +1,126 @@
 ---
 layout: default
 ---
-<div class="ribbon"></div>
 <main class="mdl-layout__content" id="about">
-        <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="about-inner mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            
-            <h3>About Sigfox</h3>
-            <h4>Basics</h4>
-              <p>
+  <section id="sigfox-basics" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                  <h2 class="mdl-card__title-text">About Sigfox - Basics</h2>
+            </div>
+
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+            <p>
         Sigfox is dedicated to giving a voice to the physical world, thanks to our dedicated network.
-      </p>
-      <p>
+        </p>
+        <p>
         The service focuses on:
         <ul>
-          <li>Simplicity : No configuration, no connection, no signaling</li>
-          <li>Autonomy : Very low energy consumption, allowing years of autonomy on battery without maintenance</li>
-          <li>Small messages : No large assets or multimedia, only small messages</li>
+        <li>Simplicity : No configuration, no connection, no signaling</li>
+        <li>Autonomy : Very low energy consumption, allowing years of autonomy on battery without maintenance</li>
+        <li>Small messages : No large assets or multimedia, only small messages</li>
         </ul>
-      </p>
-          
-        <h4>Sending a message</h4>
-  <p>There is no signaling, nor negotiation between a device and a receiving station. <br />
-  The device decices when to send its message, picking up a pseudo-random frequency.<br />
-  It's up to the network to detect the incoming messages, as well as validating & deduplicating them.<br />
-  The message is then available in the Sigfox cloud, and forwarded to any 3rd party cloud platform chosen by the user.
-    </p>
-        <p>
-          Messages can be sent <b>to the device</b> as well. For energy efficiency reasons, every communication is instigated by the device.<br />
-          This means that the device is not passively listening possible incoming data, but stays idle 99.x% of the time<br />
-          A device can <i>ask</i> for an update from a network. Then it will go back to sleep from 20 secs, before starting to listen to a specific frequency.<br />
-          The <i>downlink</i> message can be either a static one (hardcoded, or updated through API call), or a dynamic one sent instantly by the user's own application server.
-          </p>
-    <h4>Security</h4>
-  <p>
-  Every message is signed, with information proper to the device (incl. a unique private key) and to the message itself. <br />
-  This prevent spoofing, alteration or replay of genuine messages. <br />
-  Encryption & scrambling of the data are supported, with the choice of the more appropriate solution up to the consumer.
-  </p>  
-          <h4>Retrieving your data</h4>
-          <p>
-          You have 3 main ways to interact with the data you send to the Sigfox network :
-            <ul>
-              <li>Visual : through the backend.sigfox.com interface</li>
-              <li>API : a REST API allows you to pull your data & relevant stats</li>
-              <li>Callbacks : a webhook mechanism, that will <b>push</b> every new incoming message to your own application servers. Thes are fully customisable HTTPS requests : http method, headers, content-type, request body format</li>
-            </ul>
-          </p>
-          <h4>Radio Zones</h4>
-    <p>The SIGFOX network is relying on Ultra-Narrow Band(UNB) modulation, and operating in unlicensed sub-GHz frequency bands. <br />
+        </p>
+
+        <iframe style="width:100vw;height:36.25vw;" src="https://www.youtube.com/embed/videoseries?list=PL5dW9ukp0us32ExHc-rgdbI2cgiidI0J8" frameborder="0" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </section>
+  <section id="sending-message" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                  <h2 class="mdl-card__title-text">Sending a message</h2>
+            </div>
+
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+
+            <p>There is no signaling, nor negotiation between a device and a receiving station. <br />
+            The device decices when to send its message, picking up a pseudo-random frequency.<br />
+            It's up to the network to detect the incoming messages, as well as validating & deduplicating them.<br />
+            The message is then available in the Sigfox cloud, and forwarded to any 3rd party cloud platform chosen by the user.
+              </p>
+                  <p>
+                    Messages can be sent <a href="https://www.youtube.com/watch?v=gkSAmrLaD8g" target="_blank">to the device</a> as well. For energy efficiency reasons, every communication is instigated by the device.<br />
+                    This means that the device is not passively listening possible incoming data, but stays idle 99.x% of the time<br />
+                    A device can <i>ask</i> for an update from a network. Then it will go back to sleep from 20 secs, before starting to listen to a specific frequency.<br />
+                    The <i>downlink</i> message can be either a static one (hardcoded, or updated through API call), or a dynamic one sent instantly by the user's own application server.
+                    </p>
+
+      </div>
+    </div>
+  </section>
+  <section id="network-overview" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                  <h2 class="mdl-card__title-text">Network Overview</h2>
+            </div>
+
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+
+        <iframe style="width:100vw;height:36.25vw;" src="https://www.youtube.com/embed/videoseries?list=PLcw1TnahFRW_EOHxnhEX9ETv3Sf4tUUfd" frameborder="0" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </section>
+  <section id="security" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                  <h2 class="mdl-card__title-text">Security</h2>
+            </div>
+
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+
+            <p>
+            Every message is signed, with information proper to the device (incl. a unique private key) and to the message itself. <br />
+            This prevent spoofing, alteration or replay of genuine messages. <br />
+            Encryption & scrambling of the data are supported, with the choice of the more appropriate solution up to the consumer.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="data-access" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+                <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                      <h2 class="mdl-card__title-text">Retrieving your data</h2>
+                </div>
+
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                    <p>
+                    You have 3 main ways to interact with the data you send to the Sigfox network :
+                      <ul>
+                        <li>Visual : through the backend.sigfox.com interface</li>
+                        <li>API : a REST API allows you to pull your data & relevant stats</li>
+                        <li>Callbacks : a webhook mechanism, that will <b>push</b> every new incoming message to your own application servers. Thes are fully customisable HTTPS requests : http method, headers, content-type, request body format</li>
+                      </ul>
+                    </p>
+
+      </div>
+    </div>
+  </section>
+  <section id="certification" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                  <h2 class="mdl-card__title-text">Certification Process</h2>
+            </div>
+
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+
+<iframe style="width:100vw;height:36.25vw;" src="https://www.youtube.com/embed/videoseries?list=PLcw1TnahFRW93kIR1s2Ajcf2WITLydd0b" frameborder="0" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </section>
+  <section id="rcz" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="card-header mdl-card__title mdl-color--grey-circuit">
+                  <h2 class="mdl-card__title-text">Radio Configuration Zones</h2>
+            </div>
+
+          <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+
+    <p>The Sigfox network is relying on Ultra-Narrow Band(UNB) modulation, and operating in unlicensed sub-GHz frequency bands. <br />
     This protocol offer a great resistance to jamming & standard interferers, as well as a great capacity per receiving base stations
-    SIGFOX complies with local regulations, adjusting central frequency, power output and duty cycles. 
+    Sigfox complies with local regulations, adjusting central frequency, power output and duty cycles.
       <table class="table table-condensed table-striped table-hover">
         <thead>
           <tr>
@@ -62,7 +131,7 @@ layout: default
         </thead>
         <tbody>
         <tr>
-          <td>Europe, Middle East, South Africa - Radio Zone 1</td> 
+          <td>Europe, Middle East, South Africa - Radio Zone 1</td>
           <td>868MHz</td>
           <td>ETSI 300-220</td>
         </tr>
@@ -84,10 +153,10 @@ layout: default
         </tbody>
   </table>
   </p>
-          
-           
+
+
           </div>
         </div>
-    
+</section><br />
       </main>
 {% include footer.html %}
