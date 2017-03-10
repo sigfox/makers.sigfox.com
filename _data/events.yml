@@ -1,3 +1,10 @@
+- name: Startup Weekend Maker
+  location: Lille
+  url: http://www.up.co/communities/france/lille/startup-weekend/9495
+  desc: Mentoring
+  date: 2017/03/10 18:30:00
+
+
 - name: Sigfox Makers Tour
   url : http://makers.sigfox.com/tour
   date : 2017/04/06
@@ -54,14 +61,14 @@
   location: Grenoble
   desc: Workshop
   url: //wiki.eclipse.org/Eclipse_IoT_Day_Grenoble_2017
-  
+
 - name: Tech it easy
   date: 2017/03/02
   location: Venezia
   desc: Speaking
   url: //www.eventbrite.it/e/biglietti-tech-it-easy-iot-and-industry-40-31707610316
- 
-  
+
+
 - name: Africa4Tech
   date: 2016/11/03
   location: Casablanca
@@ -191,7 +198,7 @@
   date: 2016/10/11
   url: https://www.eventbrite.fr/e/billets-solutions-sigfox-on-semiconductor-27576068764
   desc: Register
-  
+
 - name: Workshop Avnet/ON
   location: Lyon
   date: 2016/10/12
