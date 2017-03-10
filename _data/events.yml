@@ -1,9 +1,30 @@
+- name: Sigfox Makers Tour
+  url : http://makers.sigfox.com/tour
+  date : 2017/04/06
+  location: Mexico
+  url: /tour
+  desc: Register
+  host: WeWork Varsovia
+  hostLink: https://www.wework.com/buildings/varsovia--mexico-city--DIF
+  SMT: true
+
+- name: Sigfox Makers Tour
+  url : http://makers.sigfox.com/tour
+  date : 2017/04/10
+  location: São Paulo
+  url: /tour
+  desc: Register
+  host: Samsung Ocean SP
+  hostLink: http://www.oceanbrasil.com/
+  SMT: true
+
+
 - name: UnaHack
   date: 2017/02/17
   location: Taipei
   desc: Mentoring
   url: unahack.unabiz.com
-  
+
 - name: Bosch Connected Week
   date: 2017/03/14
   location: Berlin
