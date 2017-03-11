@@ -7,12 +7,12 @@
 
 - name: Sigfox Makers Tour
   url : http://makers.sigfox.com/tour
-  date : 2017/04/06
+  date : 2017/04/06 16:30:00
   location: Mexico
   url: /tour
   desc: Register
-  host: WeWork Varsovia
-  hostLink: https://www.wework.com/buildings/varsovia--mexico-city--DIF
+  host: CoWdf
+  hostLink: http://cowdf.com/
   SMT: true
 
 - name: Sigfox Makers Tour
