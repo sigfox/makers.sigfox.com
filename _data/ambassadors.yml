@@ -25,7 +25,7 @@
   country: FR
   city: Lille
   img: adrienchapelet.jpg
-  links: 
+  links:
     - type: website
       url: http://adrien.iotech.fr/
     - type: github
@@ -66,7 +66,7 @@
   country: FR
   city: Grenoble
   img: stephanedriussi.jpg
-  links: 
+  links:
     - type: linkedin
       url: stephanedriussi
     - type: github
@@ -83,7 +83,7 @@
   country: ES
   city: Barcelona
   img: marcpous.jpg
-  links: 
+  links:
     - type: linkedin
       url: marcpous
     - type: website
@@ -101,7 +101,6 @@
     - cloud applications
     - IoT Platforms
     - software programming
-    - basket-ball
 - name: Douze
   firstname: Yann
   country: FR
@@ -119,9 +118,7 @@
   skills:
     - embedded systems
     - embedded software
-    - VHDL
-    - teaching
-    
+
 - name: Marcelino
   firstname: Jose
   country: GB
