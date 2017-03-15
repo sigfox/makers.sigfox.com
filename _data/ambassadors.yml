@@ -132,3 +132,22 @@
     - English
   skills:
     - software programming
+- name: Cendón
+  firstname: Bruno
+  country: ES
+  city: Santander
+  img: brunocendon.jpg
+  links:
+    - type: website
+      url: http://www.bcendon.com
+    - type: twitter
+      url: http://twitter.com/brunocendon
+    - type: linkedin
+      url: https://es.linkedin.com/in/bcendon
+  languages:
+      - Spanish
+      - French
+      - English
+  skills:
+    - IoT Projects architecture
+    - embedded systems
