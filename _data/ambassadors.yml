@@ -151,3 +151,30 @@
   skills:
     - IoT Projects architecture
     - embedded systems
+
+- name: Lee
+  firstname: Lup Yuen
+  country: SG
+  city: Singapore
+  img: leelupyuen.jpg
+  links:
+    - type: website
+      url: http://www.unabiz.com
+    - type: twitter
+      url: https://twitter.com/unabiziot
+    - type: linkedin
+      url: https://www.linkedin.com/in/lupyuen
+    - type: github
+      url: https://github.com/UnaBiz
+  languages:
+      - English
+      - Mandarin
+      - Cantonese
+  skills:
+    - IoT architecture
+    - IoT education
+    - Enterprise architecture
+    - iOS / Android / Node.js development
+    - Cloud: AWS IoT, Azure IoT, Google Cloud Platform
+    - Analytics: Sumo Logic, Google BigQuery, AWS / Azure Machine Learning
+    - Monitoring: Grafana
