@@ -1,0 +1,17 @@
+<section id="startups-builders" class="section startups-builders mdl-color-text--primary  mdl-color--white">
+  <div class="section__content grid__item palm--one-whole">
+    <header class="section__header">
+      <h3 class="section__title mdl-typography--font-thin">Some of our successful builders</h3>
+    </header>
+      <div class="mdl-grid">
+        {% for entry in site.data.startup-builders %}
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet  mdl-color-text--primary">
+          <a target="_blank" href="{{entry.url}}">
+            <img alt="{{entry.name}}" src="{{entry.img}}" />
+          </a>
+          <div class="builder-name mdl-color-text--white mdl-color--primary-dark"><div>{{entry.name}}</div></div>
+        </div>
+        {% endfor %}
+      </div>
+  </div>
+</section>
