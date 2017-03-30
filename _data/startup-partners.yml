@@ -1,0 +1,24 @@
+- name: Euratechnologies
+  img: "/assets/media/startups/euratechnologies.gif"
+  url: http://euratechnologies.com/
+  country: France
+- name: The Faktory
+  img: "/assets/media/startups/thefaktory.png"
+  url: http://www.thefaktory.com/
+  country: Belgium
+- name: Connected Camp
+  img: "/assets/media/startups/connectedcamp.png"
+  url: http://www.leconnected.camp/
+  country: France
+- name: Helsinki Ventures
+  img: "/assets/media/startups/helsinki.png"
+  url: http://www.helsinkiventures.com/
+  country: Finland
+- name: H Farm
+  img: "/assets/media/startups/hfarm.png"
+  url: http://www.h-farm.com/en/
+  country: Italy
+- name: Le Bivouac
+  img: "/assets/media/startups/bivouac.png"
+  url: http://www.lebivouac.com/
+  country: France

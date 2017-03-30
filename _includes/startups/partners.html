@@ -1,33 +1,23 @@
-<section id="partners">
-    <h4>Partners</h4>
-    <p>
-    We also join forces with some of the <b>best incubators</b> to encourage the development of new products, which receives premium support from the SIGFOX teams.
-    </p>
-  <div class="mdl-card mdl-cell mdl-cell--12-col">
-    <div class="mdl-card__supporting-text mdl-grid">
-      {% for type in site.data.startupspartners %}
-        <h5 class="text-center">{{entry.type}}</h5>
-        {% for partner in type.partners%}
-          <div class="startups-partner-card mdl-card mdl-shadow--2dp mdl-cell--6-col">
-            <div class="mdl-card__title mdl-card--expand">
-             {% if partner.logo %}
-                    <a href="{{partner.url}}"><img alt="{{partner.name}}" title="{{partner.name}}" src="{{site.url}}/assets/media/startups/{{partner.logo}}" /></a>
-                {% else %}
-                    {{partner.name}}
-                {% endif %}
-              <h4 class="text-center">{{partner.name}}, <i>{{partner.country}}</i></h4>
-            </div>
-
-            <div class=" mdl-card__actions mdl-card--border">
-              <a rel="noopener noreferrer" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"{% if partner.url %} href="{{partner.url}}"{%endif%}>
-                  More info
-              </a>
-              <div class="mdl-layout-spacer"></div>
-            </div>
-          </div>
-        {% endfor %}
+<section class="section startups-partners mdl-color-text--primary mdl-color--indigo-50">
+  <div class="section__content grid__item palm--one-whole">
+    <header class="section__header">
+      <h3 class="section__title mdl-typography--font-thin">Our partners</h3>
+      <p>
+        We join forces with a growing list of actors to encourage the development of new startups, which receive premium support from the Sigfox teams
+      </p>
+    </header>
+    <div class="mdl-grid">
+      {% for entry in site.data.startup-partners %}
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet  mdl-color-text--primary">
+        <a target="_blank" href="{{entry.url}}">
+          <img alt="{{entry.title}}" src="{{entry.img}}" />
+        </a>
+      </div>
       {% endfor %}
     </div>
+    <p>
+      If you want to become one of our partners, contact us : <a href="mailto:startups@sigfox.com">startups@sigfox.com</a>
+
+    </p>
   </div>
 </section>
-
