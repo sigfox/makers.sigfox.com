@@ -41,8 +41,14 @@ section.startups-program, section.startups-builders, .section.startups-partners,
   }
 }
 section.startups-program{
+  header{
+    p{
+      text-align: center;
+    }
+  }
   .mdl-cell{
     padding-left: 5%;
+
     > div {
       display: table;
     }
