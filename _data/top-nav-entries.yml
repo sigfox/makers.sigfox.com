@@ -16,5 +16,7 @@
   url: /ambassadors
 - text: Events
   url: /#events
-#- text: Ask
-#  url : http://ask.sigfox.com
+- text: Compatibility
+  url : /switch-to-sigfox
+- text: Ask
+  url : http://ask.sigfox.com
