@@ -1,0 +1,11 @@
+<section id="switch-benefits" class="section switch-benefits">
+  <div class="section__content grid__item palm--one-whole">
+    <div class="mdl-grid">
+      {% for entry in site.data.switch-benefits %}
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-typography--font-thin">
+        {{entry.name}}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
