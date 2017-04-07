@@ -1,6 +1,12 @@
-- name: Additional business opportunities
-- name: Low investment
-- name: 32+ countries accessible
-- name: Only software upgrade
-- name: Fast integration with Sigfox libraries
-- name: Specific support by our experts
+- title: Additional business opportunities
+  icon: "business"
+- title: Low investment
+  icon: "investment"
+- title: 32+ countries accessible
+  icon: "countries"
+- title: Only software upgrade
+  icon: "software"
+- title: Fast integration with Sigfox libraries
+  icon: "libraries"
+- title: Specific support by our experts
+  icon: "support"

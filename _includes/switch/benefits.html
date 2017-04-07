@@ -2,10 +2,16 @@
   <div class="section__content grid__item palm--one-whole">
     <div class="mdl-grid">
       {% for entry in site.data.switch-benefits %}
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-typography--font-thin">
-        {{entry.name}}
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet  mdl-color-text--black">
+        <h4 class="mdl-typography--font-thin">{{entry.title}}</h4>
+        <div>
+          <div class="icon" align="center">
+            <img alt="{{entry.title}}" src="/assets/media/switch/{{entry.icon}}.png" />
+          </div>
+        </div>
       </div>
       {% endfor %}
     </div>
+
   </div>
 </section>
