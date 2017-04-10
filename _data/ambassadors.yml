@@ -67,6 +67,14 @@
   city: Grenoble
   img: stephanedriussi.jpg
   links:
+    - type: website
+      url: //hidnseek.fr
+    - type: twitter
+      url: MyHidnSeek
+    - type: twitter
+      url: xtorrest
+    - type: facebook
+      url: MyHidnseek
     - type: linkedin
       url: stephanedriussi
     - type: github
@@ -76,7 +84,8 @@
     - English
   skills:
     - hardware design
-    - embedded software
+    - firmware design
+    - software programming
 
 - name: Pous
   firstname: Marc
