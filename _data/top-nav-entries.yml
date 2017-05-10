@@ -7,7 +7,7 @@
 - text: Startups
   url: /startups
 - text: Coverage
-  url: http://sigfox.com/coverage
+  url: https://sigfox.com/coverage
 - text: Solutions
   url: //partners.sigfox.com
 #- text: Scaling
@@ -19,4 +19,4 @@
 - text: Compatibility
   url : /switch-to-sigfox
 - text: Ask
-  url : http://ask.sigfox.com
+  url : https://ask.sigfox.com
