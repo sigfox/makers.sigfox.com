@@ -287,7 +287,14 @@
   url: /tour
   desc: Register
   SMT: true
-  date: 2100/1/1
+  date: 2017/06/28
+
+- name: Sigfox Makers Tour
+  location: Medellin
+  url: /tour
+  desc: Register
+  SMT: true
+  date: 2017/06/29
 
 - name: Sigfox Makers Tour
   location: Taipei
