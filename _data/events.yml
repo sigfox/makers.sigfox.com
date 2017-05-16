@@ -342,3 +342,21 @@
   url: https://www.eventbrite.com/e/enterprise-iot-workshop-tickets-34557708035
   desc: Register
   date: 2017/06/19
+
+- name: Infoshare
+  location: Gdansk
+  url: http://infoshare.pl
+  desc: Speaking
+  date: 2017/05/18
+
+- name: Harware.co Meetup
+  location: Berlin
+  url: //hardware.co
+  desc: Speaking
+  date: 2017/06/07
+
+- name: Riot
+  location: Berlin
+  url: //riot.berlin
+  date: 2017/06/08
+  desc: Speaking
