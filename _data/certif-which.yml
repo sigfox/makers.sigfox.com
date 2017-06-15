@@ -1,0 +1,11 @@
+- title: Chip or Module Maker
+  program: Sigfox Verified
+- title: End Product
+  more: Relying on Sigfox Verified Module
+  program: Sigfox Ready
+- title: End Product
+  more: Relying on Sigfox Verified Reference Design
+  program: Sigfox Ready
+- title: End Product
+  more: With your own custom radio design
+  program: Sigfox Verified
