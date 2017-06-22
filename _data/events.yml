@@ -288,6 +288,7 @@
   desc: Register
   SMT: true
   date: 2017/06/28
+  soldOut: true
 
 - name: Sigfox Makers Tour
   location: Medellin
