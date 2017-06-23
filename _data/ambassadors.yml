@@ -160,3 +160,22 @@
   skills:
     - IoT Projects architecture
     - embedded systems
+
+- name: Bechynský
+  firstname: Štěpán
+  country: CZ
+  city: Prague
+  img: stepanbechynsky.jpg
+  links:
+    - type: linkedin
+      url: stepanbechynsky
+    - type: twitter
+      url: stepanb
+    - type: github
+      url: bechynsky
+  languages:
+    - Czech
+    - English
+  skills:
+    - cloud applications
+    - Microsoft Azure
