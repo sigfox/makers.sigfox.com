@@ -292,6 +292,7 @@
 
 - name: Sigfox Makers Tour
   location: Medellin
+  soldOut: true
   url: /tour
   desc: Register
   SMT: true
