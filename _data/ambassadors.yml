@@ -179,3 +179,26 @@
   skills:
     - cloud applications
     - Microsoft Azure
+
+- name: Musquet
+  firstname: Gaël
+  country: FR
+  city: Vernon
+  img: gaelmusquet.jpg
+  links:
+    - type: website
+      url: http://ratzillas.com/
+    - type: linkedin
+      url: gmusquet
+    - type: twitter
+      url: RatZillaS
+    - type: github
+      url: RatZillaS
+  languages:
+    - French
+    - English
+  skills:
+    - Hamradio F4HXS / N6HXS
+    - Crisis Management
+    - Meteorological sensors
+    
