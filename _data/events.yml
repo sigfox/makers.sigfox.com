@@ -1,3 +1,33 @@
+- name: Soracom IoT Workshop
+  location: Fremont, CA
+  date : 2017/09/11
+  url: https://www.meetup.com/SV-IoT/events/242790310/
+  desc: Speaking
+
+- name: MWC Americas / 4YFN
+  location: San Francisco
+  date: 2017/09/12 23:00
+  url: http://mwcamericas.com
+  desc: Exposing
+
+- name: Sigfox Workshop (beginners)
+  location: Dusseldorf
+  date: 2017/09/21
+  url: https://www.sigfox.com/en/sigfox-workshop-21-september-2017-dusseldorf
+  desc: Register
+
+- name: Sigfox World IoT Expo
+  location: Prague
+  date: 2017/09/25
+  desc: Organising
+  url: http://world-iot-expo.com/
+
+- name: Unaday
+  location: Taipei
+  date: 2017/10/12
+  desc: Attending
+  url: http://www.unabiz.com/events/events-taiwan/unaday-taiwan/
+
 - name: Startup Weekend Maker
   location: Lille
   url: http://www.up.co/communities/france/lille/startup-weekend/9495
