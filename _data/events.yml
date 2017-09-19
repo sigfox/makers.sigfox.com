@@ -1,3 +1,9 @@
+- name: Innovation Day
+  location: 🇫🇷 Labège
+  date: 2017/09/21
+  url: https://www.innovation-day.fr/
+  desc: Attending
+  
 - name: Soracom IoT Workshop
   location: Fremont, CA
   date : 2017/09/11
@@ -11,19 +17,19 @@
   desc: Exposing
 
 - name: Sigfox Workshop (beginners)
-  location: Dusseldorf
+  location: 🇩🇪 Dusseldorf
   date: 2017/09/21
   url: https://www.sigfox.com/en/sigfox-workshop-21-september-2017-dusseldorf
   desc: Register
 
 - name: Sigfox World IoT Expo
-  location: Prague
+  location: 🇨🇿 Prague
   date: 2017/09/25
   desc: Organising
   url: http://world-iot-expo.com/
 
 - name: Unaday
-  location: Taipei
+  location: 🇹🇼 Taipei
   date: 2017/10/12
   desc: Attending
   url: http://www.unabiz.com/events/events-taiwan/unaday-taiwan/
