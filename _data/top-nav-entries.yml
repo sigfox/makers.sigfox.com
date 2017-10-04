@@ -1,7 +1,7 @@
-- text: About
-  url: /about
-- text: Getting Started
-  url: /getting-started
+- text: Build
+  url: https://build.sigfox.com
+- text: Buy
+  url: https://buy.sigfox.com
 #- text: Docs
 #  url: /docs
 - text: Startups
