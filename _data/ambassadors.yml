@@ -201,4 +201,19 @@
     - Hamradio F4HXS / N6HXS
     - Crisis Management
     - Meteorological sensors
-    
+
+- name: Boshra
+  firstname: Bassem
+  country: EG
+  city: Cairo
+  img: bassemboshra.jpg
+  links:
+    - type: linkedin
+      url: bassem-boshra-9216271
+  languages:
+      - Arabic
+      - English
+  skills:
+      - cloud applications
+      - IoT Platforms
+      - software programming
