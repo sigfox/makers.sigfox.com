@@ -217,3 +217,29 @@
       - cloud applications
       - IoT Platforms
       - software programming
+
+- name: Colindres
+  firstname: Yadia
+  country: TW
+  city: Taipei
+  img: yadiacolindres.jpg
+  links:
+    - type: website
+      url: http://www.fox-tech.co
+    - type: linkedin
+      url: yadiacolindres
+    - type: twitter
+      url: yadiaColindres
+    - type: github
+      url: yadia
+  languages:
+    - English
+    - Spanish
+    - Mandarin Chinese
+  skills:
+    - IoT Platforms
+    - Software Architecture
+    - Product Design
+
+
+
