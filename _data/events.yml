@@ -1,3 +1,9 @@
+- name: Consumer Electronic Show
+  location: Las Vegas
+  date: 2018/01/09 - 2018/01/12
+  url: https://www.ces.tech/
+  desc: Attending
+  
 - name: Euratechnologies<br/> Formation Sigfox
   location: 🇫🇷 Lille
   date: 2017/11/06
