@@ -7,7 +7,7 @@
 - text: Startups
   url: /startups
 - text: Certifications
-  url: /certifications
+  url: https://build.sigfox.com/steps/certification/
 - text: Coverage
   url: https://sigfox.com/coverage
 - text: Solutions
