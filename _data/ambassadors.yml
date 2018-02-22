@@ -23,11 +23,11 @@
 - name: Chapelet
   firstname: Adrien
   country: FR
-  city: Lille
+  city: Lyon
   img: adrienchapelet.jpg
   links:
     - type: website
-      url: http://adrien.iotech.fr/
+      url: https://adrien.iothings.fr/
     - type: github
       url: adrien3d
     - type: twitter
@@ -39,8 +39,9 @@
     - English
     - Spanish
   skills:
-    - hardware design
-    - radio
+    - Hardware design
+    - Firmware design
+    - Embedded software
 
 - name: Pino
   firstname: Claudio
