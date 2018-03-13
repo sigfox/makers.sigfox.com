@@ -242,5 +242,25 @@
     - Software Architecture
     - Product Design
 
-
+- name: Tshepo
+  firstname: Molope
+  country: ZA
+  city: Pretoria
+  img: tshepo_molope_gettogeek.jpg
+  links:
+    - type: linkedin
+      url: tshepomolope
+    - type: twitter
+      url: TshepoMolope
+    - type: github
+      url: TshepoM
+  languages:
+    - English
+    - Sepedi
+    - Setswana
+    - Sesotho
+  skills:
+    - Software Developer
+    - Cloud applications developer
+    - Microsoft Azure 
 
