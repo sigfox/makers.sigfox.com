@@ -262,5 +262,25 @@
   skills:
     - Software Developer
     - Cloud applications developer
-    - Microsoft Azure 
+    - Microsoft Azure
+
+- name: Falkvidd
+  firstname: Mikael
+  country: SE
+  city: Gothenburg
+  img: mikaelfalkvidd.jpg
+  links:
+    - type: linkedin
+      url: mikaelfalkvidd
+    - type: twitter
+      url: mfalkvidd
+    - type: github
+      url: mfalkvidd
+  languages:
+    - English
+    - Swedish
+  skills:
+    - IoT Platforms
+    - Firmware design
+    - Thingsboard
 
