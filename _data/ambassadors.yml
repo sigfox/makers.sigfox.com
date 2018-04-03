@@ -286,7 +286,7 @@
 
 - name: Orta
   firstname: Jorge
-  country: USA
+  country: US
   city: Houston
   img: jo.jpg
   links:
