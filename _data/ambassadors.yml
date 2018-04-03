@@ -284,3 +284,25 @@
     - Firmware design
     - Thingsboard
 
+- name: Orta
+  firstname: Jorge
+  country: USA
+  city: Houston
+  img: jo.jpg
+  links:
+    - type: linkedin
+      url: jorge-orta-a118828
+    - type: twitter
+      url: SeaSlugLabs
+    - type: github
+      url: SeaSlugLabs
+    - type: website
+      url: http://www.seasluglabs.io
+  languages:
+    - English
+    - Spanish
+  skills:
+    - Manufacturing
+    - Firmware design
+    - Hardware design
+    - Testing
