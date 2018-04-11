@@ -1,3 +1,11 @@
+- name: Sigfox Makers Tour
+  location: 🇨🇷 San Jose
+  date: 2018/05/23 09:00
+  url: /tour/register
+  desc: Register
+  SMT: true
+  soldOut: false
+
 - name: Euratechnologies Workshop Sigfox
   location: 🇫🇷 Lille
   date: 2018/04/11
