@@ -142,6 +142,7 @@
     - English
   skills:
     - software programming
+
 - name: Cendón
   firstname: Bruno
   country: US
@@ -306,3 +307,29 @@
     - Firmware design
     - Hardware design
     - Testing
+
+- name: Susset
+  firstname: Alexis
+  country: FR
+  city: Biarritz
+  img: amg.jpg
+  links:
+    - type: linkedin
+      url: alexissusset
+    - type: twitter
+      url: alexissusset
+    - type: github
+      url: alexissusset
+    - type: website
+      url: http://www.soracom.io
+  languages:
+    - English
+    - French
+    - Japanese
+    - German
+  skills:
+    - Cloud Computing
+    - Software Architecture
+    - Hardware Production
+    - Software Delivered Networking
+    - Connectivity-Agnostic IoT
