@@ -333,3 +333,22 @@
     - Hardware Production
     - Software Delivered Networking
     - Connectivity-Agnostic IoT
+
+- name: Arnaud
+  firstname: Clement
+  country: FR
+  city: Paris
+  img: clementarnaud.jpg
+  links:
+    - type: linkedin
+      url: clementarnaud
+    - type: twitter
+      url: ClementArnaud
+    - type: website
+      url: https://medium.com/@iotplayer/
+  languages:
+    - French
+    - Spanish
+    - English
+  skills:
+    - Software programming
