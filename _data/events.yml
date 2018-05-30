@@ -4,7 +4,7 @@
   url: /tour/register
   desc: Register
   SMT: true
-  soldOut: false
+  soldOut: true
 
 - name: Euratechnologies Workshop Sigfox
   location: 🇫🇷 Lille
