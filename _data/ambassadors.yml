@@ -352,6 +352,7 @@ name: Armenta
     - type: facebook
       url: nxtiotmx
     - type: linkedin
-      url: sarmentaio & nxtiot
+      url: sarmentaio
+      url: nxtiot
     - type: github
       url: nxtiot
