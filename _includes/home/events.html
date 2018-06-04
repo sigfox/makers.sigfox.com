@@ -35,18 +35,24 @@
               </h4>
               <h5 class="mdl-typography--font-thin mdl-color-text--white">{{event.name}}</h5>
             </div>
+              <div class="mdl-card__actions mdl-card--border mdl-color-text--white">
+                {%if event.soldOut == true%}
+                  <div class="mdl-button mdl-color-text--primary-contrast">
+                    SOLD OUT
+                  </div>
+                {%else%}
+                  <a rel="noopener noreferrer" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"{% if event.url %} href="{{event.url}}"{%endif%}>
+                    {%if event.desc %}
+                      {{event.desc}}
+                    {% else if event.url %}
+                      More info
+                    {% endif %}
+                  </a>
+                {% endif%}
+                <div class="mdl-layout-spacer"></div>
+                <i class="material-icons">event</i>
+              </div>
 
-            <div class="mdl-card__actions mdl-card--border mdl-color-text--white">
-              <a rel="noopener noreferrer" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"{% if event.url %} href="{{event.url}}"{%endif%}>
-                {%if event.desc %}
-                  {{event.desc}}
-                {% else if event.url %}
-                  More info
-                {% endif %}
-              </a>
-              <div class="mdl-layout-spacer"></div>
-              <i class="material-icons">event</i>
-            </div>
           </div>
         {% endunless %}
       {% endfor %}
