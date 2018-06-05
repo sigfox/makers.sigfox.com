@@ -337,7 +337,7 @@
 - name: Rangel
   firstname: Felipe
   country: CO
-  city: Medellín
+  city: Medellin
   img: felirangelp.jpg
   links:
     - type: website
