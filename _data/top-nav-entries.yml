@@ -1,15 +1,13 @@
-- text: Build
-  url: https://build.sigfox.com
-- text: Buy
-  url: https://buy.sigfox.com
+- text: About
+  url: /about
+- text: Getting Started
+  url: /getting-started
 #- text: Docs
 #  url: /docs
 - text: Startups
   url: /startups
-- text: Certifications
-  url: https://build.sigfox.com/steps/certification/
 - text: Coverage
-  url: https://sigfox.com/coverage
+  url: http://sigfox.com/coverage
 - text: Solutions
   url: //partners.sigfox.com
 #- text: Scaling
@@ -18,7 +16,5 @@
   url: /ambassadors
 - text: Events
   url: /#events
-- text: Compatibility
-  url : /switch-to-sigfox
-- text: Ask
-  url : https://ask.sigfox.com
+#- text: Ask
+#  url : http://ask.sigfox.com

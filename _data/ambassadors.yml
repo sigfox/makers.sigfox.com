@@ -23,11 +23,11 @@
 - name: Chapelet
   firstname: Adrien
   country: FR
-  city: Lyon
+  city: Lille
   img: adrienchapelet.jpg
   links:
     - type: website
-      url: https://adrien.iothings.fr/
+      url: http://adrien.iotech.fr/
     - type: github
       url: adrien3d
     - type: twitter
@@ -39,9 +39,8 @@
     - English
     - Spanish
   skills:
-    - Hardware design
-    - Firmware design
-    - Embedded software
+    - hardware design
+    - radio
 
 - name: Pino
   firstname: Claudio
@@ -68,14 +67,6 @@
   city: Grenoble
   img: stephanedriussi.jpg
   links:
-    - type: website
-      url: //hidnseek.fr
-    - type: twitter
-      url: MyHidnSeek
-    - type: twitter
-      url: xtorrest
-    - type: facebook
-      url: MyHidnseek
     - type: linkedin
       url: stephanedriussi
     - type: github
@@ -85,8 +76,7 @@
     - English
   skills:
     - hardware design
-    - firmware design
-    - software programming
+    - embedded software
 
 - name: Pous
   firstname: Marc
@@ -142,11 +132,10 @@
     - English
   skills:
     - software programming
-
 - name: Cendón
   firstname: Bruno
-  country: US
-  city: San Francisco
+  country: ES
+  city: Santander
   img: brunocendon.jpg
   links:
     - type: website
@@ -162,174 +151,3 @@
   skills:
     - IoT Projects architecture
     - embedded systems
-
-- name: Bechynský
-  firstname: Štěpán
-  country: CZ
-  city: Prague
-  img: stepanbechynsky.jpg
-  links:
-    - type: linkedin
-      url: stepanbechynsky
-    - type: twitter
-      url: stepanb
-    - type: github
-      url: bechynsky
-  languages:
-    - Czech
-    - English
-  skills:
-    - cloud applications
-    - Microsoft Azure
-
-- name: Musquet
-  firstname: Gaël
-  country: FR
-  city: Vernon
-  img: gaelmusquet.jpg
-  links:
-    - type: website
-      url: http://ratzillas.com/
-    - type: linkedin
-      url: gmusquet
-    - type: twitter
-      url: RatZillaS
-    - type: github
-      url: RatZillaS
-  languages:
-    - French
-    - English
-  skills:
-    - Hamradio F4HXS / N6HXS
-    - Crisis Management
-    - Meteorological sensors
-
-- name: Boshra
-  firstname: Bassem
-  country: EG
-  city: Cairo
-  img: bassemboshra.jpg
-  links:
-    - type: linkedin
-      url: bassem-boshra-9216271
-  languages:
-      - Arabic
-      - English
-  skills:
-      - cloud applications
-      - IoT Platforms
-      - software programming
-
-- name: Colindres
-  firstname: Yadia
-  country: TW
-  city: Taipei
-  img: yadiacolindres.jpg
-  links:
-    - type: website
-      url: http://www.fox-tech.co
-    - type: linkedin
-      url: yadiacolindres
-    - type: twitter
-      url: yadiaColindres
-    - type: github
-      url: yadia
-  languages:
-    - English
-    - Spanish
-    - Mandarin Chinese
-  skills:
-    - IoT Platforms
-    - Software Architecture
-    - Product Design
-
-- name: Tshepo
-  firstname: Molope
-  country: ZA
-  city: Pretoria
-  img: tshepo_molope_gettogeek.jpg
-  links:
-    - type: linkedin
-      url: tshepomolope
-    - type: twitter
-      url: TshepoMolope
-    - type: github
-      url: TshepoM
-  languages:
-    - English
-    - Sepedi
-    - Setswana
-    - Sesotho
-  skills:
-    - Software Developer
-    - Cloud applications developer
-    - Microsoft Azure
-
-- name: Falkvidd
-  firstname: Mikael
-  country: SE
-  city: Gothenburg
-  img: mikaelfalkvidd.jpg
-  links:
-    - type: linkedin
-      url: mikaelfalkvidd
-    - type: twitter
-      url: mfalkvidd
-    - type: github
-      url: mfalkvidd
-  languages:
-    - English
-    - Swedish
-  skills:
-    - IoT Platforms
-    - Firmware design
-    - Thingsboard
-
-- name: Orta
-  firstname: Jorge
-  country: US
-  city: Houston
-  img: jo.jpg
-  links:
-    - type: linkedin
-      url: jorge-orta-a118828
-    - type: twitter
-      url: SeaSlugLabs
-    - type: github
-      url: SeaSlugLabs
-    - type: website
-      url: http://www.seasluglabs.io
-  languages:
-    - English
-    - Spanish
-  skills:
-    - Manufacturing
-    - Firmware design
-    - Hardware design
-    - Testing
-
-- name: Susset
-  firstname: Alexis
-  country: FR
-  city: Biarritz
-  img: amg.jpg
-  links:
-    - type: linkedin
-      url: alexissusset
-    - type: twitter
-      url: alexis_susset
-    - type: github
-      url: alexissusset
-    - type: website
-      url: http://www.soracom.io
-  languages:
-    - English
-    - French
-    - Japanese
-    - German
-  skills:
-    - Cloud Computing
-    - Software Architecture
-    - Hardware Production
-    - Software Delivered Networking
-    - Connectivity-Agnostic IoT

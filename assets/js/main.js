@@ -28,7 +28,7 @@ function fetchProducts(type, hostNode, max){
       });
       items = items.slice(0,max);
     }
-
+    
     items.forEach(function(item){
       showHWCard(hostNode, item);
     });
@@ -39,43 +39,43 @@ function showHWCard(parentDiv, item){
     var baseUrl =  '//partners.sigfox.com/';
     var imgUrl = baseUrl + 'assets/media-for/';
     var productUrl = baseUrl + 'products/';
-
+    
     var card = document.createElement('div');
     card.classList.add('mdl-card');
     card.classList.add('mdl-shadow--2dp');
-
+    
     card.style.background = 'url(\''+imgUrl+item._id+'\') center / cover';
-
+  
     var link = document.createElement('a');
     link.href = productUrl+item.slug;
-
-
-
+  
+  
+    
     var title = document.createElement('div');
     title.classList.add('mdl-card__title');
     title.classList.add('mdl-card--expand');
-
+  
     var actions = document.createElement('div');
     actions.classList.add('mdl-card__actions');
     var span = document.createElement('span');
     span.innerHTML = item.name;
-
+  
     link.appendChild(span);
-
+  
     actions.appendChild(link);
-
+    
     card.appendChild(title);
     card.appendChild(actions);
-
+  
     parentDiv.querySelector('.mdl-spinner').classList.remove('is-active');
     parentDiv.appendChild(card);
+    
 
-
-
-
+    
+  
 }
 function fetchAskActivity(){
-  fetch('https://ask.sigfox.com/services/v1/question/list.json?sort=date&pageSize=10')
+  fetch('http://ask.sigfox.com/services/v1/question/list.json?sort=date&pageSize=10')
   .then(function(response) {
     return response.json();
   })
@@ -95,30 +95,30 @@ function displayAskActivity(entries){
   container.classList.remove('hidden');
 }
 function showAskQuestion(hostNode, entry){
-
+  
   if (!entry){
     return false;
   }
   var date = entry.lastActiveDate;
-  var link = "https://ask.sigfox.com/questions/"+entry.id+"/"+entry.plug+".html";
-
+  var link = "http://ask.sigfox.com/questions/"+entry.id+"/"+entry.plug+".html";
+  
   function getLinkNode(url, innerHTML){
     var a = document.createElement('a');
     a.innerHTML = innerHTML;
     a.href = url;
     a.target = "_blank";
     a.rel="noopener noreferrer";
-
+    
     return a;
   }
-
-
-
+  
+  
+  
   var tableLine = document.createElement('tr');
   var dateCol = document.createElement('td');
   dateCol.classList.add('mdl-data-table__cell--non-numeric');
   dateCol.appendChild(getLinkNode(link, moment(date).fromNow()));
-
+  
   var userCol = document.createElement('td');
   userCol.classList.add('mdl-data-table__cell--non-numeric');
   userCol.classList.add('mdl-cell--hide-tablet');
@@ -128,16 +128,16 @@ function showAskQuestion(hostNode, entry){
   var titleCol = document.createElement('td');
   titleCol.classList.add('mdl-data-table__cell--non-numeric');
   titleCol.appendChild(getLinkNode(link, entry.title));
-
-
+  
+  
   tableLine.appendChild(titleCol);
   tableLine.appendChild(dateCol);
   tableLine.appendChild(userCol);
-
-
-
+  
+  
+  
   hostNode.appendChild(tableLine);
-
+  
 }
 document.addEventListener("DOMContentLoaded", function() {
   fetchKits(4);

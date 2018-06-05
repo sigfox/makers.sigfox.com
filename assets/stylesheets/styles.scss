@@ -104,6 +104,7 @@ main.mdl-layout__content{
   }
   > .mdl-layout__tab-panel {
     padding: 8px;
+    padding-top: 48px;
   }
   .mdl-card {
     height: auto;
@@ -565,23 +566,5 @@ table#ask-activity{
       color: #000;
       font-weight: normal;
     }
-  }
-}
-.sigfox-love{
-  a{
-    border-bottom: 1px dashed;
-  }
-  h3{
-    margin-top: 0;
-  }
-  .logos img{
-    max-width:100%;
-  }
-  .partner-logo{
-    max-height: 30px;
-    max-width: 90px;
-    margin-right: 20px;
-    margin-bottom: 1em;
-    background-color: #fff;
   }
 }
