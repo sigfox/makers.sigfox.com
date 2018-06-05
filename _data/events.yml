@@ -1,3 +1,96 @@
+- name: Sigfox Makers Tour
+  location: 🇨🇷 San Jose
+  date: 2018/06/06
+  url: /tour/register
+  desc: Sold Out
+  SMT: true
+  soldOut: true
+
+- name: Euratechnologies Workshop Sigfox
+  location: 🇫🇷 Lille
+  date: 2018/04/11
+  url: https://www.euratechnologies.com/agenda/workshop-sigfox/
+  desc: Attending
+
+- name: TNW
+  location: 🇺🇸 New York
+  date: 2017/12/12
+  url: http://thenextweb.com/new-york/
+  desc: Attending
+
+- name: Atoms
+  location: 🇫🇷 Paris
+  date: 2017/11/16
+  url: http://atoms.paris
+  desc: Speaking
+
+- name: CES
+  location: 🇺🇸 Las Vegas
+  date: 2018/01/09 - 2018/01/12
+  url: https://www.ces.tech/
+  desc: Attending
+  
+- name: Euratechnologies<br/> Formation Sigfox
+  location: 🇫🇷 Lille
+  date: 2017/11/06
+  url: https://www.euratechnologies.com/agenda/developper-objet-connecte-sigfox/
+  desc: Register
+
+- name: Sigfox Makers Tour
+  location: 🇪🇪 Tallinn
+  date: 2017/11/16
+  url: http://www.connectedbaltics.com/get-started/sigfox-makers-tour-tallinn-estonia/
+  desc: Register
+
+- name: Maker Faire Europe
+  location: 🇮🇹 Rome
+  date: 2017/12/01
+  url: http://www.makerfairerome.eu/en/
+  desc: Exposing
+
+- name: Sigfox Adoption Event
+  location: 🇿🇦 Cape Town
+  date: 2017/11/08
+  url: https://sigfoxsouthafrica.splashthat.com/
+  desc: Register
+  
+
+- name: Innovation Day
+  location: 🇫🇷 Labège
+  date: 2017/09/21
+  url: https://www.innovation-day.fr/
+  desc: Attending
+  
+- name: Soracom IoT Workshop
+  location: Fremont, CA
+  date : 2017/09/11
+  url: https://www.meetup.com/SV-IoT/events/242790310/
+  desc: Speaking
+
+- name: MWC Americas / 4YFN
+  location: San Francisco
+  date: 2017/09/12 23:00
+  url: http://mwcamericas.com
+  desc: Exposing
+
+- name: Sigfox Workshop (beginners)
+  location: 🇩🇪 Dusseldorf
+  date: 2017/09/21
+  url: https://www.sigfox.com/en/sigfox-workshop-21-september-2017-dusseldorf
+  desc: Register
+
+- name: Sigfox World IoT Expo
+  location: 🇨🇿 Prague
+  date: 2017/09/25
+  desc: Organising
+  url: http://world-iot-expo.com/
+
+- name: Unaday
+  location: 🇹🇼 Taipei
+  date: 2017/10/12
+  desc: Attending
+  url: http://www.unabiz.com/events/events-taiwan/unaday-taiwan/
+
 - name: Startup Weekend Maker
   location: Lille
   url: http://www.up.co/communities/france/lille/startup-weekend/9495
@@ -14,6 +107,7 @@
   host: CoWdf
   hostLink: http://cowdf.com/
   SMT: true
+  soldOut: true
 
 - name: Sigfox Makers Tour
   url : http://makers.sigfox.com/tour
@@ -24,7 +118,7 @@
   host: Samsung Ocean SP
   hostLink: http://www.oceanbrasil.com/
   SMT: true
-
+  soldOut: true
 
 - name: UnaHack
   date: 2017/02/17
@@ -286,7 +380,16 @@
   url: /tour
   desc: Register
   SMT: true
-  date: 2100/1/1
+  date: 2017/06/28
+  soldOut: true
+
+- name: Sigfox Makers Tour
+  location: Medellin
+  soldOut: true
+  url: /tour
+  desc: Register
+  SMT: true
+  date: 2017/06/29
 
 - name: Sigfox Makers Tour
   location: Taipei
@@ -328,3 +431,39 @@
   url: //ces.tech
   date: 2017/1/5
   desc: Meet there
+
+- name: Enterprise IoT Workshop
+  location: San Francisco
+  url: https://www.eventbrite.com/e/enterprise-iot-workshop-tickets-34557708035
+  desc: Register
+  date: 2017/06/19
+
+- name: Infoshare
+  location: Gdansk
+  url: http://infoshare.pl
+  desc: Speaking
+  date: 2017/05/18
+
+- name: Harware.co Meetup
+  location: Berlin
+  url: //hardware.co
+  desc: Speaking
+  date: 2017/06/07
+
+- name: Riot
+  location: Berlin
+  url: //riot.berlin
+  date: 2017/06/08
+  desc: Speaking
+
+- name: IoT Meetup
+  location: Barcelona
+  url: //iot.barcelona
+  desc: Attending
+  date: 2017/05/31
+
+- name: Maker Faire Bay Area
+  location: San Mateo
+  url: //makerfaire.com
+  desc: Exposing
+  date: 2017/05/19
