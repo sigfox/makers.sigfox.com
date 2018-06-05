@@ -333,3 +333,23 @@
     - Hardware Production
     - Software Delivered Networking
     - Connectivity-Agnostic IoT
+
+- name: Rangel
+  firstname: Felipe
+  country: CO
+  city: Medellín
+  img: felirangelp.jpg
+  links:
+    - type: website
+      url: http://cowsurfing.com
+    - type: github
+      url: felirangelp
+    - type: twitter
+      url: felirangel
+    - type: linkedin
+      url: felirangelp
+  languages :
+    - English
+    - Spanish
+  skills:
+    - Hardware design
