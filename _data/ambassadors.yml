@@ -334,7 +334,7 @@
     - Software Delivered Networking
     - Connectivity-Agnostic IoT
 
-name: Armenta
+- name: Armenta
   firstname: Sergio
   country: MX
   img: sergio.jpg
@@ -356,3 +356,23 @@ name: Armenta
       url: nxtiot
     - type: github
       url: nxtiot
+
+- name: Rangel
+  firstname: Felipe
+  country: CO
+  city: Medellin
+  img: felirangelp.jpg
+  links:
+    - type: website
+      url: http://cowsurfing.com
+    - type: github
+      url: felirangelp
+    - type: twitter
+      url: felirangel
+    - type: linkedin
+      url: felirangelp
+  languages :
+    - English
+    - Spanish
+  skills:
+    - Hardware design
