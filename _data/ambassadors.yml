@@ -334,6 +334,29 @@
     - Software Delivered Networking
     - Connectivity-Agnostic IoT
 
+- name: Armenta
+  firstname: Sergio
+  country: MX
+  img: sergio.jpg
+  city: México
+  languages:
+    - Spanish
+    - English
+    - French (basic)
+  skills:
+    - system integration
+    - iot solution design
+  links:
+    - type: website
+      url: //nxtiot.io
+    - type: facebook
+      url: nxtiotmx
+    - type: linkedin
+      url: sarmentaio
+      url: nxtiot
+    - type: github
+      url: nxtiot
+
 - name: Rangel
   firstname: Felipe
   country: CO
