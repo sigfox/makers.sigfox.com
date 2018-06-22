@@ -33,3 +33,6 @@ url: "http://makers.sigfox.com" # the base hostname & protocol for your site
 
 sass:
     sass_dir: assets/stylesheets/sass_imports
+
+plugins:
+  - jekyll-redirect-from
