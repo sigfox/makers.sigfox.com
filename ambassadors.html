@@ -1,5 +1,7 @@
 ---
 layout: default
+redirect_to:
+  - https://www.sigfox.com/en/sigfox-developers
 ---
 {% assign ambassadors = site.data.ambassadors | sort: "name" %}
 <style>
@@ -52,7 +54,7 @@ layout: default
             {% if amb.links  %}
               <div class="ambassador-links mdl-typography--font-thin">
                 {% for link in amb.links %}
-                  
+
                   {% case link.type %}
                     {% when 'linkedin' %}{% assign prefix="//linkedin.com/in/" %}
                     {% when 'twitter' %}{% assign prefix="//twitter.com/" %}
@@ -65,9 +67,9 @@ layout: default
                     <a class="link-website" href="{{link.url}}" rel="noopener noreferrer"  target="_blank"><i class="material-icons mdl-color-text--white">public</i></a>
                   {% endif %}
                 {% endfor %}
-              </div>  
+              </div>
             {%endif%}
-              
+
           </div>
         </div>
       {% endfor %}
