@@ -1,3 +1,5 @@
+## As Of July 2018, this repository is deprecated. New Sigfox Developers webpage is located here: https://www.sigfox.com/en/sigfox-developers
+
 # Sigfox Developer Portal website
 
 This repo is used to publish the http://makers.sigfox.com website, using [Github pages](https://pages.github.com/)
